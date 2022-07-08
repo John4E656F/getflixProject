@@ -6,7 +6,7 @@ Image of Final Product here
 
 Tech:
 - Tailwinds CSS frameworks
-- Node js for backend
+- Node & Express for backend
 - Docker
 - React ? 
 - Typescript ?
