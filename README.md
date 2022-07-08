@@ -2,7 +2,7 @@
 
 ## Anime Netflix Clone
 
-Image of Finaly Product here
+Image of Final Product here
 
 Tech:
 - Tailwinds CSS frameworks
