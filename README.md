@@ -5,9 +5,13 @@
 Image of Final Product here
 
 Tech:
-- Tailwinds CSS frameworks
-- Node & Express for backend
-- Docker
+- [Tailwinds CSS](https://tailwindcss.com/docs/installation "A utility-first CSS framework")
+
+- [NodeJS](https://nodejs.org/en/ " JavaScript runtime built on Chrome's V8 JavaScript engine") &
+[Express](https://expressjs.com/ " Express is a minimal and flexible Node.js web application frameworke")
+- [Docker](https://docs.docker.com/ "Developing, shipping, and running applications.")
+- [Cookie Session](https://www.npmjs.com/package/cookie-session "Store use session with cookie. server or cleint")
+-[Cookie Session](https://www.npmjs.com/package/cookie-session "Store use session with cookie. server or cleint")
 - React ? 
 - Typescript ?
 
