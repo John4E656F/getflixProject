@@ -1,14 +1,30 @@
 {
-    "name": "docker_web_app",
+    "name": "aniflex",
     "version": "1.0.0",
-    "description": "Node.js on Docker",
-    "author": "First Last <first.last@example.com>",
+    "description": "Anime Streaming service",
+    "author": "john4e656f",
     "main": "server.js",
     "scripts": {
         "start": "node server.js"
     },
+    "keywords": [
+        "node.js",
+        "express",
+        "jwt",
+        "login",
+        "registration",
+        "authentication",
+        "authorization",
+        "mongodb",
+        "mongoose"
+      ],
     "dependencies": {
-        "express": "^4.16.1",
+        "bcryptjs": "^2.4.3",
+        "cookie-session": "^2.0.0",
+        "cors": "^2.8.5",
+        "express": "^4.18.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.4.4",
         "nodemon": "^2.0.19"
     }
 }
