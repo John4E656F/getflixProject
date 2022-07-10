@@ -1,5 +1,10 @@
 # Aniflix
 
+How to use:
+run 'npm install' to all the dependencies from the package.json
+
+docker-compose CMD coming soon!
+
 ## Anime Netflix Clone
 
 Image of Final Product here
