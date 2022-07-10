@@ -1,14 +1,15 @@
 {
-    "name": "docker_web_app",
+    "name": "Aniflex",
     "version": "1.0.0",
-    "description": "Node.js on Docker",
-    "author": "First Last <first.last@example.com>",
+    "description": "Anime Streaming platform",
+    "author": "John4e656f",
     "main": "server.js",
     "scripts": {
         "start": "node server.js"
     },
     "dependencies": {
         "express": "^4.16.1",
+        "mongoose": "^6.4.4",
         "nodemon": "^2.0.19"
     }
 }
