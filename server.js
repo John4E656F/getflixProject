@@ -1,13 +1,26 @@
+<<<<<<< HEAD
 //Express is for building the REST apis
 const express = require("express");
 //cors provides Express middleware to enable CORS
 const cors = require("cors");
 //cookie-session helps to stores the session data on the client within a cookie without requiring any database/resources on the server side
 const cookieSession = require("cookie-session");
+=======
+//Server Connection
+'use strict';
+>>>>>>> e0b8987b4728382464ccfaa6d6316b97e3896f7b
 
 const dbConfig = require("./app/config/db.config");
 
+<<<<<<< HEAD
 //Create an Express app, then add request parsing, cookie-based session middleware and cors middlewares using app.use() method. 
+=======
+// Constants
+const PORT = 8080;
+const HOST = 'localhost';
+
+// App
+>>>>>>> e0b8987b4728382464ccfaa6d6316b97e3896f7b
 const app = express();
 //set origin: http://localhost:8081.
 var corsOptions = {

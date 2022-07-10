@@ -9,8 +9,9 @@ Tech:
 - [NodeJS](https://nodejs.org/en/ " JavaScript runtime built on Chrome's V8 JavaScript engine") &
 [Express](https://expressjs.com/ " Express is a minimal and flexible Node.js web application framework")
 - [Docker](https://docs.docker.com/ "Developing, shipping, and running applications.")
-- [Cookie Session](https://www.npmjs.com/package/cookie-session "Store use session with cookie. server or cleint")
--[Cookie Session](https://www.npmjs.com/package/cookie-session "Store use session with cookie. server or cleint")
+- [Cookie Session](https://www.npmjs.com/package/cookie-session "Store use session with cookie. server or client")
+- [Mongodb](https://www.mongodb.com/ "Database") & 
+[Mongoose](https://mongoosejs.com/ "MongoDB framework object modeling for node.js") 
 - React ? 
 - Typescript ?
 
