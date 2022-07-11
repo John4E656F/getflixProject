@@ -14,7 +14,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="kids.css">
     <title>Kid anifix</title>
 </head>
 <body>
@@ -48,17 +48,101 @@
         </div>
     </div>
 
-    <!-- Carousel 1 -->
+    <!-- Carousel 1 --><!-- Wrapper -->
 
+    <h1 class="logo">Aniflix</h1>
+
+    <div class="container ">
+      <button type="button" id="moveLeft" class="btn-nav">
+        ᐊ
+      </button>
+      <div class="container-indicators ">
+        <div class="indicator active" data-index=0></div>
+        <div class="indicator" data-index=1></div>
+        <div class="indicator" data-index=2></div>
+      </div>
+      <div class="slider 	flex-grow: 1" id="mySlider">
+        <div class="movie" id="movie0">
+          <img
+            src="https://images.unsplash.com/photo-1585951237318-9ea5e175b891?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="" srcset="">
+          <div class="description">
+            <div class="description__buttons-container">
+              <div class="description__button"><i class="fas fa-play"></i></div>
+              <div class="description__button"><i class="fas fa-plus"></i></div>
+              <div class="description__button"><i class="fas fa-thumbs-up"></i></div>
+              <div class="description__button"><i class="fas fa-thumbs-down"></i></div>
+              <div class="description__button"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            <div class="description__text-container">
+              <span class="description__match">97% Match</span>
+              <span class="description__rating">TV-14</span>
+              <span class="description__length">2h 11m</span>
+              <br><br>
+              <span>Explosive</span>
+              <span>&middot;</span>
+              <span>Exciting</span>
+              <span>&middot;</span>
+              <span>Family</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" id="moveRight" class="btn-nav">
+        ᐅ
+      </button>
+    </div>
     <!-- -------------- Carousel 2 ---------------------------- -->
   
-
+    <div class="container_2 ">
+        <button type="button_2" id="moveLeft_2" class="btn-nav">
+          ᐊ
+        </button>
+        <div class="container-indicators ">
+          <div class="indicator active" data-index=0></div>
+          <div class="indicator" data-index=1></div>
+          <div class="indicator" data-index=2></div>
+        </div>
+        <div class="slider 	flex-grow: 1" id="mySlider_2">
+          <div class="movie" id="movie0_2">
+            <img
+              src="https://images.unsplash.com/photo-1585951237318-9ea5e175b891?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="" srcset="">
+            <div class="description">
+              <div class="description__buttons-container">
+                <div class="description__button"><i class="fas fa-play"></i></div>
+                <div class="description__button"><i class="fas fa-plus"></i></div>
+                <div class="description__button"><i class="fas fa-thumbs-up"></i></div>
+                <div class="description__button"><i class="fas fa-thumbs-down"></i></div>
+                <div class="description__button"><i class="fas fa-chevron-down"></i></div>
+              </div>
+              <div class="description__text-container">
+                <span class="description__match">97% Match</span>
+                <span class="description__rating">TV-14</span>
+                <span class="description__length">2h 11m</span>
+                <br><br>
+                <span>Explosive</span>
+                <span>&middot;</span>
+                <span>Exciting</span>
+                <span>&middot;</span>
+                <span>Family</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" id="moveRight" class="btn-nav">
+          ᐅ
+        </button>
+      </div>
  <!------------ --- -- - Carousel 3  -------------------------->
 
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="/path/to/font-awesome/all.min.css" />
+    <!-- CDN jquery -->
+    <script src="/path/to/cdn/jquery.min.js"></script>
 
-    
-
-
+    <!--      javascript         -->
+    <script src="kids.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
