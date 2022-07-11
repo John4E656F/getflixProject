@@ -3,10 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Fonts */
 body {
   font-family: 'Crimson Pro', serif;
+  -webkit-font-smoothing: antialiased;
 }
+
 
 /* Container */
 .container{
@@ -20,13 +23,7 @@ body {
     z-index: 4000;
     position: fixed;
 }
-.search::after{
-  content: '\1F50D';
-  margin: 100px;
-  color: #df8613;
-  font-size: large;
-  position: absolute;
-}
+
 .sidebar{
     width: 80px;
     height: 100vh;
