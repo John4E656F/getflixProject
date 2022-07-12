@@ -8,7 +8,7 @@ docker-compose CMD coming soon!
 
 ## Anime Netflix Clone
 ### Design
-![Aniflex Web ](/inspiration/aniflex%20design.PNG "Aniflex Designed by @john4e656f")
+![Aniflex Web ](/inspiration/aniflixDesign.PNG "Aniflex Designed by @john4e656f")
 
 ### User Funnel
 ![Aniflex user funnel ](/inspiration/userfunnel.PNG "Aniflex user funnel")
