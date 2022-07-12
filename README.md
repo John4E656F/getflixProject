@@ -12,7 +12,8 @@ docker-compose CMD coming soon!
 
 ### User Funnel
 ![Aniflex user funnel ](/inspiration/userfunnel.PNG "Aniflex user funnel")
-Tech:
+
+## Technology used:
 - [Tailwinds CSS](https://tailwindcss.com/docs/installation "A utility-first CSS framework")
 - [NodeJS](https://nodejs.org/en/ " JavaScript runtime built on Chrome's V8 JavaScript engine") &
 [Express](https://expressjs.com/ " Express is a minimal and flexible Node.js web application framework")
@@ -23,8 +24,7 @@ Tech:
 - React ? 
 - Typescript ?
 
-### Members:
-
+## Members:
 
 <table align="center">
   <tr>
