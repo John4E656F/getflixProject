@@ -6,9 +6,11 @@ run 'npm install' to all the dependencies from the package.json
 docker-compose CMD coming soon!
 
 ## Anime Netflix Clone
+### Design
+![Aniflex Web ](/inspiration/aniflex%20design.PNG "Aniflex Designed by @john4e656f")
 
-Image of Final Product here
-
+### User Funnel
+![Aniflex user funnel ](/inspiration/userfunnel.PNG "Aniflex user funnel")
 Tech:
 - [Tailwinds CSS](https://tailwindcss.com/docs/installation "A utility-first CSS framework")
 - [NodeJS](https://nodejs.org/en/ " JavaScript runtime built on Chrome's V8 JavaScript engine") &
