@@ -53,10 +53,10 @@ form *{
     display: flex;
     justify-content: space-between;
 }
-input{
+input {
     width: 220px;
     height: 40px;
-    padding: 5px 19px;
+    /* padding: 5px 19px; */
     border-radius: 12px;
 }
 
