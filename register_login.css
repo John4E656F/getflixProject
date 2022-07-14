@@ -14,19 +14,29 @@ body{
 
 .container{
     max-width: 1200px;
-    height: 700px;
+    height: 750px;
     padding: 50px;
     background-color: #010003;
     border-radius: 20px;
     display: flex;
     /* flex-direction: column; */
     color: #fff;
+    position: relative;
 }
 .text_head{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+.container-register{
+    /* background-color: #e5e5e527; */
+    position: absolute;
 
+}
+.hidden{
+    visibility: hidden;
+
+}
 
 form{
     width: 500px;
@@ -43,17 +53,13 @@ form *{
     display: flex;
     justify-content: space-between;
 }
-input{
+input {
     width: 220px;
     height: 40px;
-    padding: 5px 9px;
+    /* padding: 5px 19px; */
     border-radius: 12px;
 }
-.firstname::after{
-    content: '\01F464';
-    color: #000;
 
-}
 .container_button{
     display: flex;
     justify-content: space-between;
@@ -62,6 +68,9 @@ input{
     display: flex;
     justify-content: center;
 }
+
+
+
 
 .letter {
     display: inline-block;
