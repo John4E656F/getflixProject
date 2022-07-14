@@ -25,6 +25,7 @@ body{
 .text_head{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -46,7 +47,7 @@ form *{
 input{
     width: 220px;
     height: 40px;
-    padding: 5px 9px;
+    padding: 5px 19px;
     border-radius: 12px;
 }
 .firstname::after{
