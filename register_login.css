@@ -14,20 +14,29 @@ body{
 
 .container{
     max-width: 1200px;
-    height: 700px;
+    height: 750px;
     padding: 50px;
     background-color: #e5e5e527;
     border-radius: 20px;
     display: flex;
     /* flex-direction: column; */
     color: #fff;
+    position: relative;
 }
 .text_head{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.container-register{
+    /* background-color: #e5e5e527; */
+    position: absolute;
 
+}
+.hidden{
+    visibility: hidden;
+
+}
 
 form{
     width: 500px;
@@ -50,30 +59,10 @@ input{
     padding: 5px 19px;
     border-radius: 12px;
 }
-.firstname::after{
-    content: '\01F464';
-    color: #000;
 
-}
 .container_button{
     display: flex;
     justify-content: space-between;
 }
 
 
-/* 
- body{
-    animation: bgfade 70s  ease infinite;
-    background-color:#000;
-   } 
-  @keyframes bgfade {
-     0% { background-image: url('https://images4.alphacoders.com/476/47666.png');
-     }
-      25% { background-image: url('https://images6.alphacoders.com/596/596848.jpg');
-       } 
-       50% { background-image: url('https://images3.alphacoders.com/144/144565.jpg');
-       }
-        75% { background-image: url('https://images3.alphacoders.com/270/270187.jpg');
-         }
-          100% { background-image: url('https://images5.alphacoders.com/526/526885.jpg');
-           } }   */

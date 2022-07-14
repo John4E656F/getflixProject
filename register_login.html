@@ -13,15 +13,17 @@
 <body>
     <!-- <iframe src="" frameborder="0"></iframe> -->
     <div class="container mt-20">
-        <div class="content-left">
+
+        <!-- register -->
+        <div class="container-register register">
             <div class="text_head">
                 <img src="logo_aniflix.png" alt="" style="width:70px ;">
                 <a href="">Home</a><a href="">Join</a> 
             </div>
             <div class="text_main mt-20">
                 <span class="mt-4">START FOR FREE</span>
-                <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 ">Creat new account </h1>
-                <span class="mt-4">Already A Member ? <a href="#">Log in</a></span>
+                <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 ">Create new account </h1>
+                <span class="mt-4">Already A Member ? <button class="bg-lime-500  px-4 rounded-full" id="login-container">Login</span>
             </div>
             <div class="container_form">
                 <form action="" name="register">
@@ -29,6 +31,7 @@
                         <input type="text" id="firstName" class="firstname bg-slate-500" placeholder="First name">
                         <input type="text" id="lastName" class="lastname bg-slate-500" placeholder="Last name">
                     </div>
+                    <input type="text" id="username" class="mt-4 w-full bg-slate-500" placeholder="User name">
                     <input type="text" class="mt-4 w-full bg-slate-500" id="email" class="email" placeholder="Email@...com">
                     <input type="text" class="mt-4 w-full bg-slate-500" id="password" class="password" placeholder="Password">
                     <input type="text" class="mt-4 w-full bg-slate-500" id="password" class="password" placeholder="Confirm Password">
@@ -39,7 +42,18 @@
                 </form>
             </div>
         </div>
-        <div class="login-container">
+
+        <!-- log in -->
+        <div class="login-container login hidden">
+            <div class="text_head">
+                <img src="logo_aniflix.png" alt="" style="width:70px ;">
+                <a href="">Home</a><a href="">Join</a> 
+            </div>
+            <div class="text_main mt-20">
+                <span class="mt-4">START FOR FREE</span>
+                <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 ">Login in your account </h1>
+                <span class="mt-4">Already A Member ? <button class="bg-amber-500 px-4 rounded-full" id="pageRegister">Create account</button></span>
+            </div>
             <form action="" name="login">
                 <div class="container_input">
                     <input type="text" id="firstName" class="firstname bg-slate-500">
@@ -56,5 +70,7 @@
         <div class="content-right"></div>
     </div>
     
+
+    <script src="register.js"></script>
 </body>
 </html>
