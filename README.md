@@ -22,8 +22,8 @@ docker-compose CMD coming soon!
 - [Mongodb](https://www.mongodb.com/ "Database") & 
 [Mongoose](https://mongoosejs.com/ "MongoDB framework object modeling for node.js") 
 - [Node Fetch](https://www.npmjs.com/package/node-fetch "Node Fetch Package")
-- React ? 
-- Typescript ?
+- [React ](https://reactjs.org/docs/getting-started.html)
+
 
 ## Members:
 
