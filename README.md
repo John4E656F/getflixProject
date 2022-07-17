@@ -28,11 +28,15 @@ To run react frontend
 
 ## Anime Netflix Clone
 ### Design
+
 [Click Me to Check out the UI 👈](https://www.figma.com/file/SJwTqAdGM0fmk9kw85S3Jw/Aniflex-web-design?node-id=0%3A1)
+
 ![Aniflex Web ](/inspiration/aniflixDesign.PNG "Aniflex Designed by @john4e656f")
 
 ### User Funnel
+
 [Click Me to Check out the UX 👈](https://miro.com/app/board/uXjVOmnF7ZY=/?share_link_id=286191284988)
+
 ![Aniflex user funnel ](/inspiration/userfunnel.PNG "Aniflex user funnel")
 
 ## Technology used:
