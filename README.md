@@ -1,4 +1,14 @@
 # Aniflix
+
+##Built with MERN Stack
+
+- <b>MongoDB</b>: A document-based database or NoSQL, to be precise MSQL.
+- <b>ExpressJS</b>: A web app framework for Node.js
+- <b>React</b>: A Javascript front-end library for building User Interface (UI).
+- <b>Node.js</b>: Javascript run-tume environment that executes Javascript code outside of a browser (such as a server).
+
+- and <b>Mongoose</b>: Simple, schemabased solution to model application data.
+
 ## Prerequisites
 To Run this project in your system you need to install:
 - [Node.js](https://nodejs.org/en/download/)
@@ -45,7 +55,7 @@ To run react frontend
 [Express](https://expressjs.com/ " Express is a minimal and flexible Node.js web application framework")
 - [Docker](https://docs.docker.com/ "Developing, shipping, and running applications.")
 - [Cookie Session](https://www.npmjs.com/package/cookie-session "Store use session with cookie. server or client")
-- [Mongodb](https://www.mongodb.com/ "Database") & 
+- [Mongodb](https://www.mongodb.com/ "Database") 
 - [Mongoose](https://mongoosejs.com/ "MongoDB framework object modeling for node.js") 
 - [Node Fetch](https://www.npmjs.com/package/node-fetch "Node Fetch Package")
 - [React ](https://reactjs.org/docs/getting-started.html)
