@@ -53,7 +53,8 @@ To run react frontend
 <h2>The Fantastic 4</h2>
 </div>
 
-[![The Fantastic 4!](https://media0.giphy.com/media/5pUuYfAGJnvl6FXrL2/giphy.gif?cid=ecf05e47wptwopo0ogsx99xdflrvg4f967jmff3ts9g1jjqg&rid=giphy.gif&ct=g)](https://www.youtube.com/watch?v=vTIIMJ9tUc8)
+![The Fantastic 4!](https://media0.giphy.com/media/5pUuYfAGJnvl6FXrL2/giphy.gif?cid=ecf05e47wptwopo0ogsx99xdflrvg4f967jmff3ts9g1jjqg&rid=giphy.gif&ct=g)
+
 <div align="center"><a href="https://www.youtube.com/watch?v=vTIIMJ9tUc8">Click Me</a></div>
 
 <table align="center">
