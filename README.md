@@ -8,10 +8,10 @@ docker-compose CMD coming soon!
 
 ## Anime Netflix Clone
 ### Design
-![Aniflex Web ](/inspiration/aniflixDesign.PNG "Aniflex Designed by @john4e656f")
+[![Aniflex Web ](/inspiration/aniflixDesign.PNG "Aniflex Designed by @john4e656f")](https://www.figma.com/file/SJwTqAdGM0fmk9kw85S3Jw/Aniflex-web-design?node-id=0%3A1)
 
 ### User Funnel
-![Aniflex user funnel ](/inspiration/userfunnel.PNG "Aniflex user funnel")
+[![Aniflex user funnel ](/inspiration/userfunnel.PNG "Aniflex user funnel")](https://miro.com/app/board/uXjVOmnF7ZY=/?share_link_id=284387748126)
 
 ## Technology used:
 - [Tailwinds CSS](https://tailwindcss.com/docs/installation "A utility-first CSS framework")
