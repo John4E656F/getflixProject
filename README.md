@@ -1,6 +1,6 @@
 # Aniflix
 
-##Built with MERN Stack
+## Built with MERN Stack
 
 - <b>MongoDB</b>: A document-based database or NoSQL, to be precise MSQL.
 - <b>ExpressJS</b>: A web app framework for Node.js
