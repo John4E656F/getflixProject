@@ -51,16 +51,12 @@ To run react frontend
 <h1>MADE WITH ❤️ BY </h1>
 
 <h2>The Fantastic 4</h2>
-</div>
 
-<<<<<<< HEAD
+
+<div align="center">
 [![The Fantastic 4!](./inspiration/fantastic4.gif)](https://www.youtube.com/watch?v=vTIIMJ9tUc8)
-<center><a href="https://www.youtube.com/watch?v=vTIIMJ9tUc8">Click Me</a></center>
-=======
-![The Fantastic 4!](https://media0.giphy.com/media/5pUuYfAGJnvl6FXrL2/giphy.gif?cid=ecf05e47wptwopo0ogsx99xdflrvg4f967jmff3ts9g1jjqg&rid=giphy.gif&ct=g)
+<a href="https://www.youtube.com/watch?v=vTIIMJ9tUc8">Click Me</a></div>
 
-<div align="center"><a href="https://www.youtube.com/watch?v=vTIIMJ9tUc8">Click Me</a></div>
->>>>>>> 398dd14668cce45c614cb9c0761233480b27a581
 
 <table align="center">
   <tr>
