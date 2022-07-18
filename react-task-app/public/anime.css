@@ -1,0 +1,95 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    /* padding: 0 50px; */
+    background-color: black;
+    color: #fff;
+}
+
+
+/* Navbar */
+
+
+
+/* Main */
+
+.container-fluid .main{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(206, 131, 34);
+    background-image: url(https://dw9to29mmj727.cloudfront.net/promo/2016/5971-Curtain_MHA_v5_2000x1024_Test.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.main .heading{
+    width: auto;
+    height: 300px;
+    margin: 100px 150px;
+}
+.heading a{
+    text-decoration: none;
+}
+/* logo */
+.heading span{
+    font-size: 40px;
+    color: #fff;
+}
+.heading h1{
+    font-size: 90px;
+    color: #fff;
+}
+.heading p{
+    max-width: 500px;
+    margin-top: 20px;
+}
+.heading button {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btnPlayer::before{
+    content: '\25B6';
+}
+.btninfo{
+    opacity: 50%;
+    color: brown;
+}
+
+
+/* container-Carousel */
+
+.container-Carousel{
+    max-width: 1900px;
+    margin: 350px auto;
+    background-color: rgb(56, 46, 32);
+}
+
+/* Carousel */
+.MultiCarousel { 
+    float: left; overflow: hidden; width: 100%; position:relative; 
+}
+.MultiCarousel .MultiCarousel-inner {
+    transition: 1s ease all; float: left; 
+}
+.MultiCarousel .MultiCarousel-inner .item { float: left;}
+
+.MultiCarousel .MultiCarousel-inner .item > div { 
+    text-align: center; padding:1px; margin:2px; background:#000000; color:#666;
+}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { 
+    position:absolute; border-radius:50%;top:calc(50% - 20px); 
+}
+.MultiCarousel .leftLst { left:0; }
+.MultiCarousel .rightLst { right:0; }
+    
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:rgb(161, 101, 101); }
+    
+

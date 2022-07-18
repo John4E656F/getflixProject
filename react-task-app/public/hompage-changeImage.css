@@ -1,0 +1,22 @@
+#changeImage{
+    animation: bgfade 70s  infinite;
+    /* background-color:#000; */
+  } 
+  @keyframes bgfade {
+     0% { background-image: url('https://images2.alphacoders.com/108/108142.jpg');
+     }
+      25% { background-image: url('https://i0.wp.com/thetechnovore.com/wp-content/uploads/2019/07/westworld-s1-1920x1080-hbocom.jpg?fit=1920%2C1080&ssl=1');
+       } 
+       50% { background-image: url('https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2016/07/mr-robot-banner.jpg');
+       }
+        75% { background-image: url('https://i0.wp.com/www.heyuguys.com/images/2012/07/Ice-Age-Continental-Drift-poster-1.jpg?fit=2047%2C1178');
+         }
+          100% { background-image: url('http://moplathebig.weebly.com/uploads/1/3/3/2/133220944/690604943_orig.jpg');
+           } } 
+/****** add a background overlay *******/
+#animated-background:before{ 
+  content:""; 
+  position:absolute; top:0; bottom:0; left:0; 
+  /* right:0; background-color:black;  */
+  opacity:0.3; 
+}

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font and icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- CDN tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/7fd1974617.js" crossorigin="anonymous"></script>
+    <!-- cdn icons -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hompage-changeImage.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+    <!-- end jquery -->
+
+<!-- script for tooltip -->
+    <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+    <title>Aniflix</title>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app .</noscript>
+
+    <div class="container">
+      <form id="content">
+        <input type="text" name="input" class="input" id="search-input">
+        <button type="reset" class="search" id="search-btn"></button>
+      </form>
+       
+        <div class="bg-zinc-900	 nav">
+          <div class="menu-left">
+            <ul class="inline-block mx-8 mt-5">
+
+
+              <li class="inline-block mx-5	 border-b-4"><a href="#" ><span class="material-symbols-outlined">home</span></a></li>
+              <li class="inline-block mx-5	"><a href="movie.html"><span class="material-symbols-outlined">movie</span></a></li>
+              <li class="inline-block mx-5	"><a href="kids.html"><span class="material-symbols-outlined">
+                child_care
+                </span></a></li>
+              <li class="inline-block mx-5	"><a href=""><span class="material-symbols-outlined ">
+                live_tv
+                </span></a></li>
+                <li class="inline-block mx-5	"><a href="anime.html"><span class="material-symbols-outlined">
+                  swords
+                  </span></a></li>  
+              
+              
+          </ul>
+          </div>
+            <div class="menu-right">
+              <ul class="mx-8 mt-5">
+                <li class="inline-block	 mx-5"><a href="#"><span class="material-symbols-outlined">
+                  person
+                  </span></a></li>
+                <li class="inline-block	 mx-5"><a href="#"><span class="material-symbols-outlined">
+                  language
+                  </span></a></li>
+                  
+              </ul>
+            </div>
+        </div>
+        <div class="bg-teal-300 main" id="changeImage">
+            <div class="container-txt ">
+                <a href="#" class="	"><img loading="lazy" src="" alt="">series</a>
+                <h1>Aniflix</h1>
+                <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error, ex fugit quis adipisci dicta velit voluptatem ipsam ut nemo blanditiis voluptates porro repudiandae quo nostrum id voluptatum doloremque illo!</p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold my-4 py-2 px-4 rounded">
+                  Play
+                </button>
+            </div>
+
+        </div>
+    </div>
+<div class="container-carousels">
+      <!----------------------- Carousel 1 Anime ----------------------->
+      <div class="container_carousel">
+        <div class="contain">
+      
+          <div class="row">
+            <div class="row__inner">
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" loading="lazy" class="tile__img" src="https://vignette.wikia.nocookie.net/vlad-love/images/2/24/Vlad-Love-Poster.jpg/revision/latest?cb=20200410030455" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title mx-8">
+                    Vlad Love
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://financerewind.com/wp-content/uploads/2021/05/Godzilla-singular-point.jpeg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Godzilla: Singular Point
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://image.tmdb.org/t/p/original/r8MVvQeu1wxsybUeGrLntazOffP.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    SSSS.Dynazenon
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.osmSQlN40TG986tunU-zKgHaEK%26pid%3DApi&f=1" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    My Hero Academia
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://img4.hulu.com/user/v3/artwork/8cce2117-1a21-4ecf-810a-14c9d748d5fc?base_image_bucket_name=image_manager&base_image=672921cb-d6fd-4ead-9856-3a03c398116e&size=1200x630&format=jpeg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    SONNY BOY
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://randomc.net/image/Zombieland%20Saga/Zombie%20Land%20Saga%20Revenge%20-%2001%20-%20Large%2028.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    ZOMBIE LAND SAGA REVENGE
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://i0.wp.com/omnitos.com/wp-content/uploads/2020/11/SK98.png" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Sk8 the Infinity
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://i1.wp.com/dollars-bbs.org/comics/src/1370197915491.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title mx-8">
+                    Horimiya
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://theglobalcoverage.com/wp-content/uploads/2021/08/D1963A51-4DAA-4EBD-859A-B8409F3E1E77.jpeg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    TOKYO REVENGERS
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://i0.wp.com/ticgamesnetwork.com/wp-content/uploads/2019/11/Megalobox-TICGN.jpg?fit=1280%2C730&ssl=1" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Megalobox 2
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://theawesomeone.com/wp-content/uploads/2021/07/To-Your-Eternity-Season-2-1536x864.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    To Your Eternity
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://i2.wp.com/vocesabianime.com/wp-content/uploads/2021/01/Vivy-Fluorite-Eyes-Song-1.jpg?resize=800%2C420&ssl=1" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Vivy: Fluorite Eye’s Song
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://www.anmosugoi.com/wp-content/uploads/2020/03/Anime3P-86.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    86
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://www.thenewsfetcher.com/wp-content/uploads/2021/01/Jujutsu-Kaisen-1068x601.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Jujutsu Kaisen
+                  </div>
+                </div>
+              </div>
+      
+      
+      
+      
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://i.imgflip.com/3x9j1u.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title mx-8">
+                    DEATH NOTE
+                  </div>
+                </div>
+              </div>
+        
+            
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.e0WmoKq6woowO_AQIabp-QHaDZ%26pid%3DApi&f=1" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Narato
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://fetch.fm/media/titles/screengrabs/2018/01/26/TokyoGhoul_QuadPoster_30x40inc.png" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Tokyo Ghoul
+      
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://anidl.org/wp-content/uploads/2019/10/0_V9Aviaov4IP4AQ8-.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Vinland Saga
+      
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/boxart_images/df9d5fa4-020c-43eb-b569-a799a1b748e6-d8e166b0-9daa-4fe4-a043-5b0733f1839d_RGB_SD._RI_VL2DdQHJjp1mRrIjCkgvm5GGzb0tAXG_TTW_.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Noragami
+                  </div>
+                </div>
+              </div>
+      
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://financerewind.com/wp-content/uploads/2020/09/AqsNGqpBXbTXpfg-1600x900-noPad.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Avatar
+                  </div>
+                </div>
+              </div>
+      
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://s3-ap-northeast-1.amazonaws.com/cdn.bibi-star.jp/production/imgs/images/000/523/036/lqip.jpg?1592529240" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Bleach
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        
+        </div>
+      </div>
+     
+      <hr>
+      <!-- -------------- Carousel 2 Kids ---------------------------- -->
+      <div class="container_carousel_2">
+        <div class="contain">
+  
+          <div class="row">
+            <div class="row__inner">
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/TimeCiTy%20-%20Update/Animation/spies-bnbwyr87by3wr78twbs7d6t73w84e.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title mx-8">
+                    Spies in Disguise
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/TimeCiTy%20-%20Update/Animation/mitchells-bwd8yubgy2weg78tds67gt2w6e7tws67etf672w34.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    The Mitchells
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/article/Koreie/bwu8r3789wrygw87eryg89374w67etg834rt.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Raya and the Last Dragon
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/wp-content/uploads/2019/07/gy2879ad-e8hy023byu894y896.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Despicable Me
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/article/389bn476t89ruyg983745y89e89yt3eu7r89yu4895tru89ed57.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Frozen 2
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/W-Peter-Rabbit.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Peter Rabbit
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/top-dialogue-kung-fu-panda.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Kung Fu Panda
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/coco-2017-800-40.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title mx-8">
+                    COCO
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/hotel-transylvania-3-summer-vacation-2018.jpeg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Hotel Transylvania 3
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/the-incredibles1.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    The Incredibles
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/Ralph-Breaks-the-Internet-750x491.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Ralph Breaks the Internet
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/Onward-1-1.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Onward
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/uploads/16441520-9800-a.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    3 Cars
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/wp-content/uploads/2019/07/vjqo3u5980yqhe9g28493y689d9g376.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Finding Nemo
+                  </div>
+                </div>
+              </div>
+  
+  
+  
+  
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://i1.wp.com/doblu.com/wp-content/uploads/2018/12/The-Lion-King_t00.mkv_snapshot_01.23.14_2018.12.09_12.38.04.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title mx-8">
+                    The Lion King
+                  </div>
+                </div>
+              </div>
+        
+            
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://4.bp.blogspot.com/-4oOqkEeHtBY/VoPIfpV8NKI/AAAAAAAAkfo/7ITMMa1alQY/s1600/monster%2Buniversity%2Bhd%2Bwallpapers%2B8.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Monsters University
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://timecity.ir/wp-content/uploads/2019/07/vj2890436y098adyhg89324y806yh98e67.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Toy Story
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://i.postimg.cc/fTwGN0RT/AAAABXn-Lm-Ub9-ZY-XX5-Hs-LCZ-epep-DIk2akq7pf-Rf-Iq-og-Uh-Im8-Pg-Zbrl-Q4j-UTxdeb-Nt-UWh-Ij1m-KTOT-3-Xz-U6-Omfvv6c-Lu2b-RJJoq.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Shrek
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://is4-ssl.mzstatic.com/image/thumb/Video113/v4/d2/6f/2b/d26f2b0d-dfe1-61ae-2bf0-7e108b096051/IceAge_CoverArt_3840x2160.lsr/1000x562.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Ice Age
+                  </div>
+                </div>
+              </div>
+  
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://getwallpapers.com/wallpaper/full/d/8/4/965749-vertical-big-hero-6-wallpapers-1920x1080.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Big Hero 6
+                  </div>
+                </div>
+              </div>
+  
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://3.bp.blogspot.com/-pYM0HeKvXo8/VinZJvynyvI/AAAAAAAAAMg/RIh05bINnsc/s1600/Wall-E-2008-poster.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Wall-E
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        
+        </div>
+      </div>
+  
+   <!-------------------- Carousel 3 movie & serie  -------------------------->
+  
+      <div class="container_carousel_3">
+      <div class="contain">
+  
+          <div class="row">
+            <div class="row__inner">
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-1.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title mx-8">
+                    Top Gear
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://www.talentown.in/wp-content/uploads/2019/06/chernobyl-story.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Chernobyl
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIF.3Zg4vVaoqg26gIp6gJjHVA%26pid%3DApi&f=1" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    West world
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://i.ytimg.com/vi/-2-qm_-Jijk/maxresdefault.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Poaro
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://www.themoviethemesong.com/wp-content/uploads/2014/04/Game-of-Thrones-Theme-Song-5.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Game of thrones
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://i.ytimg.com/vi/gIujv-OB--c/maxresdefault.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Peaky blinders
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://gumlet.assettype.com/thebridgechronicle%2Fimport%2Fs3fs-public%2Fnews-story%2Fcover-images%2F1Breaking_Bad_Season_6_Trending_Today_DKODING_3_20_281_29.jpg?auto=format%2Ccompress&fit=max&format=webp&w=768&dpr=1.0" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Breaking bad
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://ntvb.tmsimg.com/assets/p12900907_b_h10_aa.jpg?w=1280&h=720" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title mx-8">
+                    Prison break
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://www.hbo.com/content/dam/hbodata/series/band-of-brothers/podcast/thumbnails/BandOfBrothers-podcast-art-16x9.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Band of brothers
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://gudstory.s3.us-east-2.amazonaws.com/wp-content/uploads/2020/12/22091744/The-Mandalorian-Season-3-release-date.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Mandalorian
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://phantom-marca.unidadeditorial.es/3d70e0bb3507dd9f43d687a6a5b107cc/resize/1320/f/jpg/assets/multimedia/imagenes/2021/07/25/16272310050961.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Wlking dead
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/01/Featured-Image-Cropped-Vikings.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Vikings
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://riotfest.org/wp-content/uploads/2017/08/black-mirror-1.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Black mirror
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Gu5RXVggFHuukBCeei_ARgHaD4%26pid%3DApi&f=1" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    SEE
+                  </div>
+                </div>
+              </div>
+  
+  
+  
+  
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://otakukart.com/wp-content/uploads/2021/01/Shadow-and-Bone-Feature-Image-512x256.png" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title mx-8">
+                    Shadow and Bone
+                  </div>
+                </div>
+              </div>
+        
+            
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/06/Friends.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Friends
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-17.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Top Gear
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://hddesktopwallpapers.in/wp-content/uploads/2015/06/the-simpsons-wallpaper-1024x500.gif" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Simpsons
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://noobist.com/wp-content/uploads/2015/02/bigbangtheory.jpeg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Bigbangtheory
+                  </div>
+                </div>
+              </div>
+  
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://upload.wikimedia.org/wikipedia/en/6/6c/Logo_of_the_100.jpg" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    The 100
+                  </div>
+                </div>
+              </div>
+  
+              <div class="tile">
+                <div class="tile__media">
+                  <img loading="lazy" class="tile__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.6YFV4pd_Qfs8gCEnTB24PwHaEK%26pid%3DApi&f=1" alt=""  />
+                </div>
+                <div class="tile__details">
+                  <div class="tile__title">
+                    Mr. Robot
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      
+</div>
+
+
+    <!-- Final output file Index.html -->
+
+    <script src="index.js"></script>
+</body>
+</html>
