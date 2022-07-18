@@ -16,7 +16,8 @@
         "authentication",
         "authorization",
         "mongodb",
-        "mongoose"
+        "mongoose",
+        "react"
     ],
     "dependencies": {
         "bcryptjs": "^2.4.3",
