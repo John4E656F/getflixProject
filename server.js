@@ -5,7 +5,7 @@ const cors = require("cors");
 //cookie-session helps to stores the session data on the client within a cookie without requiring any database/resources on the server side
 const cookieSession = require("cookie-session");
 
-const dbConfig = require("./app/config/db.config");
+const dbConfig = require("./app/backend/config/db.config");
 
 //Create an Express app, then add request parsing, cookie-based session middleware and cors middlewares using app.use() method. 
 const app = express();
@@ -30,7 +30,7 @@ app.use(
   })
 );
 
-const db = require("./app/models");
+const db = require("./app/backend/models");
 const Role = db.role;
 
 db.mongoose

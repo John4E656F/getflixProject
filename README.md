@@ -1,4 +1,14 @@
 # Aniflix
+
+## Built with MERN Stack
+
+- <b>MongoDB</b>: A document-based database or NoSQL, to be precise MSQL.
+- <b>ExpressJS</b>: A web app framework for Node.js
+- <b>React</b>: A Javascript front-end library for building User Interface (UI).
+- <b>Node.js</b>: Javascript run-tume environment that executes Javascript code outside of a browser (such as a server).
+
+- and <b>Mongoose</b>: Simple, schemabased solution to model application data.
+
 ## Prerequisites
 To Run this project in your system you need to install:
 - [Node.js](https://nodejs.org/en/download/)
@@ -28,9 +38,15 @@ To run react frontend
 
 ## Anime Netflix Clone
 ### Design
+
+[Click Me to Check out the UI 👈](https://www.figma.com/file/SJwTqAdGM0fmk9kw85S3Jw/Aniflex-web-design?node-id=0%3A1)
+
 ![Aniflex Web ](/inspiration/aniflixDesign.PNG "Aniflex Designed by @john4e656f")
 
 ### User Funnel
+
+[Click Me to Check out the UX 👈](https://miro.com/app/board/uXjVOmnF7ZY=/?share_link_id=286191284988)
+
 ![Aniflex user funnel ](/inspiration/userfunnel.PNG "Aniflex user funnel")
 
 ## Technology used:
@@ -39,7 +55,7 @@ To run react frontend
 [Express](https://expressjs.com/ " Express is a minimal and flexible Node.js web application framework")
 - [Docker](https://docs.docker.com/ "Developing, shipping, and running applications.")
 - [Cookie Session](https://www.npmjs.com/package/cookie-session "Store use session with cookie. server or client")
-- [Mongodb](https://www.mongodb.com/ "Database") & 
+- [Mongodb](https://www.mongodb.com/ "Database") 
 - [Mongoose](https://mongoosejs.com/ "MongoDB framework object modeling for node.js") 
 - [Node Fetch](https://www.npmjs.com/package/node-fetch "Node Fetch Package")
 - [React ](https://reactjs.org/docs/getting-started.html)
@@ -51,10 +67,14 @@ To run react frontend
 <h1>MADE WITH ❤️ BY </h1>
 
 <h2>The Fantastic 4</h2>
-</div>
+
+
 
 [![The Fantastic 4!](./inspiration/fantastic4.gif)](https://www.youtube.com/watch?v=vTIIMJ9tUc8)
-<center><a href="https://www.youtube.com/watch?v=vTIIMJ9tUc8">Click Me</a></center>
+  
+
+<div align="center"><a href="https://www.youtube.com/watch?v=vTIIMJ9tUc8">Click Me</a></div>
+
 
 <table align="center">
   <tr>
