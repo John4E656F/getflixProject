@@ -5,6 +5,7 @@ const cors = require("cors");
 //cookie-session helps to stores the session data on the client within a cookie without requiring any database/resources on the server side
 const cookieSession = require("cookie-session");
 
+
 const dbConfig = require("./app/config/db.config");
 
 //Create an Express app, then add request parsing, cookie-based session middleware and cors middlewares using app.use() method. 
@@ -13,6 +14,8 @@ const app = express();
 var corsOptions = {
   origin: "http://localhost:8081"
 };
+
+
 
 app.use(cors(corsOptions));
 
@@ -31,6 +34,7 @@ app.use(
 );
 
 const db = require("./app/models");
+const { mongoose } = require("./app/models");
 const Role = db.role;
 
 db.mongoose
@@ -53,12 +57,14 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to Aniflex application." });
 });
 
+
 // routes
 require("./app/routes/auth.routes");
 require("./app/routes/user.routes");
 
 // set port, listen on port 8080 for incoming requests.
 const PORT = process.env.PORT || 8080;
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
