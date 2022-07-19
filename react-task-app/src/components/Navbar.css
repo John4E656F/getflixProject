@@ -1,0 +1,35 @@
+.navbar{
+    position: fixed;
+    padding: 0 10px 0 20px;
+}
+.logo{
+    margin-left: 50px;
+}
+ul{
+    margin-left: 15px;
+}
+li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.menu-left{
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: 200px;
+    padding: 0 8px;
+    border: none;
+    height: 22px;
+    border-radius: 5px;
+
+}
+
+/* hidden navbar */
+@media screen and (max-width:777px) {
+    .navbar{
+       display: none;
+    }
+
+  
+}

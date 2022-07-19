@@ -1,0 +1,18 @@
+/* hiden Menu Burger */
+@media screen and (min-width:776px) {
+    .menu-burger{
+        display: none;
+    }
+}
+.btn-menuBurger{
+    padding: 2px 5px;
+    position: absolute;
+}
+.close::after{
+    content: '';
+}
+.menu-burger{
+    margin: auto;
+    margin: 20px;
+    position: absolute;
+}

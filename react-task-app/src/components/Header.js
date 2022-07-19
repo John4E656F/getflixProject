@@ -1,20 +1,15 @@
 import React from 'react'
-import '../components/header.css'
+import './Header.css';
+import './Navbar'
+import Navbar from './Navbar';
+import TextHeader from './TextHeader';
+import MenuBurger from './MenuBurger';
 const Header = () => {
   return (
     <div className='header'>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+      <MenuBurger />
+      <Navbar />
+      <TextHeader />
     </div>
   )
 }
