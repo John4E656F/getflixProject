@@ -1,0 +1,17 @@
+.navbar{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    background-color: rgba(5, 5, 5, 0.829);
+    position: fixed;
+    z-index: 5000;
+}
+.menu-left , .menu-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    display: inline-block;
+    margin: 10px;
+}

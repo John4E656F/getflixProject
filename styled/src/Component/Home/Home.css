@@ -1,0 +1,22 @@
+.home{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+.header{
+    padding-top: 33px;
+}
+.text-head{
+    position: absolute;
+    margin: -700px 100px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.text-head p , h1{
+    text-align: left;
+}
+.container-btn{
+    display: flex;
+}
