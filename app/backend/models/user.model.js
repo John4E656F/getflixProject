@@ -11,6 +11,6 @@ const User = mongoose.model(
         ref: "Role"
       }
     ]
-  })
+  }, { collection: 'userdb' }) //specify the mongodb collection
 );
 module.exports = User;

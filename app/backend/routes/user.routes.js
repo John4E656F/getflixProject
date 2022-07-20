@@ -1,32 +1,18 @@
-/*
-Authorization:
+const router = require('express').Router();
+let Users = require('../models/user.model');
 
-GET /api/test/all
-GET /api/test/user for loggedin users (user/moderator/admin)
-GET /api/test/mod for moderator
-GET /api/test/admin for admin
-*/
+router.route('/').get((req, res) => {
+  Users.find()
+  .then(users => res.json(users))
+  .catch(err => res.status(400).json('Error: ' + err));
+});
 
-const { authJwt } = require("../middlewares");
-const controller = require("../controllers/user.controller");
-module.exports = function(app) {
-  app.use(function(req, res, next) {
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Origin, Content-Type, Accept"
-    );
-    next();
-  });
-  app.get("/api/test/all", controller.allAccess);
-  app.get("/api/test/user", [authJwt.verifyToken], controller.userBoard);
-  app.get(
-    "/api/test/mod",
-    [authJwt.verifyToken, authJwt.isModerator],
-    controller.moderatorBoard
-  );
-  app.get(
-    "/api/test/admin",
-    [authJwt.verifyToken, authJwt.isAdmin],
-    controller.adminBoard
-  );
-};
+router.get('/login', async (req, res) => {
+  res.send('login page')
+})
+
+router.route('/register').post((req, res) => {
+  const username = req.body.name;
+  const email = req.body.email;
+  const password = req.body.password;
+})
