@@ -5,8 +5,7 @@ import Anime from './Component/Anime/Anime';
 import Contact from './Component/Contact/Contact';
 import Manga from './Component/Manga/Manga';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Link } from "react-router-dom";
-import NavBar from './Component/Navbar/Navbar';
+// import { Link } from "react-router-dom";
 import Footer from "./Component/Footer/Footer";
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
                 <Route exact path="/Manga" element={<Manga />} />
                 <Route exact path="/Contact" element={<Contact />} />
             </Routes>
-            <Footer />
         </div>
     );
 }

@@ -5,7 +5,7 @@
     position: relative;
 }
 .header{
-    padding-top: 33px;
+    padding-top: 67px;
 }
 .text-head{
     position: absolute;
@@ -20,3 +20,4 @@
 .container-btn{
     display: flex;
 }
+
