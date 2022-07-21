@@ -1,16 +1,52 @@
 # Aniflix
 
-How to use:
+## Built with MERN Stack
 
-run 'npm install' to all install the dependencies from the package.json
+- <b>MongoDB</b>: A document-based database or NoSQL, to be precise MSQL.
+- <b>ExpressJS</b>: A web app framework for Node.js
+- <b>React</b>: A Javascript front-end library for building User Interface (UI).
+- <b>Node.js</b>: Javascript run-tume environment that executes Javascript code outside of a browser (such as a server).
 
-docker-compose CMD coming soon!
+- and <b>Mongoose</b>: Simple, schemabased solution to model application data.
+
+## Prerequisites
+To Run this project in your system you need to install:
+- [Node.js](https://nodejs.org/en/download/)
+- NPM (it comes with node.js)
+- [MongoDB](https://www.mongodb.com/)
+or Just do the Setup. 
+
+## Setup
+Clone or download this repository
+
+1. `cd https://github.com/John4E656F/getflixProject`
+2. `npm install` To install dependencies inside the package.JSON
+
+
+🚧UNDER CUNSTRUCTION🚧
+### To Run
+
+To run node server
+1. `cd https://github.com/John4E656F/getflixProject/frontend`
+2. `node server.js`
+
+To run react frontend
+1. `cd https://github.com/John4E656F/getflixProject/backend`
+2. `npm start`
+
+🚧UNDER CUNSTRUCTION🚧
 
 ## Anime Netflix Clone
 ### Design
+
+[Click Me to Check out the UI 👈](https://www.figma.com/file/SJwTqAdGM0fmk9kw85S3Jw/Aniflex-web-design?node-id=0%3A1)
+
 ![Aniflex Web ](/inspiration/aniflixDesign.PNG "Aniflex Designed by @john4e656f")
 
 ### User Funnel
+
+[Click Me to Check out the UX 👈](https://miro.com/app/board/uXjVOmnF7ZY=/?share_link_id=286191284988)
+
 ![Aniflex user funnel ](/inspiration/userfunnel.PNG "Aniflex user funnel")
 
 ## Technology used:
@@ -19,13 +55,26 @@ docker-compose CMD coming soon!
 [Express](https://expressjs.com/ " Express is a minimal and flexible Node.js web application framework")
 - [Docker](https://docs.docker.com/ "Developing, shipping, and running applications.")
 - [Cookie Session](https://www.npmjs.com/package/cookie-session "Store use session with cookie. server or client")
-- [Mongodb](https://www.mongodb.com/ "Database") & 
-[Mongoose](https://mongoosejs.com/ "MongoDB framework object modeling for node.js") 
+- [Mongodb](https://www.mongodb.com/ "Database") 
+- [Mongoose](https://mongoosejs.com/ "MongoDB framework object modeling for node.js") 
 - [Node Fetch](https://www.npmjs.com/package/node-fetch "Node Fetch Package")
-- React ? 
-- Typescript ?
+- [React ](https://reactjs.org/docs/getting-started.html)
 
-## Members:
+
+
+
+<div align="center">
+<h1>MADE WITH ❤️ BY </h1>
+
+<h2>The Fantastic 4</h2>
+
+
+
+[![The Fantastic 4!](./inspiration/fantastic4.gif)](https://www.youtube.com/watch?v=vTIIMJ9tUc8)
+  
+
+<div align="center"><a href="https://www.youtube.com/watch?v=vTIIMJ9tUc8">Click Me</a></div>
+
 
 <table align="center">
   <tr>
@@ -35,6 +84,6 @@ docker-compose CMD coming soon!
     <td align="center"><a href="https://github.com/Younes-sh"><img src="https://avatars.githubusercontent.com/u/98320752?v=4" width="100px;" alt=""/><br /><sub><b>Younes Sheikhlaer</b></sub></a><br /><a href="https://github.com/Younes-sh" title="Code">💻</a>
   </tr>
  </table>
-
-
-
+<div align="center">
+Do not forget to leave a star! 🤗
+</div>
