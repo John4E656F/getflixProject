@@ -1,21 +1,24 @@
+import { Route, Switch } from "react-router-dom";
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import './Carousel.css';
 import './Carousel';
+import { FaBeer } from 'react-icons/fa';
 
 const CarouselHome = () => {
   return (
     <div className=''>
 
         {/* Carousel 1   */}
-
+        
 <div class="carousel-container">
+<h3 className='text-light float-left'>Bingeworthy Anime</h3>
   <div class="carousel-inner">
     <div class="track">
       <div class="card-container">
         <div class="card">
           <div class="img">
-                <img className='img-fluid' src={process.env.PUBLIC_URL+"https://i.pinimg.com/736x/fc/42/e4/fc42e46e8d08b50e1e39854c421d07df.jpg"} />
+                <img className='img-fluid' src={process.env.PUBLIC_URL+"https://i.pinimg.com/736x/11/1e/3d/111e3d537407342dfda36fc7b0e72abf.jpg"} />
           </div>
           <div class="info">
             Title 1
@@ -177,16 +180,12 @@ const CarouselHome = () => {
       {/*  */}
     </div>
   </div>
-  <div class="nav">
-    <button class="prev">
-      <i class="material-icons">
-      keyboard_arrow_left
-      </i>
+  <div class="nav btn-carousel">
+    <button  class="prev">
+    <span class="material-icons">keyboard_double_arrow_left</span>
     </button>
-    <button class="next">
-      <i class="material-icons">
-      keyboard_arrow_right
-      </i>
+    <button  class="next">
+    <span class="material-icons">double_arrow</span>
     </button>
   </div>
 </div>
@@ -194,6 +193,7 @@ const CarouselHome = () => {
 {/* Second Carousel   2 */}
 
 <div class="carousel-container">
+<h3 className='text-light float-left'>Must watch </h3>
   <div class="carousel-inner">
     <div class="track">
       <div class="card-container">
@@ -359,16 +359,12 @@ const CarouselHome = () => {
       {/*  */}
     </div>
   </div>
-  <div class="nav">
-    <button class="prev">
-      <i class="material-icons">
-      keyboard_arrow_left
-      </i>
+  <div class="nav btn-carousel">
+    <button  class="prev">
+    <span class="material-icons">keyboard_double_arrow_left</span>
     </button>
-    <button class="next">
-      <i class="material-icons">
-      keyboard_arrow_right
-      </i>
+    <button  class="next">
+    <span class="material-icons">double_arrow</span>
     </button>
   </div>
 </div>
@@ -378,6 +374,7 @@ const CarouselHome = () => {
 
 
 <div class="carousel-container">
+<h3 className='text-light float-left'>Recently Updated</h3>
   <div class="carousel-inner">
     <div class="track">
       <div class="card-container">
@@ -542,16 +539,12 @@ const CarouselHome = () => {
 
     </div>
   </div>
-  <div class="nav">
-    <button class="prev">
-      <i class="material-icons">
-      keyboard_arrow_left
-      </i>
+  <div class="nav btn-carousel">
+    <button  class="prev">
+    <span class="material-icons">keyboard_double_arrow_left</span>
     </button>
-    <button class="next">
-      <i class="material-icons">
-      keyboard_arrow_right
-      </i>
+    <button  class="next">
+    <span class="material-icons">double_arrow</span>
     </button>
   </div>
 </div>

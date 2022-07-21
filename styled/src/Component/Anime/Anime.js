@@ -1,15 +1,17 @@
 import React from 'react'
 import './Anime.css';
-import Footer from '../Footer/Footer'
-import  '../Navbar/Navbar';
-import CarouselAnime from './CarouselAnime/CarouselAnime';
 import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer'
+import './CarouselAnime/Carousel';
+import CarouselAnime from './CarouselAnime/CarouselAnime';
 const Anime = () => {
   return (
     <div className='anime'>
       <Navbar />
          <div className='header'>
-               
+         <div classs='container-image'>
+                    <img  className="img-responsive img-fluid max-width: 100%" src="https://www.xtrafondos.com/wallpapers/shoto-todoroki-my-hero-academia-3370.jpg" alt="logo"/>
+                </div>
                 <div className='text-head'>
                     <h1 className='text-light display-1'>Breath of</h1>
                     <h1 className='text-light display-1'>Thunder</h1>

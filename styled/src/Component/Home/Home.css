@@ -20,4 +20,14 @@
 .container-btn{
     display: flex;
 }
+button{
+    background-color: rgb(12, 44, 44);
+}
 
+.btn-carousel button:hover{
+    background-color: rgb(21, 110, 91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}

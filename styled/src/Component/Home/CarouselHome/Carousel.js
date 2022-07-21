@@ -1,3 +1,5 @@
+
+
 // Class version of the factory function below
 class Carousel {
     constructor(container) {
@@ -46,7 +48,7 @@ class Carousel {
   }
   
   
-  // Create an array ([...]) from a Node List (querySelectorAll), containing all carousels on the page
+  // Create an array  , containing all carousels on the page
   const carouselList = [...document.querySelectorAll('.carousel-container')];
   // Map over the above array and create a new Carousel object from each carousel; put these in carousels array
   const carousels = carouselList.map(container => new Carousel(container));

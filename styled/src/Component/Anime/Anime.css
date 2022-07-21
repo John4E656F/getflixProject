@@ -1,22 +1,20 @@
 .anime{
     width: 90%;
-    height: 100vh;
     margin: auto;
 }
 .header{
     width: 100%;
-    height: 900px;
-    background-image: url(https://www.worthview.com/wp-content/uploads/2019/03/Cult-Anime.jpg);
+    height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .text-head{
     position: absolute;
-    margin: -700px 100px;
+    /* margin: -700px 100px; */
     display: flex;
     flex-direction: column;
-    
 }
 .text-head p , h1{
     text-align: left;
