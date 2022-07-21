@@ -15,3 +15,35 @@ li{
     display: inline-block;
     margin: 10px;
 }
+
+/* Serch input */
+.search {
+    padding: 5px;
+    color: #eee;
+    background: linear-gradient(to bottom right,#460b2f60,#429bee65);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.search :is(input , button) {
+    color: inherit;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.search_input {
+    width: 0;
+}
+.search_btn {
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.search:focus-within input {
+    width: 200px;
+}
+::placeholder {
+    color: inherit;
+}
