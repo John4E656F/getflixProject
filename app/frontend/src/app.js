@@ -1,23 +1,18 @@
-import React from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Routing from "./routing";
 
+import "swiper/swiper-bundle.min.css";
 
-import Navbar from "./components/navbar/navbar.component";
-import Welcome from "./components/welcome/welcome.component";
-import Register from "./components/register/register.component";
-
+// Import main sass file to apply global styles
+// import "./App.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" exact element={<Welcome />} />
-        <Route path="/register" component={<Register />} />
-      </Routes>
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<Routing />
+		</BrowserRouter>
+	);
 }
 
 export default App;
