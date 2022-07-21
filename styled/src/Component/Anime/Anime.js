@@ -9,9 +9,7 @@ const Anime = () => {
     <div className='anime'>
       <Navbar />
          <div className='header'>
-                <div classs='container-image'>
-                    {/* <img  className="img-responsive img-fluid max-width: 100%" src="https://www.worthview.com/wp-content/uploads/2019/03/Cult-Anime.jpg" alt="logo"/> */}
-                </div>
+               
                 <div className='text-head'>
                     <h1 className='text-light display-1'>Breath of</h1>
                     <h1 className='text-light display-1'>Thunder</h1>
