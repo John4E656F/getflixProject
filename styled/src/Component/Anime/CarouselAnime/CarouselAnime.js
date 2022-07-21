@@ -15,7 +15,7 @@ const CarouselHome = () => {
       <div class="card-container">
         <div class="card">
           <div class="img">
-                <img className='img-fluid' src={process.env.PUBLIC_URL+"https://i.pinimg.com/736x/fc/42/e4/fc42e46e8d08b50e1e39854c421d07df.jpg"} />
+                {/* <img className='img-fluid' src={process.env.PUBLIC_URL+"https://i.pinimg.com/736x/fc/42/e4/fc42e46e8d08b50e1e39854c421d07df.jpg"} /> */}
           </div>
           <div class="info">
             Title 1

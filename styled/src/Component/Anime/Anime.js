@@ -24,6 +24,7 @@ const Anime = () => {
             </div>
            <div className='carousel-1'>
             {/* Container carousel 1 */}
+            {/* Folder : Anime  - Folder : CarouselAnime  carouselAnime.js */}
                 <CarouselAnime />
             {/* Container carousel End 1 */}
            </div>
