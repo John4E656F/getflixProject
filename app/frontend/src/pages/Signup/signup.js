@@ -45,7 +45,7 @@ const Signup = (props) => {
 
     const navigate = useNavigate();
 
-    const inputCHangeHandler = (props) => {
+    const inputChangeHandler = (props) => {
         const { name, value } = event.target;
         switch (name) {
             case "email":

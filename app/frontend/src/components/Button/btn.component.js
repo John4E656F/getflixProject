@@ -62,7 +62,7 @@ const button = (props) => {
             className="Button"
             style={conditionalStyles}
             onMouseEnter={onButtonHover}
-            onMouveLeave={onButtonHover}
+            onMouseLeave={onButtonHover}
             >
                 {orderButton}
             </button>

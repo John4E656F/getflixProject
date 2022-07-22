@@ -16,16 +16,16 @@ const Routing = () => {
     const user = true;
 
     return (
-        <React.Fragment>
+
         <Routes>
             {/* <Route exact path="/" component={LandingPage}>
                 <LandingPage />
             </Route> */}
-            <Route exact path="/login" element={!user ?<LoginPage /> : <Navigate to='/'/> } />
-                <LoginPage />
-            <Route exact path="/signup">
-                <SignupPage />
-            </Route>
+            <Route exact path="/login" element={<LoginPage /> } />
+
+            <Route exact path="/signup" />
+
+
             {/* <Route exact path="/profile">
                 <Profil />
             </Route>
@@ -35,7 +35,7 @@ const Routing = () => {
                 </MovieState>
             </Route> */}
         </Routes>
-        </React.Fragment>
+
     )
 }
 export default Routing;
