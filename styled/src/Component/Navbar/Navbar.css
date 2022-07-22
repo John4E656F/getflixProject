@@ -43,6 +43,7 @@ li{
 }
 .search:focus-within input {
     width: 200px;
+    transition: 0.7s ease-in-out;
 }
 ::placeholder {
     color: inherit;

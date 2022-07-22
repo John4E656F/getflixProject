@@ -1,7 +1,7 @@
-
-
 // Class version of the factory function below
 class Carousel {
+  
+
     constructor(container) {
       this.container = container;
       this.track = container.querySelector(".track");
@@ -34,11 +34,11 @@ class Carousel {
     
     moveForward() {
       this.index++;
-      this.prev.classList.add('show');
+      this.prev.classList.add(' show');
   
       this.track.style.transform = `translateX(-${this.index * this.width}px)`;
       if (this.track.offsetWidth - (this.index * this.width) < this.width) {
-        this.next.classList.add('hide');
+        this.next.classList.add(' hide');
       }
     }
     

@@ -3,16 +3,39 @@ import { Route, Switch } from "react-router-dom";
 import React from 'react'
 import './Carousel.css';
 import './Carousel';
-import { FaBeer } from 'react-icons/fa';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
-const CarouselHome = () => {
+// import { FaBeer } from 'react-icons/fa';
+const CarouselHome = props => {
+  
+  // 
+
+
+
+
+
+
+
+// 
+
+
   return (
     <div className=''>
 
         {/* Carousel 1   */}
+
+        
+
+       
+
+        
         
 <div class="carousel-container">
-<h3 className='text-light float-left'>Bingeworthy Anime</h3>
+
+<h1></h1>
+
+
   <div class="carousel-inner">
     <div class="track">
       <div class="card-container">
@@ -180,15 +203,19 @@ const CarouselHome = () => {
       {/*  */}
     </div>
   </div>
-  <div class="nav btn-carousel">
-    <button  class="prev">
+  <div class="nav ">
+    <button type="submit"  class="prev" >
     <span class="material-icons">keyboard_double_arrow_left</span>
     </button>
-    <button  class="next">
+    <button  class="next" >
     <span class="material-icons">double_arrow</span>
     </button>
   </div>
 </div>
+
+
+
+
 
 {/* Second Carousel   2 */}
 
@@ -359,11 +386,11 @@ const CarouselHome = () => {
       {/*  */}
     </div>
   </div>
-  <div class="nav btn-carousel">
-    <button  class="prev">
+  <div class="nav ">
+    <button type="submit"  class="prev" >
     <span class="material-icons">keyboard_double_arrow_left</span>
     </button>
-    <button  class="next">
+    <button  class="next " >
     <span class="material-icons">double_arrow</span>
     </button>
   </div>
@@ -540,10 +567,10 @@ const CarouselHome = () => {
     </div>
   </div>
   <div class="nav btn-carousel">
-    <button  class="prev">
+    <button type="submit"  class="prev" >
     <span class="material-icons">keyboard_double_arrow_left</span>
     </button>
-    <button  class="next">
+    <button  class="next" >
     <span class="material-icons">double_arrow</span>
     </button>
   </div>

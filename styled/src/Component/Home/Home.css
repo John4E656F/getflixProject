@@ -25,7 +25,7 @@ button{
 }
 
 .btn-carousel button:hover{
-    background-color: rgb(21, 110, 91);
+    background-color: rgb(23, 65, 56);
     display: flex;
     justify-content: center;
     align-items: center;

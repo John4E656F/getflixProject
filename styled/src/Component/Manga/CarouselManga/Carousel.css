@@ -1,0 +1,49 @@
+.container-carousel{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.c-carousel__slides img {
+  display: block;
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.c-carousel {
+  width: 90%;
+  position: relative;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.c-carousel__arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  transform: translateY(-50%) rotate(deg);
+  background-color: rgb(255, 255, 255);
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.c-carousel__arrow:hover{
+  color: green;
+}
+.c-carousel__arrow_left {
+  left: 15px;
+}
+.c-carousel__arrow_right {
+  right: 15px;
+}
+.c-carousel__slides {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  will-change: transform;
+}
