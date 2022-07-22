@@ -1,0 +1,56 @@
+/* style Carousel 2 */
+
+
+.c-carousel__slides img {
+  display: block;
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+}
+.c-carousel {
+  width: 94%;
+  position: relative;
+  margin: 0 auto ;
+  overflow: hidden;
+  display: flex;
+}
+.c-carousel__slides img {
+  display: block;
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+}
+
+
+.c-carousel__arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  transform: translateY(-50%) rotate(deg);
+  /* background-color: rgb(255, 255, 255); */
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: brown;
+}
+.c-carousel__arrow:hover{
+  color: green;
+}
+.c-carousel__arrow_left {
+  left: 15px;
+}
+.c-carousel__arrow_right {
+  right: 15px;
+}
+.c-carousel__slides {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  will-change: transform;
+}

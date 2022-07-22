@@ -14,7 +14,16 @@
 li{
     display: inline-block;
     margin: 10px;
+    background-color: transparent;
+    padding: 1px 3px;
+
 }
+li:hover{
+    background-color: rgba(87, 83, 83, 0.719);
+    padding: 1px 3px;
+    border-radius: 3px;
+}
+
 
 /* Serch input */
 .search {

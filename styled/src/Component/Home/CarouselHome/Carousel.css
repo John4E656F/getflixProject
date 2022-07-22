@@ -33,10 +33,7 @@
   display: inline-flex;
   transition: transform 0.5s;
 }
-.card-container:hover{
-  transform: scale(1.1);
-  transition: 1s ease-in-out;
-}
+
 .carousel-container .card-container {
   width: 259px;
   flex-shrink: 0;

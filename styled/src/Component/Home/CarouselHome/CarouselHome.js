@@ -33,7 +33,7 @@ const CarouselHome = props => {
         
 <div class="carousel-container">
 
-<h1></h1>
+<h3 className='text-light float-left'>Bingeworthy Anime </h3>
 
 
   <div class="carousel-inner">

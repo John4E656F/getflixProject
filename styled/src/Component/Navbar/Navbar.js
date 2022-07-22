@@ -5,9 +5,9 @@ import './Navbar.css'
 const Navbar = () => {
 
 
-    const handleSubmit = (event) => {
+const handleSubmit = (event) => {
         event.preventDefault();
-      };
+};
 
 
 
@@ -20,7 +20,7 @@ const Navbar = () => {
             <ul>
                 <li><Link className='text-light' to='/'>Home</Link></li>                
                 <li><Link className='text-light' to='/Anime'>Anime</Link></li>
-                <li><Link className='text-light' to='/Manga'>Manga</Link></li>
+                <li><Link  className='text-light' to='/Manga'>Manga</Link></li>
                 <li><Link className='text-light' to="/contact">Contact</Link></li>
             </ul>
         </div>

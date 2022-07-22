@@ -1,5 +1,9 @@
-const carousel = options => {
-  const _carousel = {
+
+
+
+const carousel_2 = options => {
+ 
+  const _carousel_2 = {
     paused: false,
 
     stopped: false,
@@ -122,12 +126,14 @@ const carousel = options => {
     }
   };
 
-  _carousel.init(options);
+  _carousel_2.init(options);
 
-  return _carousel;
+  return _carousel_2;
 };
 
+
 window.onload = () =>
-  carousel({
-    selector: ".c-carousel"
-  });
+carousel_2({
+  selector: ".c-carousel"
+}); 
+
