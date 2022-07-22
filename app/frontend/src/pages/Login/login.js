@@ -1,13 +1,13 @@
-import React, { useState, useContext } from "react;
+import React, { useState, useContext } from "react";
 //import "./index.scss";
 
 import LoginBackground from "../../assets/images/landingPage.jpg";
-import ColosseumLogo from "../../assets/images/logo.png";
+import AniflexLogo from "../../assets/images/logo.png";
 import { TextField } from "@material-ui/core";
-import Button from "../../component/UI/Button/index";
+import Button from "../../components/Button/btn.component";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { AuthenticationContext } from "../../contexts/authenticationContext";
 import { validEmailAndPhoneNumber } from "../../utils/validation";
 
@@ -34,10 +34,10 @@ const Login = (props) => {
         onSubmitInvalid: false,
     });
 
-    const history = useHistory();
+    const navigate = useNavigate();
     const authContext = useContext(AuthenticationContext);
 
-    const inpuChangeHandler = (event) => {
+    const inputChangeHandler = (event) => {
         const { name, value } =event.target;
         if (name === "email") {
 			setForm((prevForm) => ({
@@ -89,5 +89,79 @@ const Login = (props) => {
         emailSpan = <span>Please enter a valid email or phone number.</span>;
     }
 
-    if((!form.password))
-}
+    if((!form.password.valid && form.password.touched) || (form.onSubmitInvalid && !form.password.valid)) {
+        passSpan = <span>Your password must contain between 4 and 60 characters.</span>
+    }
+
+    const formSubmitHandler = (event) => {
+        event.preventDefault();
+        if (!form.email.valid || !form.password.valid) {
+            setForm((prevForm) => ({...prevForm, onSubmitnvalid: true}));
+        } else {
+            authContext.login();
+            navigate.push("/browse");
+        }
+    };
+
+    return (
+        <div className="Login" style={{ backgroundImages: `url(${LoginBackground})` }}>
+            <img src={AniflexLogo} alt="Logo" />
+            <div className="LoginCard">
+                <h1>Sign In</h1>
+                <form onSubmit={formSubmitHandler}>
+                <TextField
+						name="email"
+						className="textField"
+						label="Email or phone number"
+						variant="filled"
+						type="text"
+						style={{ backgroundColor: "#333" }}
+						color="secondary"
+						value={form.email.value}
+						onChange={inputChangeHandler}
+						onBlur={fieldBlurHandler}
+						autoComplete="off"
+						InputLabelProps={{
+							style: { color: "#8c8c8c" },
+						}}
+					/>
+
+					{emailSpan}
+
+					<TextField
+						name="password"
+						className="textField"
+						label="Password"
+						variant="filled"
+						type="password"
+						style={{ backgroundColor: "#333" }}
+						color="secondary"
+						value={form.password.value}
+						onChange={inputChangeHandler}
+						onBlur={fieldBlurHandler}
+						autoComplete="off"
+						InputLabelProps={{
+							style: { color: "#8c8c8c" },
+						}}
+					/>
+
+					{passwordSpan}
+
+                    <Button height="45px" width="100%" backgroundColor="#e50914" textColor="#fff">
+						Sign In
+					</Button>
+                </form>
+
+                <div className="HorizontalDiv">
+                    <FormControlLabel style={{ marginLeft: "-12px" }}
+                    control={<Checkbox style={{ color: "rgb(229, 9, 20)"}} name="checkB" />}
+                    label="Remember Me"
+                    />
+                    <span>Need help?</span>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Login;

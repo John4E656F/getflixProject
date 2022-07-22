@@ -20,7 +20,7 @@ const Navbar = (props) => {
     useEffect(() => {
         document.addEventListener('scroll, scrollNavbarStateHandler');
         return () => {
-            document.removeEventListener("scroll", scrollnavbarStateHandler);
+            document.removeEventListener("scroll", scrollNavbarStateHandler);
         };
     }, [scrollNavbarStateHandler]);
 
