@@ -1,11 +1,8 @@
-import mongoose from 'mongoose'
+import  mongoose  from 'mongoose'
 import {animes} from '../models/animeDB.mjs'
 
 
-
 mongoose.connect(`mongodb+srv://aniflex-admin:xelfina@aniflex-db.yqpgc8j.mongodb.net/animeDB`)
-
-const input_string= 'Oh! My Goddess (TV)';
 
 // var db = mongoose.connection
 // db.on('error', console.error.bind(console, 'connection error: '))
@@ -14,14 +11,10 @@ const input_string= 'Oh! My Goddess (TV)';
 // })
 
 (async ()=> {
-
-  try {
-   const query= await animes.findOne({title: input_string})
-   console.log(query);
-    
-  } catch (e) {
-    console.log(e.message);
-    
-  }
+    try {
+        const query= await animes.find({genre:{'0':'Adventure'} })
+        console.log('this is your query' +  query);
+    } catch (e) {
+        console.log(e.message);
+    }
 })();
-
