@@ -8,11 +8,15 @@ import "swiper/swiper-bundle.min.css";
 // import "./App.scss";
 
 function App() {
-	return (
-		<BrowserRouter>
-			<Routing />
-		</BrowserRouter>
-	);
+  return (
+    <div className="App">
+      <Navbar />
+      <Routes>
+        <Route path="/" exact element={<Welcome />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;

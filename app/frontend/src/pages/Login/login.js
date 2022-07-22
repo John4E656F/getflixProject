@@ -1,13 +1,13 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext } from "react;
 //import "./index.scss";
 
 import LoginBackground from "../../assets/images/landingPage.jpg";
-import AniflexLogo from "../../assets/images/logo.png";
+import ColosseumLogo from "../../assets/images/logo.png";
 import { TextField } from "@material-ui/core";
-import Button from "../../components/Button/btn.component";
+import Button from "../../component/UI/Button/index";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { AuthenticationContext } from "../../contexts/authenticationContext";
 import { validEmailAndPhoneNumber } from "../../utils/validation";
 
@@ -34,10 +34,17 @@ const Login = (props) => {
         onSubmitInvalid: false,
     });
 
+<<<<<<< HEAD
     const navigate = useNavigate();
     const authContext = useContext(AuthenticationContext);
 
     const inputChangeHandler = (event) => {
+=======
+    const history = useHistory();
+    const authContext = useContext(AuthenticationContext);
+
+    const inpuChangeHandler = (event) => {
+>>>>>>> ab0c97a7313dcf3d51e65be5fc083334e8dec6c0
         const { name, value } =event.target;
         if (name === "email") {
 			setForm((prevForm) => ({
@@ -89,6 +96,7 @@ const Login = (props) => {
         emailSpan = <span>Please enter a valid email or phone number.</span>;
     }
 
+<<<<<<< HEAD
     if((!form.password.valid && form.password.touched) || (form.onSubmitInvalid && !form.password.valid)) {
         passSpan = <span>Your password must contain between 4 and 60 characters.</span>
     }
@@ -165,3 +173,7 @@ const Login = (props) => {
 };
 
 export default Login;
+=======
+    if((!form.password.valid && form.password.touched) || (form.on))
+}
+>>>>>>> ab0c97a7313dcf3d51e65be5fc083334e8dec6c0

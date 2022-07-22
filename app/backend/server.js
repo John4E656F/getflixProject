@@ -30,23 +30,10 @@ app.use(express.json());
 //   })
 // );
 
-const db = require("./models");
-const Role = db.role;
+const connectDB = require("./config/connectDB");
 
-db.mongoose
-  .connect(process.env.dbServer, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(() => {
-    console.log("Successfully connect to MongoDB.");
-    initial();
-  })
-  .catch(err => {
-    console.error("Connection error", err);
-    process.exit();
-  });
-
+// Connection to DB
+connectDB();
 
 
 // routes
