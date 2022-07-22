@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Welcome />} />
-        <Route path="/register" component={<Register />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </div>
   );
