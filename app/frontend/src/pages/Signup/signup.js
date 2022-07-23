@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
-//import "./index.scss";
+import "./index.scss";
 
-import SignUpBackground from "../../assets/images/landingPage.jpg";
+import SignupBackground from "../../assets/images/landingPage.jpg";
 import AniflexLogo from "../../assets/images/logo.png";
 import { TextField } from "@material-ui/core";
 import Button from "../../components/Button/btn.component";
@@ -10,6 +10,7 @@ import Checkbox from "@material-ui/core/Checkbox";
 import { useNavigate } from "react-router-dom";
 import { AuthenticationContext } from "../../contexts/authenticationContext";
 import { validEmailAndPhoneNumber } from "../../utils/validation";
+import { Event } from "@material-ui/icons";
 
 /**
  * The SignUp component, which validates the email,password,phoneNumber ...
@@ -45,9 +46,21 @@ const Signup = (props) => {
 
     const navigate = useNavigate();
 
-    const inputChangeHandler = (props) => {
+    const inputChangeHandler = (event) => {
         const { name, value } = event.target;
         switch (name) {
+            case "name":
+                setForm((prevForm) => ({
+                    ...prevForm,
+                    password: {
+                        ...prevForm.name,
+                        value: value,
+                        touched: true,
+                        valid: value.length >= 4 && value.length <= 60,
+                    },
+                }));
+                break;
+s
             case "email":
                 setForm((prevForm) => ({
                     ...prevForm,
@@ -112,7 +125,7 @@ const Signup = (props) => {
             if (form.repeatPassword.value === "") {
                 setForm((prevForm) => ({
                     ...prevForm,
-                    repeatPassword: { ...prefForm.repeatPassword, touched: true },
+                    repeatPassword: { ...prevForm.repeatPassword, touched: true },
                 }));
             }
         }
@@ -152,22 +165,23 @@ const Signup = (props) => {
                 <h1>Sign Up</h1>
                 <form onSubmit={formSubmitHandler}>
                     <TextField
-                        name="name"
-                        className="textField"
-                        label="Name"
-                        type="text"
-                        style={{ backgroundColor: '#333' }}
-                        color="secondary"
-                        value={form.name.value}
-                        onChange={inputChangeHandler}
-                        onBlur={fieldBlurHandler}
-                        autoComplete="off"
-                        InputLabelProps={{
-                            style: { color: "#8c8c8c"},
-                        }}
-                    />
+					name="name"
+					className="textField"
+					label="Name"
+					variant="filled"
+					type="text"
+					style={{ backgroundColor: "#333" }}
+					color="secondary"
+					value={form.name.value}
+					onChange={inputChangeHandler}
+					onBlur={fieldBlurHandler}
+					autoComplete="off"
+					InputLabelProps={{
+						style: { color: "#8c8c8c" },
+					}}
+					/>
 
-                    {/*nameSpan*/}
+					{/* {nameSpan} */}
 
                     <TextField
                     name="email"
@@ -198,7 +212,6 @@ const Signup = (props) => {
                     value={form.password.value}
                     onChange={inputChangeHandler}
                     onBlur={fieldBlurHandler}
-                    autoComplete="off"
                     InputLabelProps={{
                         style: { color: "#8c8c8c" },
                     }}
@@ -216,7 +229,6 @@ const Signup = (props) => {
                     value={form.repeatPassword.value}
                     onChange={inputChangeHandler}
                     onBlur={fieldBlurHandler}
-                    autoComplete="off"
                     InputLabelProps={{
                         style: { color: "#8c8c8c" },
                     }}
@@ -224,7 +236,7 @@ const Signup = (props) => {
 
                     {repeatPasswordSpan}
 
-                    <Button height="45px" width="1400%" backgroundColor="#e50914" textColor="#fff">
+                    <Button height="45px" width="100%" backgroundColor="#e50914" textColor="#fff">
                         Sign Up
                     </Button>
                 </form>

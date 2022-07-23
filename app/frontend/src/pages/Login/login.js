@@ -38,7 +38,7 @@ const Login = (props) => {
     const authContext = useContext(AuthenticationContext);
 
     const inputChangeHandler = (event) => {
-        const  [name, value]  =event.target;
+        const  { name, value } = event.target;
         if (name === "email") {
 			setForm((prevForm) => ({
 				...prevForm,
@@ -90,7 +90,7 @@ const Login = (props) => {
     }
 
     if((!form.password.valid && form.password.touched) || (form.onSubmitInvalid && !form.password.valid)) {
-        passSpan = <span>Your password must contain between 4 and 60 characters.</span>
+        passwordSpan = <span>Your password must contain between 4 and 60 characters.</span>
     }
 
     const formSubmitHandler = (event) => {
@@ -99,7 +99,7 @@ const Login = (props) => {
             setForm((prevForm) => ({...prevForm, onSubmitnvalid: true}));
         } else {
             authContext.login();
-            navigate.push("/browse");
+            navigate("/browse", { replace: true});
         }
     };
 

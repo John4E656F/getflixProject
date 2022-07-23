@@ -23,7 +23,7 @@ const Routing = () => {
             </Route> */}
             <Route exact path="/login" element={<LoginPage /> } />
 
-            <Route exact path="/signup" />
+            <Route exact path="/signup" element={<SignupPage /> } />
 
 
             {/* <Route exact path="/profile">
