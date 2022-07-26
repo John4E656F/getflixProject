@@ -52,9 +52,9 @@ const handleSubmit = (event) => {
                     </form>
                 </li>
                 <li>
-                <Tooltip title="Search">
+                <Tooltip title="Profile">
                     <IconButton>
-                    <PersonIcon className='text-light' cursor='pointer' style={{}}/>
+                    <PersonIcon className='text-light' cursor='pointer' />
                     </IconButton>
                 </Tooltip>
                     
