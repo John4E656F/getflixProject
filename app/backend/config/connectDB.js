@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+const Db = process.env.MONGO_URI;
 
 const connectDB = async () => {
 	try {
-		const conn = await mongoose.connect(`mongodb+srv://aniflex-admin:xelfina@aniflex-db.yqpgc8j.mongodb.net/?retryWrites=true&w=majority`, {
+		const conn = mongoose.connect(Db, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 		});

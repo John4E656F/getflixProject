@@ -1,0 +1,9 @@
+//Package.json in the root to run both backend and frontend
+{
+    "scripts": {
+    "start": "node app/backend/server.js",
+    "server": "nodemon app/backend/server.js",
+    "client": "cd app/frontend && npm run start",
+    "dev": "npm run server\" \"npm run client\""
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import "./index.scss";
+import "./login.scss";
 
 import LoginBackground from "../../assets/images/landingPage.jpg";
 import AniflixLogo from "../../assets/images/logo.png";

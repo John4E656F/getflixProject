@@ -1,6 +1,8 @@
 import React, { useState, useContext } from "react";
 import "./signup.scss";
-
+import {
+    addNewUser
+} from "../../api/user";
 
 import SignupBackground from "../../assets/images/landingPage.jpg";
 import AniflexLogo from "../../assets/images/logo.png";
@@ -18,6 +20,8 @@ import { Event } from "@material-ui/icons";
  * fields and uses a controlled form. Uses material UI for the
  * textfields.
  */
+
+
 
 const Signup = (props) => {
     const [form, setForm] = useState({

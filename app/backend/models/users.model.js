@@ -1,16 +1,18 @@
 const mongoose = require("mongoose");
-const Users = mongoose.model(
+
+const userDB = mongoose.createConnection(`mongodb+srv://aniflex-admin:xelfina@aniflex-db.yqpgc8j.mongodb.net/userdb`)
+const Users = userDB.model(
   "User",
   new mongoose.Schema({
     username: String,
     email: String,
     password: String,
-    roles: [
+    role: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Role"
       }
     ]
-  }, { collection: 'userdb' }) //specify the mongodb collection
+  }, { collection: 'users' }) //specify the mongodb collection
 );
 module.exports = Users;

@@ -41,10 +41,10 @@ connectDB();
 const usersRouter = require('./routes/users.routes');
 
 
-app.use('/users', usersRouter);
+app.use('/user', usersRouter);
 
 // set port, listen on port 8080 for incoming requests.
-const PORT = process.env.PORT || 5001
+const PORT = process.env.PORT || 4000
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
