@@ -1,9 +1,12 @@
 import { Route, Switch } from "react-router-dom";
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 import './Carousel.css';
 import './Carousel';
-import Carousel from 'react-multi-carousel';
+// import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 // import { FaBeer } from 'react-icons/fa';
@@ -26,555 +29,272 @@ const CarouselHome = props => {
         {/* Carousel 1   */}
 
         
+        <div className="container-carousel">
+      <Carousel className="carousel">
+          <div className="pics">
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+          </div>
+          <div className="pics">
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+          </div>
+        </Carousel>
+
+        {/* carousel 2 */}
+        <Carousel className="carousel">
+          <div className="pics">
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+          </div>
+          <div className="pics">
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+          </div>
+        
+        </Carousel>
+        {/* carousel 3 */}
+        <Carousel className="carousel">
+          <div className="pics">
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+          </div>
+          <div className="pics">
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+          </div>
+        
+        </Carousel>
+    {/* Carousel  4 */}
+
+        <Carousel className="carousel">
+          <div className="pics">
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+          </div>
+          <div className="pics">
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+          </div>
+        
+        </Carousel>
+        {/* carousel 5 */}
+        <Carousel className="carousel">
+          <div className="pics">
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+          </div>
+          <div className="pics">
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <p>Brand launch Extension</p>
+              <p className="branch">Branch Matrics</p>
+            </div>
+          </div>
+        
+        </Carousel>
+
+      </div>
 
        
 
-        
-        
-<div class="carousel-container">
-
-<h3 className='text-light float-left'>Bingeworthy Anime </h3>
-
-
-  <div class="carousel-inner">
-    <div class="track">
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img className='img-fluid' src={process.env.PUBLIC_URL+"https://i.pinimg.com/736x/11/1e/3d/111e3d537407342dfda36fc7b0e72abf.jpg"} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 2
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 3
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      {/*  */}
-
-      {/* You can added card */}
-
-
-
-        {/* <div class="card-container">
-            <div class="card">
-                <div class="img">
-                        <img src={process.env.PUBLIC_URL+""} />
-                </div>
-                <div class="info">
-                    Title 1
-                </div>
-            </div>
-        </div> */}
-
-
-
-
-
-
-      {/*  */}
-    </div>
-  </div>
-  <div class="nav ">
-    <button type="submit"  class="prev" >
-    <span class="material-icons">keyboard_double_arrow_left</span>
-    </button>
-    <button  class="next" >
-    <span class="material-icons">double_arrow</span>
-    </button>
-  </div>
-</div>
-
-
-
-
-
-{/* Second Carousel   2 */}
-
-<div class="carousel-container">
-<h3 className='text-light float-left'>Must watch </h3>
-  <div class="carousel-inner">
-    <div class="track">
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 2
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 3
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-
-      {/*  */}
-
-      {/* You can added card */}
-
-
-
-        {/* <div class="card-container">
-            <div class="card">
-                <div class="img">
-                        <img src={process.env.PUBLIC_URL+""} />
-                </div>
-                <div class="info">
-                    Title 1
-                </div>
-            </div>
-        </div> */}
-
-
-
-      {/*  */}
-    </div>
-  </div>
-  <div class="nav ">
-    <button type="submit"  class="prev" >
-    <span class="material-icons">keyboard_double_arrow_left</span>
-    </button>
-    <button  class="next " >
-    <span class="material-icons">double_arrow</span>
-    </button>
-  </div>
-</div>
-
-
-{/* Carousel  3 */}
-
-
-<div class="carousel-container">
-<h3 className='text-light float-left'>Recently Updated</h3>
-  <div class="carousel-inner">
-    <div class="track">
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 2
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 3
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="img">
-                <img src={process.env.PUBLIC_URL+""} />
-          </div>
-          <div class="info">
-            Title 1
-          </div>
-        </div>
-      </div>
-        <div class="card-container">
-            <div class="card">
-                <div class="img">
-                        <img src={process.env.PUBLIC_URL+""} />
-                </div>
-                <div class="info">
-                    Title 1
-                </div>
-            </div>
-        </div>
-      {/*  */}
-      {/* You can added card */}
-
-
-      {/* <div class="card-container">
-            <div class="card">
-                <div class="img">
-                        <img src={process.env.PUBLIC_URL+""} />
-                </div>
-                <div class="info">
-                    Title 1
-                </div>
-            </div>
-        </div> */}
-
-
-
-
-
-
-    </div>
-  </div>
-  <div class="nav btn-carousel">
-    <button type="submit"  class="prev" >
-    <span class="material-icons">keyboard_double_arrow_left</span>
-    </button>
-    <button  class="next" >
-    <span class="material-icons">double_arrow</span>
-    </button>
-  </div>
-</div>
 
 
 
