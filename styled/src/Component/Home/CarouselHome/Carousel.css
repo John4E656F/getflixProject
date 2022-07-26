@@ -24,3 +24,10 @@
   display: flex;
 }
 
+.container-carousel h2{
+  margin-left: 90px;
+  color: rgba(250, 235, 215, 0.336);
+}
+.container-carousel{
+  margin-top: -100px;
+}

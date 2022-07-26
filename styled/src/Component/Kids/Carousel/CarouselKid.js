@@ -7,6 +7,13 @@ import { Carousel } from "react-responsive-carousel";
 
 
 const CarouselKid = () => {
+    // Rating
+
+    
+
+
+    // 
+
   return (
     <div>
         {/* Carousel Container */}

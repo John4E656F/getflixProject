@@ -6,14 +6,40 @@ import Contact from './Component/Contact/Contact';
 import Manga from './Component/Manga/Manga';
 import Kids from './Component/Kids/Kids'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+// 
+
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+// 
 
 function App() {
 
-   
+    //    
+
+
+    
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    // 
 
 
     return (
+      
         <div className="App">
             
             <Routes>
@@ -24,7 +50,9 @@ function App() {
                 <Route exact path="/Contact" element={<Contact />} />
             </Routes>
         </div>
+       
     );
+
 }
 
 export default App;

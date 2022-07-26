@@ -1,7 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { FaSearch, FaRegHeart } from 'react-icons/fa';
-import './Navbar.css'
+import { FaSearch, FaRegHeart, FaFilter } from 'react-icons/fa';
+import { createFilterOptions } from '@mui/material/Autocomplete';
+
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
+import FilterIcon from '@mui/icons-material/Filter';
+// import Filter from '../Filter/Filter';
+import PersonIcon from '@mui/icons-material/Person';
+import './Navbar.css';
 const Navbar = () => {
 
 
@@ -31,12 +38,36 @@ const handleSubmit = (event) => {
                     <form className='search'onSubmit={handleSubmit}>
                         <input type='text' placeholder='Serach' className='search_input' />
                         <button type='submit' className='search_btn'>
-                        <i class="fa-regular fa-magnifying-glass ri-serch-2-line"></i>
-                        <FaSearch />
+                        <i class="fa-regular fa-magnifying-glass ri-serch-2-line">
+                            <Tooltip title="Search">
+                            <IconButton>
+                            <FaSearch />
+                                
+                            </IconButton>
+                            </Tooltip>
+                        </i>
+                          
                         </button>
+                       
                     </form>
                 </li>
-                <li className='mx-5'><Link className='text-light' to='/Login'>Login</Link></li>
+                <li>
+                <Tooltip title="Search">
+                    <IconButton>
+                    <PersonIcon className='text-light' cursor='pointer' style={{}}/>
+                    </IconButton>
+                </Tooltip>
+                    
+                </li>
+                <li>
+                <Tooltip title="Filter">
+                <IconButton>
+                    <FaFilter className='text-light filter' />
+                    
+                </IconButton>
+                </Tooltip>
+                   
+                </li>
             </ul>
         </div>
     </div>

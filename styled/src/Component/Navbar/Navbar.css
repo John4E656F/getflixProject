@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 li{
     display: inline-block;
@@ -33,6 +34,7 @@ li:hover{
     border-radius: 4px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .search :is(input , button) {
     color: inherit;
@@ -56,4 +58,14 @@ li:hover{
 }
 ::placeholder {
     color: inherit;
+}
+.fa-regular{
+    position: absolute;
+}
+
+.filter{
+    cursor:pointer;
+}
+Tooltip{
+    z-index: 5;
 }

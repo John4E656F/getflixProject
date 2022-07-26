@@ -30,6 +30,7 @@ const CarouselHome = props => {
 
         
         <div className="container-carousel">
+          <h2 className=" ">Anime</h2>
       <Carousel className="carousel">
           <div className="pics">
             <div className="sec-1">
@@ -82,6 +83,7 @@ const CarouselHome = props => {
         </Carousel>
 
         {/* carousel 2 */}
+        <h2 className=" ">Manga</h2>
         <Carousel className="carousel">
           <div className="pics">
             <div className="sec-1">
@@ -134,6 +136,7 @@ const CarouselHome = props => {
         
         </Carousel>
         {/* carousel 3 */}
+        <h2 className=" ">Kid</h2>
         <Carousel className="carousel">
           <div className="pics">
             <div className="sec-1">
@@ -186,7 +189,7 @@ const CarouselHome = props => {
         
         </Carousel>
     {/* Carousel  4 */}
-
+        <h2 className=" ">Film</h2>
         <Carousel className="carousel">
           <div className="pics">
             <div className="sec-1">
@@ -239,6 +242,7 @@ const CarouselHome = props => {
         
         </Carousel>
         {/* carousel 5 */}
+        <h2 className=" ">Live</h2>
         <Carousel className="carousel">
           <div className="pics">
             <div className="sec-1">
