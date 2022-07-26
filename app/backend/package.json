@@ -23,6 +23,7 @@
     "express-jwt"
   ],
   "dependencies": {
+    "anilist-node": "^1.12.1",
     "bcryptjs": "^2.4.3",
     "cookie-session": "^2.0.0",
     "cors": "^2.8.5",
