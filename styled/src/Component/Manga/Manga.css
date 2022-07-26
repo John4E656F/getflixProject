@@ -4,8 +4,11 @@
   margin: auto;
 }
 .container-carousel{
-  margin-top: -20px;
+  margin-top: 200px;
 }
 .carousel_container{
-  margin-top: 250px;
+  /* margin-top: 250px; */
+}
+.marginT{
+  margin-top: 20px;
 }

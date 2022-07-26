@@ -32,28 +32,14 @@ function Manga(){
                 </div>
             </div>
            <div className='carousel_container'>
-            {/* Carousel 1 */}
-               
-                
+            {/* Carousels */}
                 <div>
                     <Carousel_1  />
                 </div>
-                
-
-            {/* Container carousel End 1 */}
-
-              {/* carousel 2 */}
-               
-              
-                <div>
+                <div className='marginT'>
                     <Carousel_2 />
                 </div>
-              
-
-            {/* Container carousel End 2 */}
-                {/* Carousel 3 */}
-                
-                <div className='mt-3'>
+                <div>
                     <Carousel_3 />
                 </div>
                

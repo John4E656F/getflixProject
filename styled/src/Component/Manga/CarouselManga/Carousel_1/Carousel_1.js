@@ -2,13 +2,20 @@ import React from 'react'
 import './Carousel.css';
 import './code';
 
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+
+
 const Carousel_1 = () => {
   return (
     <div className=''>
        
 {/* start container */}
 <div className='container-carousel'>
-  {/* Carousel 1 */}
+
+
+
   <div class="c-carousel">
     <div class="c-carousel__arrow c-carousel__arrow_left">&#x1F844;</div>
     <div class="c-carousel__arrow c-carousel__arrow_right">&#x1F846;</div>
@@ -25,6 +32,13 @@ const Carousel_1 = () => {
     </ul>
     {/* -------------------- */}
   </div>
+
+
+
+
+  
+
+
 
 {/* end container */}
         </div>

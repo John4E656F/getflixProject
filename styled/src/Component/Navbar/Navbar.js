@@ -21,6 +21,7 @@ const handleSubmit = (event) => {
                 <li><Link className='text-light' to='/'>Home</Link></li>                
                 <li><Link className='text-light' to='/Anime'>Anime</Link></li>
                 <li><Link  className='text-light' to='/Manga'>Manga</Link></li>
+                <li><Link className='text-light' to="/Kids">Kids</Link></li>
                 <li><Link className='text-light' to="/contact">Contact</Link></li>
             </ul>
         </div>

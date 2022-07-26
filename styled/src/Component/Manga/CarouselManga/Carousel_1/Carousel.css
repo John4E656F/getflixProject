@@ -44,3 +44,6 @@
   list-style: none;
   will-change: transform;
 }
+.c-carousel__slides li{
+  height: 250px;
+}

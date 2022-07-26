@@ -1,6 +1,5 @@
 
 
-
 const carousel = options => {
  
   const _carousel = {

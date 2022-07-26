@@ -1,141 +1,17 @@
-/* style Carousel 3 */
-
-.c-carousel__slides img {
-  display: block;
-  width: 250px;
-  height: 300px;
-  cursor: pointer;
+.pics{
+	width:90%;
+	margin: 0 auto;
+	display: flex;
+	gap: 15px;
+}
+.carousel{
+	height: 350px;
+}
+.sec-1{
+	width: 400px;
 }
 
-.c-carousel {
-  width: 94%;
-  position: relative;
-  margin: 0 auto ;
-  overflow: hidden;
-  display: flex;
-}
-.c-carousel__arrow {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  border-radius: 50%;
-  z-index: 1;
-  transform: translateY(-50%) rotate(deg);
-  background-color: rgb(255, 255, 255);
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: green;
-}
-.c-carousel__arrow:hover{
-  color: rgb(165, 157, 42);
-}
-.c-carousel__arrow_left {
-  left: 15px;
-}
-.c-carousel__arrow_right {
-  right: 15px;
-}
-.c-carousel__slides {
-  display: flex;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  will-change: transform;
+.control-arrow{
+	background-color: aliceblue;
 }
 
-/* style Carousel 2 */
-
-.c-carousel_2 {
-  width: 94%;
-  position: relative;
-  margin: 0 auto ;
-  overflow: hidden;
-  display: flex;
-}
-.c-carousel__slides_2 img {
-  display: block;
-  width: 250px;
-  height: 300px;
-  cursor: pointer;
-}
-
-
-.c-carousel__arrow_2 {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  border-radius: 50%;
-  z-index: 1;
-  transform: translateY(-50%) rotate(deg);
-  /* background-color: rgb(255, 255, 255); */
-  font-size: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: brown;
-}
-.c-carousel__arrow:hover{
-  color: green;
-}
-.c-carousel__arrow_left_2 {
-  left: 15px;
-}
-.c-carousel__arrow_right_2 {
-  right: 15px;
-}
-.c-carousel__slides_2 {
-  display: flex;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  will-change: transform;
-}
-
-/* style carousel 3 */
-
-
-
-.c-carousel__slides_3 img {
-  display: block;
-  width: 250px;
-  height: 300px;
-  cursor: pointer;
-}
-
-
-.c-carousel__arrow_3 {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  border-radius: 50%;
-  z-index: 1;
-  transform: translateY(-50%) rotate(deg);
-  /* background-color: rgb(255, 255, 255); */
-  font-size: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: brown;
-}
-.c-carousel__arrow:hover{
-  color: green;
-}
-
-.c-carousel__arrow_right_3 {
-  right: 15px;
-}
-.c-carousel__slides_3 {
-  display: flex;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  will-change: transform;
-}

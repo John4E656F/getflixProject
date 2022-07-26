@@ -1,0 +1,28 @@
+.pics{
+	width:100%;
+	margin: 50px auto;
+	display: flex;
+	gap: 15px;
+}
+.slide{
+
+}
+.slide:hover{
+	background-color: transparent;
+}
+.carousel{
+	height: 350px;
+}
+.sec-1{
+	width: 400px;
+}
+
+.control-arrow{
+	background-color: aliceblue;
+	height: 250px;
+	top: 50px;
+}
+.dot{
+	display: none;
+}
+
