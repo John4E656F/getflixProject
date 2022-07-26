@@ -1,0 +1,15 @@
+/* .container-carousel{
+    width: 90%;
+} */
+
+.sec-1{
+    text-align: left;
+    color: aliceblue;
+}
+.sec-1 p{
+    padding-left: 5px;
+}
+.sec-1 img{
+    height: 250px;
+    cursor: pointer;
+}
