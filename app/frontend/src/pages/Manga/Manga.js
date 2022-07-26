@@ -18,7 +18,7 @@ function Manga(){
         <div className='manga'>
             <Navbar />
             <div className='header'>
-                <div classs='container-image'>
+                <div className='container-image'>
                     <img  className="img-responsive img-fluid max-width: 100%" src="https://getwallpapers.com/wallpaper/full/9/e/a/454545.jpg" alt="logo"/>
                 </div>
                 <div className='text-head'>

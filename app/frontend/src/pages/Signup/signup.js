@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import "./signup.scss";
+import "./signup.css";
 import {
     addNewUser
 } from "../../api/user";

@@ -25,9 +25,10 @@ const carousel = options => {
       }
 
       // Cache nodes
-      const carousel = document.querySelector(
-        options.selector || this.options.selector
-      );
+      //TypeError: Cannot read properties of null (reading 'querySelector')
+      // const carousel = document.querySelector(
+      //   options.selector || this.options.selector
+      // );
       const slides = (this._slides = carousel.querySelector(
         this.options.slidesSelector
       ));
@@ -124,15 +125,15 @@ const carousel = options => {
       animate();
     }
   };
-
-  _carousel.init(options);
+//TypeError: Cannot read properties of null (reading 'querySelector')
+  // _carousel.init(options);
 
   return _carousel;
 };
 
-
-window.onload = () =>
-carousel({
-  selector: ".c-carousel"
-}); 
+//TypeError: Cannot read properties of null (reading 'querySelector')
+// window.onload = () =>
+// carousel({
+//   selector: ".c-carousel"
+// }); 
 

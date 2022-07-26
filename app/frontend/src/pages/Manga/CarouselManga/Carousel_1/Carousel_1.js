@@ -16,10 +16,10 @@ const Carousel_1 = () => {
 
 
 
-  <div class="c-carousel">
-    <div class="c-carousel__arrow c-carousel__arrow_left">&#x1F844;</div>
-    <div class="c-carousel__arrow c-carousel__arrow_right">&#x1F846;</div>
-    <ul class="c-carousel__slides">
+  <div className="c-carousel">
+    <div className="c-carousel__arrow c-carousel__arrow_left">&#x1F844;</div>
+    <div className="c-carousel__arrow c-carousel__arrow_right">&#x1F846;</div>
+    <ul className="c-carousel__slides">
       <li><img src={process.env.PUBLIC_URL+"https://i.pinimg.com/736x/b6/fb/51/b6fb512cc644493da24aebbd429d9971.jpg"}/></li>
       <li><img src={process.env.PUBLIC_URL+"https://i.pinimg.com/736x/d0/2d/2f/d02d2fd901c726f0606a305f58ddb6aa.jpg"}/></li>
       <li><img src={process.env.PUBLIC_URL+"https://3.bp.blogspot.com/-giIUt3d6Oe0/VP7ZfUR6FPI/AAAAAAAAAtE/pMgtCS_5-Y8/s1600/yato_noragami_56795.jpg"}/></li>

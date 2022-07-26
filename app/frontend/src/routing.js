@@ -7,15 +7,9 @@ import Home from './pages/Home/Home';
 import Anime from './pages/Anime/Anime';
 import Contact from './components/Contact/Contact';
 import Manga from './pages/Manga/Manga';
-import Kids from './pages/Kids/Kids'
-//Import All the different States
-// import MovieState from "./contexts/movies/movieState";
-
-// import LandingPage from "./pages/LandingPage/LandingPage";
-// import LoginPage from "./pages/Login/login";
-// import SignupPage from "./pages//Signup/signup";
-// import Home from "./pages/Home/index";
-// import Profil from "./pages/Profile/index";
+import Kids from './pages/Kids/Kids';
+import LoginPage from './pages/login/login';
+import SignupPage from './pages/Signup/signup';
 
 const Routing = () => {
 
@@ -30,9 +24,9 @@ const Routing = () => {
             <Route exact path="/Manga" element={<Manga />} />
             <Route exact path="/Kids" element={<Kids />} />
             <Route exact path="/Contact" element={<Contact />} />
-            {/* <Route exact path="/login" element={<LoginPage /> } />
+            <Route exact path="/login" element={<LoginPage /> } />
 
-            <Route exact path="/signup" element={<SignupPage /> } /> */}
+            <Route exact path="/signup" element={<SignupPage /> } />
 
 
             {/* <Route exact path="/profile">

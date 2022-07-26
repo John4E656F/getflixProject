@@ -9,18 +9,13 @@ const handleSubmit = (event) => {
         event.preventDefault();
 };
 
-
-
-
-
-
   return (
     <div className='navbar'>
         <div className='menu-left'>
             <ul>
                 <li><Link className='text-light' to='/'>Home</Link></li>                
                 <li><Link className='text-light' to='/Anime'>Anime</Link></li>
-                <li><Link  className='text-light' to='/Manga'>Manga</Link></li>
+                <li><Link className='text-light' to='/Manga'>Manga</Link></li>
                 <li><Link className='text-light' to="/Kids">Kids</Link></li>
                 <li><Link className='text-light' to="/contact">Contact</Link></li>
             </ul>
@@ -29,9 +24,9 @@ const handleSubmit = (event) => {
             <ul>
                 <li>
                     <form className='search'onSubmit={handleSubmit}>
-                        <input type='text' placeholder='Serach' className='search_input' />
+                        <input type='text' placeholder='Search' className='search_input' />
                         <button type='submit' className='search_btn'>
-                        <i class="fa-regular fa-magnifying-glass ri-serch-2-line"></i>
+                        <i className="fa-regular fa-magnifying-glass ri-search-2-line"></i>
                         <FaSearch />
                         </button>
                     </form>

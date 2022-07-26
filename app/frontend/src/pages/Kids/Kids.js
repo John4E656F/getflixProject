@@ -10,7 +10,7 @@ function Kids(){
         <div className='home '>
             <Navbar />
             <div className='header'>
-                <div classs='container-image'>
+                <div className='container-image'>
                     <img  className="img-responsive img-fluid max-width: 100%" src="https://images.hdqwalls.com/download/raya-and-the-last-dragon-2021-gp-1920x1080.jpg" alt="logo"/>
                 </div>
                 <div className='text-head'>
