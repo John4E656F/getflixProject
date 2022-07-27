@@ -8,7 +8,7 @@ import Button from "../../components/Button/btn.component";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { useNavigate } from "react-router-dom";
-import { AuthenticationContext } from "../../contexts/authenticationContext";
+import { AuthenticationContext } from "../../contexts/authUser";
 import { validEmailAndPhoneNumber } from "../../utils/validation";
 
 /**

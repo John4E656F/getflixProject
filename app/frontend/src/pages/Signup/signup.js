@@ -1,6 +1,6 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useRef } from "react";
 import "./signup.scss";
-
+import axios from "axios";
 
 import SignupBackground from "../../assets/images/landingPage.jpg";
 import AniflexLogo from "../../assets/images/logo.png";
@@ -9,7 +9,7 @@ import Button from "../../components/Button/btn.component";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { useNavigate } from "react-router-dom";
-import { AuthenticationContext } from "../../contexts/authenticationContext";
+import { AuthenticationContext } from "../../contexts/authUser";
 import { validEmailAndPhoneNumber } from "../../utils/validation";
 import { Event } from "@material-ui/icons";
 
@@ -20,6 +20,7 @@ import { Event } from "@material-ui/icons";
  */
 
 const Signup = (props) => {
+    //Hooks
     const [form, setForm] = useState({
         email: {
             value: "",
@@ -151,26 +152,21 @@ const Signup = (props) => {
      // This function will handle the submission.
     async function formSubmitHandler(event)  {
         event.preventDefault();
-
+        
          // When a post request is sent to the create url, we'll add a new record to the database.
-         const newUser = { ...form };
+        
         if (!form.email.valid || !form.password.valid) {
             setForm((prevForm) => ({ ...prevForm, onSubmitInvalid: true }));
         } else {
             // TODO: handle the data submission
-            await fetch("http://localhost:4000/user/signup", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-               },
-               body: JSON.stringify(newUser),
-            })
-            .catch(error => {
-                window.alert(error);
-                return;
-            });
-
-            setForm({ username: "", email: "", password: "" });
+            const newUser = {
+                "email" : form.email.value, 
+                "username" : form.username.value, 
+                "password" : form.password.value};
+            
+            axios.post("http://localhost:4000/user/signup", newUser)
+                .then(res => { console.log(res); })
+                .catch(err => { console.log(err); });
             navigate('/browse');
         }
     };

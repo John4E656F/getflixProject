@@ -11,7 +11,7 @@ import Button from "../../components/Button/btn.component";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { useNavigate } from "react-router-dom";
-import { AuthenticationContext } from "../../contexts/authenticationContext";
+import { AuthenticationContext } from "../../contexts/authUser";
 import { validEmailAndPhoneNumber } from "../../utils/validation";
 import { Event } from "@material-ui/icons";
 
@@ -20,8 +20,6 @@ import { Event } from "@material-ui/icons";
  * fields and uses a controlled form. Uses material UI for the
  * textfields.
  */
-
-
 
 const Signup = (props) => {
     const [form, setForm] = useState({
@@ -162,17 +160,6 @@ const Signup = (props) => {
             setForm((prevForm) => ({ ...prevForm, onSubmitInvalid: true }));
         } else {
             // TODO: handle the data submission
-            await fetch("http://localhost:4000/user/signup", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-               },
-               body: JSON.stringify(newUser),
-            })
-            .catch(error => {
-                window.alert(error);
-                return;
-            });
 
             setForm({ username: "", email: "", password: "" });
             navigate('/browse');
