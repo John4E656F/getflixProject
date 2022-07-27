@@ -8,17 +8,12 @@ import './Carousel.css';
 import './Carousel';
 // import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Rating from '../../Rating/Rating'
 
 // import { FaBeer } from 'react-icons/fa';
 const CarouselHome = props => {
   
-  // 
-
-
-
-
-
-
+// 
 
 // 
 
@@ -26,58 +21,96 @@ const CarouselHome = props => {
   return (
     <div className=''>
 
-        {/* Carousel 1   */}
+      {/* Carousel 1   */}
 
         
-        <div className="container-carousel">
-          <h2 className=" ">Anime</h2>
-      <Carousel className="carousel">
+      <div className="container-carousel">
+        <h2 className=" ">Anime</h2>
+        <Carousel className="carousel">
           <div className="pics">
+            
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
-            </div>
-            <div className="sec-1">
-              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
-            </div>
+                <div>
+                  <div  className="container-play-rating">
+                    <p>Brand launch Extension</p>
+                    <p className="play">&#9655; Play</p> <Rating className='rating'/>
+                  </div>
+              </div>
+            </div> 
+              
+           
+            
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+              </div>
             </div>
+
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+              </div>
+              
+            </div>
+
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <div>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+              </div>
+
             </div>
           </div>
+          {/* end Pics 1 */}
           <div className="pics">
+
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
-            </div>
-            <div className="sec-1">
-              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div>
+                <di className="container-play-rating"v>
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </di><Rating className='rating'/>
+              </div>
             </div>
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
           </div>
         </Carousel>
@@ -88,49 +121,65 @@ const CarouselHome = props => {
           <div className="pics">
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
-            </div>
-
-            <div className="sec-1">
-              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
           </div>
           <div className="pics">
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
-            </div>
-
-            <div className="sec-1">
-              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
           </div>
         
@@ -141,49 +190,65 @@ const CarouselHome = props => {
           <div className="pics">
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
-            </div>
-
-            <div className="sec-1">
-              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
           </div>
           <div className="pics">
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
-            </div>
-
-            <div className="sec-1">
-              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
           </div>
         
@@ -194,49 +259,65 @@ const CarouselHome = props => {
           <div className="pics">
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
-            </div>
-
-            <div className="sec-1">
-              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
           </div>
           <div className="pics">
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
-            </div>
-
-            <div className="sec-1">
-              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
           </div>
         
@@ -247,49 +328,65 @@ const CarouselHome = props => {
           <div className="pics">
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
-            </div>
-
-            <div className="sec-1">
-              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
           </div>
           <div className="pics">
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
-            </div>
-
-            <div className="sec-1">
-              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
 
             <div className="sec-1">
               <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-              <p>Brand launch Extension</p>
-              <p className="branch">Branch Matrics</p>
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
+            </div>
+
+            <div className="sec-1">
+              <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+              <div className="container-play-rating">
+                <p>Brand launch Extension</p>
+                <p className="play">&#9655; Play</p> <Rating className='rating'/>
+              </div>
             </div>
           </div>
         

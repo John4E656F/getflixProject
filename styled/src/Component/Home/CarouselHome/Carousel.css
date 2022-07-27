@@ -31,3 +31,9 @@
 .container-carousel{
   margin-top: -100px;
 }
+.container-play-rating{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  padding: 2px;
+}
