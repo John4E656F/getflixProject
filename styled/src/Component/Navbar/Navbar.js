@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { FaSearch, FaRegHeart, FaFilter } from 'react-icons/fa';
 import { createFilterOptions } from '@mui/material/Autocomplete';
-
+import ModalFilter from './ModalFilter';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import FilterIcon from '@mui/icons-material/Filter';
@@ -15,11 +15,6 @@ const Navbar = () => {
 const handleSubmit = (event) => {
         event.preventDefault();
 };
-
-
-
-
-
 
   return (
     <div className='navbar'>
@@ -61,8 +56,9 @@ const handleSubmit = (event) => {
                 </li>
                 <li>
                 <Tooltip title="Filter">
-                <IconButton>
-                    <FaFilter className='text-light filter' />
+                <IconButton className='container-filter'>
+                    <FaFilter className='text-light filterIcon' />
+                    <ModalFilter className='modal'/>
                 </IconButton>
                 </Tooltip>
                    

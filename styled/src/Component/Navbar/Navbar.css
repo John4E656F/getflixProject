@@ -5,12 +5,21 @@
     background-color: rgba(5, 5, 5, 0.829);
     position: fixed;
     z-index: 5000;
+    justify-content: space-between;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .menu-left , .menu-right{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+.menu-right{
+    float: right;
 }
 li{
     display: inline-block;
@@ -64,5 +73,16 @@ li:hover{
 }
 
 .filter{
+    
+}
+.filterIcon{
     cursor:pointer;
+    position: absolute;
+}
+.modal{
+    position: absolute;
+    z-index: 6000;
+}
+.container-filter{
+    position: relative;
 }
