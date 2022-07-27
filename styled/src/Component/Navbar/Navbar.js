@@ -47,20 +47,20 @@ const handleSubmit = (event) => {
                     </form>
                 </li>
                 <li>
-                <Tooltip title="Profile">
-                    <IconButton>
-                    <PersonIcon className='text-light' cursor='pointer' />
-                    </IconButton>
-                </Tooltip>
+                    <Tooltip title="Profile">
+                        <IconButton>
+                        <PersonIcon className='text-light' cursor='pointer' />
+                        </IconButton>
+                    </Tooltip>
                     
                 </li>
                 <li>
-                <Tooltip title="Filter">
-                <IconButton className='container-filter'>
-                    <FaFilter className='text-light filterIcon' />
-                    <ModalFilter className='modal'/>
-                </IconButton>
-                </Tooltip>
+                    <Tooltip title="Filter">
+                    <IconButton className='container-filter'>
+                        <FaFilter className='text-light filterIcon' />
+                        <ModalFilter className='modal'/>
+                    </IconButton>
+                    </Tooltip>
                    
                 </li>
             </ul>
