@@ -2,6 +2,8 @@ import React from 'react'
 import './Anime.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+
+
 // import './CarouselAnime/Carousel';
 import CarouselAnime from './CarouselAnime/CarouselAnime';
 const Anime = () => {

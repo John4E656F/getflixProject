@@ -5,6 +5,8 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+// import CheckBox |
+import CheckBoxModal from './CheckBoxModal' ;
 
 const style = {
   position: 'absolute',
@@ -25,7 +27,7 @@ export default function TransitionsModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen} >O</Button>
+      <Button onClick={handleOpen} >&nbsp; </Button>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -40,11 +42,13 @@ export default function TransitionsModal() {
         <Fade in={open}>
           <Box sx={style}>
             <Typography id="transition-modal-title" variant="h6" component="h2">
-              Text in a modal
+              Quick filter
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-              <input  />
+              <CheckBoxModal />
+           
+              
             </Typography>
           </Box>
         </Fade>
