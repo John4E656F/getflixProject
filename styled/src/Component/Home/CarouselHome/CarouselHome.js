@@ -8,7 +8,7 @@ import './Carousel.css';
 import './Carousel';
 // import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Rating from '../../Rating/Rating'
+import Rating from '../../Rating/Rating';
 
 // import { FaBeer } from 'react-icons/fa';
 const CarouselHome = props => {
