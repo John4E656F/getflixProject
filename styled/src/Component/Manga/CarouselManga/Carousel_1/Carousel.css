@@ -42,7 +42,7 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  will-change: transform;
+  will-change: transform inherit;
 }
 .c-carousel__slides li{
   height: 250px;

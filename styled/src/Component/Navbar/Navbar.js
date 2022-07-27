@@ -6,7 +6,7 @@ import { createFilterOptions } from '@mui/material/Autocomplete';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import FilterIcon from '@mui/icons-material/Filter';
-// import Filter from '../Filter/Filter';
+import '../Filter/Filter' ;
 import PersonIcon from '@mui/icons-material/Person';
 import './Navbar.css';
 const Navbar = () => {
@@ -36,7 +36,7 @@ const handleSubmit = (event) => {
             <ul>
                 <li>
                     <form className='search'onSubmit={handleSubmit}>
-                        <input type='text' placeholder='Serach' className='search_input' />
+                        <input type='text' placeholder='Serach' className='search_input filter' />
                         <button type='submit' className='search_btn'>
                         <i class="fa-regular fa-magnifying-glass ri-serch-2-line">
                             <Tooltip title="Search">
@@ -63,7 +63,6 @@ const handleSubmit = (event) => {
                 <Tooltip title="Filter">
                 <IconButton>
                     <FaFilter className='text-light filter' />
-                    
                 </IconButton>
                 </Tooltip>
                    

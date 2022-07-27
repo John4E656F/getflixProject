@@ -66,6 +66,3 @@ li:hover{
 .filter{
     cursor:pointer;
 }
-Tooltip{
-    z-index: 5;
-}
