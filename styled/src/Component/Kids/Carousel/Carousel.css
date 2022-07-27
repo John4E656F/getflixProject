@@ -1,6 +1,3 @@
-/* .container-carousel{
-    width: 90%;
-} */
 
 .sec-1{
     text-align: left;
@@ -9,7 +6,37 @@
 .sec-1 p{
     padding-left: 5px;
 }
-.sec-1 img{
+.sec-1 .blurImg img{
     height: 250px;
+    cursor: pointer;
+}
+.blurImg{
+    width: 100%;
+    
+    overflow: hidden;
+    position: relative;
+}
+.blurImg img{
+    height: 100%;
+    transition: all 0.3s;
+}
+.blurImg p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: rgb(228, 247, 223);
+    font-size: 2em;
+    opacity: 0;
+    transition: all 0.3s;
+    text-shadow: 0 0 5px rgb(20, 20, 24) , 1px 1px 5px red , -1px -1px 5px blue;
+}
+.blurImg:hover img{
+    transform: scale(1.1);
+    -webkit-filter: grayscale(100%) blur(2px);
+    filter: grayscale(100%) blur(2px);
+}
+.blurImg:hover p {
+    opacity: 1;
     cursor: pointer;
 }

@@ -22,23 +22,35 @@ const Carousel_2 = () => {
       <div className="pics">
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.TJe8qo5cYT3Gh8zM1RXZrgHaEK%26pid%3DApi&f=1"} alt="Spirited Away" />
+          <div>
+            
+          </div>
           <p>Spirited Away</p>
           <p className="branch"></p>
         </div>
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://573452.smushcdn.com/767387/wp-content/uploads/2021/03/Grave-of-the-Fireflies-Best-of-Studio-Ghibli.jpg?lossy=1&strip=1&webp=1"} alt="Grave of the Fireflies" />
+          <div>
+            
+          </div>
           <p>Grave of the Fireflies</p>
           <p className="branch"></p>
         </div>
 
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.l7-4TgL7BV9JopVf-_4jFQHaFJ%26pid%3DApi&f=1"} alt="Your Name" />
+          <div>
+            
+          </div>
           <p>Your Name</p>
           <p className="branch"></p>
         </div>
 
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.btO8_vlOe7PyuNEjj5IG9AHaE1%26pid%3DApi&f=1"} alt="Nausicaä " />
+          <div>
+            
+          </div>
           <p>Nausicaä of the Valley of the Wind</p>
           <p className="branch"></p>
         </div>
@@ -46,23 +58,35 @@ const Carousel_2 = () => {
       <div className="pics">
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://cdn.discordapp.com/attachments/660300830766792705/660302249121284107/Review-Tokio-Godfathers.png"} alt="Tokyo Godfathers" />
+          <div>
+            
+          </div>
           <p>Tokyo Godfathers</p>
           <p className="branch"></p>
         </div>
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yhRdz4vEz3g5upHcZ8IQZQHaEo%26pid%3DApi&f=1"} alt="Paprika " />
+          <div>
+            
+          </div>
           <p>Paprika </p>
           <p className="branch"></p>
         </div>
 
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://i1.wp.com/www.animated247.net/wp-content/uploads/2020/01/I-Lost-My-Body-2019-480P-BluRay-English-Animated247.com_.mkvaa_.jpg?resize=660%2C392"} alt="I Lost My Body" />
+          <div>
+            
+          </div>
           <p>I Lost My Body</p>
           <p className="branch"></p>
         </div>
 
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.eO2Ptpz11kFm7ZLa7NmlMgHaEK%26pid%3DApi&f=1"} alt="Weathering with You" />
+          <div>
+            
+          </div>
           <p>Weathering with You</p>
           <p className="branch"></p>
         </div>
@@ -74,49 +98,73 @@ const Carousel_2 = () => {
       <div className="pics">
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"http://operationrainfall.com/wp-content/uploads/2013/08/Wolf-Children-Logo.jpg"} alt="Wolf Children" />
+          <div>
+            
+          </div>
           <p>Wolf Children</p>
           <p className="branch"></p>
         </div>
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+          <div>
+            
+          </div>
           <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
+          <p className="branch"></p>
         </div>
 
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+          <div>
+            
+          </div>
           <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
+          <p className="branch"></p>
         </div>
 
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+          <div>
+            
+          </div>
           <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
+          <p className="branch"></p>
         </div>
       </div>
       <div className="pics">
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+          <div>
+            
+          </div>
           <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
+          <p className="branch"></p>
         </div>
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+          <div>
+            
+          </div>
           <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
+          <p className="branch"></p>
         </div>
 
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+          <div>
+            
+          </div>
           <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
+          <p className="branch"></p>
         </div>
 
         <div className="sec-1">
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+          <div>
+            
+          </div>
           <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
+          <p className="branch"></p>
         </div>
       </div>
     
