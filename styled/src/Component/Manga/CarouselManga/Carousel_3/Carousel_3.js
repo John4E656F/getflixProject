@@ -21,49 +21,83 @@ const Carousel_3 = () => {
       <Carousel className="carousel">
       <div className="pics">
         <div className="sec-1">
+        <div className='blurImg'>
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-          <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
-        </div>
-        <div className="sec-1">
-          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-          <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
-        </div>
-
-        <div className="sec-1">
-          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
           <p>Brand launch Extension</p>
           <p className="branch">Branch Matrics</p>
         </div>
 
+
         <div className="sec-1">
+        <div className='blurImg'>
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
+          <p>Brand launch Extension</p>
+          <p className="branch">Branch Matrics</p>
+        </div>
+
+
+        <div className="sec-1">
+        <div className='blurImg'>
+          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
+          <p>Brand launch Extension</p>
+          <p className="branch">Branch Matrics</p>
+        </div>
+
+
+        <div className="sec-1">
+        <div className='blurImg'>
+          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
           <p>Brand launch Extension</p>
           <p className="branch">Branch Matrics</p>
         </div>
       
       </div>
+
+
       <div className="pics">
         <div className="sec-1">
+        <div className='blurImg'>
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-          <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
-        </div>
-        <div className="sec-1">
-          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-          <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
-        </div>
-
-        <div className="sec-1">
-          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
           <p>Brand launch Extension</p>
           <p className="branch">Branch Matrics</p>
         </div>
 
+
         <div className="sec-1">
+        <div className='blurImg'>
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
+          <p>Brand launch Extension</p>
+          <p className="branch">Branch Matrics</p>
+        </div>
+
+
+        <div className="sec-1">
+        <div className='blurImg'>
+          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
+          <p>Brand launch Extension</p>
+          <p className="branch">Branch Matrics</p>
+        </div>
+
+
+        <div className="sec-1">
+        <div className='blurImg'>
+          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
           <p>Brand launch Extension</p>
           <p className="branch">Branch Matrics</p>
         </div>
@@ -74,48 +108,82 @@ const Carousel_3 = () => {
     <Carousel className="carousel">
       <div className="pics">
         <div className="sec-1">
+        <div className='blurImg'>
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-          <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
-        </div>
-        <div className="sec-1">
-          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-          <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
-        </div>
-
-        <div className="sec-1">
-          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
           <p>Brand launch Extension</p>
           <p className="branch">Branch Matrics</p>
         </div>
 
+
         <div className="sec-1">
+        <div className='blurImg'>
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
+          <p>Brand launch Extension</p>
+          <p className="branch">Branch Matrics</p>
+        </div>
+
+
+        <div className="sec-1">
+        <div className='blurImg'>
+          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
+          <p>Brand launch Extension</p>
+          <p className="branch">Branch Matrics</p>
+        </div>
+
+
+        <div className="sec-1">
+        <div className='blurImg'>
+          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
           <p>Brand launch Extension</p>
           <p className="branch">Branch Matrics</p>
         </div>
       </div>
+
+
       <div className="pics">
         <div className="sec-1">
+        <div className='blurImg'>
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-          <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
-        </div>
-        <div className="sec-1">
-          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
-          <p>Brand launch Extension</p>
-          <p className="branch">Branch Matrics</p>
-        </div>
-
-        <div className="sec-1">
-          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
           <p>Brand launch Extension</p>
           <p className="branch">Branch Matrics</p>
         </div>
 
+
         <div className="sec-1">
+        <div className='blurImg'>
           <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
+          <p>Brand launch Extension</p>
+          <p className="branch">Branch Matrics</p>
+        </div>
+
+
+        <div className="sec-1">
+        <div className='blurImg'>
+          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
+          <p>Brand launch Extension</p>
+          <p className="branch">Branch Matrics</p>
+        </div>
+
+
+        <div className="sec-1">
+        <div className='blurImg'>
+          <img src={process.env.PUBLIC_URL+"https://www.pcclean.io/wp-content/gallery/naruto-hd-wallpapers-1/106780.jpg"} alt="Slider 1" />
+                 <p>&#9655; Play</p>
+               </div>
           <p>Brand launch Extension</p>
           <p className="branch">Branch Matrics</p>
         </div>
