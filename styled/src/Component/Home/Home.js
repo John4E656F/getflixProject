@@ -3,8 +3,8 @@ import './Home.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 // import './CarouselHome/Carousel';
-import CarouselHome from './CarouselHome/CarouselHome';
-
+// import CarouselHome from './CarouselHome/CarouselHome';
+import Carousel2 from './CarouselHome/Carousel2'
 function Home(){
     return(
         <div className='home '>
@@ -23,10 +23,9 @@ function Home(){
                     </div>
                 </div>
             </div>
-           <div className='carousel-1'>
-            {/* Container carousel 1 */}
-                <CarouselHome />
-            {/* Container carousel End 1 */}
+           <div className='carousel'>
+            <Carousel2 />
+        
            </div>
 
 

@@ -3,8 +3,8 @@ import './Kids.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import './Carousel/CarouselKid';
-import CarouselKids from './Carousel/CarouselKid';
-
+// import CarouselKids from './Carousel/CarouselKid';
+import Carousel from './Carousel/Carousel';
 function Kids(){
     return(
         <div className='home '>
@@ -25,7 +25,9 @@ function Kids(){
             </div>
            <div className='carousel-1'>
             {/* Container carousel 1 */}
-                <CarouselKids />
+
+                    <Carousel />
+                {/* <CarouselKids /> */}
             {/* Container carousel End 1 */}
            </div>
 

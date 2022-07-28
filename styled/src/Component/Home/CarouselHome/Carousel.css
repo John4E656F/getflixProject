@@ -37,3 +37,12 @@
   align-items: center;
   padding: 2px;
 }
+.slider{
+  width: 90%;
+  margin-bottom: 20px;
+}
+.card{
+  width: 300px;
+  height: 250px;
+  margin: 0 5px;
+}

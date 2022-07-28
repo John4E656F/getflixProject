@@ -2,10 +2,10 @@ import React from 'react'
 import './Anime.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import Carousel from './CarouselAnime/Carousel'
+// import CarouselAnime from './CarouselAnime/CarouselAnime';
 
 
-// import './CarouselAnime/Carousel';
-import CarouselAnime from './CarouselAnime/CarouselAnime';
 const Anime = () => {
   return (
     <div className='anime'>
@@ -24,11 +24,8 @@ const Anime = () => {
                     </div>
                 </div>
             </div>
-           <div className='carousel-1'>
-            {/* Container carousel 1 */}
-            {/* Folder : Anime  - Folder : CarouselAnime  carouselAnime.js */}
-                <CarouselAnime />
-            {/* Container carousel End 1 */}
+           <div className='carousel'>
+              <Carousel />
            </div>
 
 

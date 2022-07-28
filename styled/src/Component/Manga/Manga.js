@@ -1,9 +1,7 @@
 /* eslint-disable react/jsx-no-undef */
 import React from 'react'
-import Carousel_1 from './CarouselManga/Carousel_1/Carousel_1';
-import Carousel_2 from './CarouselManga/Carousel_2/Carousel_2';
-import Carousel_3 from './CarouselManga/Carousel_3/Carousel_3';
 
+import Carousel from './CarouselManga/Carousel';
 
 
 import Navbar from '../Navbar/Navbar';
@@ -33,14 +31,13 @@ function Manga(){
             </div>
            <div className='carousel_container'>
             {/* Carousels */}
-                <div>
-                    <Carousel_1  />
-                </div>
+            
                 <div className='marginT'>
-                    <Carousel_2 />
+                    <Carousel />
+                    {/* <Carousel_2 /> */}
                 </div>
                 <div>
-                    <Carousel_3 />
+                    {/* <Carousel_3 /> */}
                 </div>
                
            </div>

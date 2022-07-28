@@ -34,3 +34,8 @@ button{
 .container-play-rating{
     background-color: rgb(37, 34, 34);
 }
+
+.carousel {
+  
+    margin: 100px 0;
+}
