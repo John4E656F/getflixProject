@@ -9,8 +9,8 @@ function Kids(){
     return(
         <div className='kid '>
             <Navbar />
-            <div className='header'>
-              
+            <div className='header-kid'>
+                <div className='imageHeader'></div>
                 <div className='text-head'>
                     <h1 className='text-light display-1'>Raya</h1>
                     <h1 className='text-light display-1'>THE LAST DRAGON</h1>

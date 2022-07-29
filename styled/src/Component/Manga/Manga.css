@@ -1,8 +1,14 @@
 .header-manga{
+  width: 100%;
+  height: 700px;
+  padding-top: 70px;
+}
+.header-manga .imageHeder{
+  width: 100%;
+  height: 700px;
   background-image: url(https://getwallpapers.com/wallpaper/full/9/e/a/454545.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 .manga{
   width: 90%;

@@ -16,6 +16,7 @@ function Manga(){
         <div className='manga'>
             <Navbar />
             <div className='header-manga'>
+                <div className='imageHeder'></div>
                 <div className='text-head'>
                     <h1 className='text-light display-1'>Breath of</h1>
                     <h1 className='text-light display-1'>Thunder</h1>
