@@ -1,5 +1,5 @@
 .kid{
-    width: 100%;
+    width: 90%;
     height: 100vh;
     margin: 0 auto;
     position: relative;
@@ -7,6 +7,10 @@
 }
 .header{
     padding-top: 67px;
+    background-image: url(https://images.hdqwalls.com/download/raya-and-the-last-dragon-2021-gp-1920x1080.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .text-head{
@@ -32,4 +36,7 @@ button{
     justify-content: center;
     align-items: center;
     font-size: 40px;
+}
+.container-carousel{
+    margin-top: 10px;
 }

@@ -84,3 +84,9 @@ li:hover{
 .container-filter{
     position: relative;
 }
+
+@media screen and (max-width:996px) {
+    .navbar{
+        display: none;
+    }
+}

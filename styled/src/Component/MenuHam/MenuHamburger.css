@@ -1,0 +1,14 @@
+@media screen and (min-width:997px) {
+    .menuHambuerger{
+        display: none;
+    }
+}
+@media screen and (max-width:996px) {
+    .menuHambuerger{
+        background-color: rgba(0, 0, 0, 0.521);
+    }
+}
+.menuHambuerger{
+    margin: 0 auto ;
+    color: #fff;
+}

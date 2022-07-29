@@ -47,35 +47,65 @@ export default class Responsive extends Component {
        
             <Slider {...settings}>
                     <div className="card">
+                    <div className='blurImg'>
                         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                      <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+                    <div className="card">
+                      <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                      <p>&#9655; Play</p>
+                      </div>
+                        <h3></h3>
+                    </div>
+
+                    <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+                    <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+                    <div className="card">
+                      <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                      <p>&#9655; Play</p>
+                      </div>
+                        <h3></h3>
+                    </div>
+
+                    <div className="card">
+                      <div className='blurImg'>
+                          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                      <p>&#9655; Play</p>
+                      </div>
+                        <h3></h3>
+                    </div>
+
+                    <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
                         <h3></h3>
                     </div>
                     <div className="card">
+                    <div className='blurImg'>
                         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-                        <h3></h3>
+                    <p>&#9655; Play</p>
                     </div>
-                    <div className="card">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-                        <h3></h3>
-                    </div>
-                    <div className="card">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-                        <h3></h3>
-                    </div>
-                    <div className="card">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-                        <h3></h3>
-                    </div>
-                    <div className="card">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-                        <h3></h3>
-                    </div>
-                    <div className="card">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-                        <h3></h3>
-                    </div>
-                    <div className="card">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
                         <h3></h3>
                     </div>
             </Slider>
@@ -85,112 +115,206 @@ export default class Responsive extends Component {
         {/*  */}
 
         <Slider {...settings}>
+        <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+           <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+           <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+         <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
           <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
           <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
           <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
           <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
         </Slider>
 
 {/*  */}
 
         <Slider {...settings}>
+        <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+      <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+           <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+         <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
           <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
           <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+           <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+           <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
         </Slider>
 
         {/*  */}
 
         <Slider {...settings}>
           <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
           <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+        <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+         <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+       <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
           <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
+           <div className="card">
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
+
           <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
-          <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
-            <h3></h3>
-          </div>
+                    <div className='blurImg'>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" />
+                    <p>&#9655; Play</p>
+                    </div>
+                        <h3></h3>
+                    </div>
         </Slider>
 
 

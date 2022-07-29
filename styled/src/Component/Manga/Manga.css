@@ -1,3 +1,9 @@
+.header-manga{
+  background-image: url(https://getwallpapers.com/wallpaper/full/9/e/a/454545.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .manga{
   width: 90%;
   height: 100vh;
@@ -6,8 +12,9 @@
 .container-carousel{
   margin-top: 200px;
 }
-.carousel_container{
-  /* margin-top: 250px; */
+.container-carousel{
+  width: 90%;
+  margin: 250px auto;
 }
 .marginT{
   margin-top: 20px;

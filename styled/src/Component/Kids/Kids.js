@@ -2,17 +2,15 @@ import React from 'react'
 import './Kids.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import './Carousel/CarouselKid';
+
 // import CarouselKids from './Carousel/CarouselKid';
 import Carousel from './Carousel/Carousel';
 function Kids(){
     return(
-        <div className='home '>
+        <div className='kid '>
             <Navbar />
             <div className='header'>
-                <div classs='container-image'>
-                    <img  className="img-responsive img-fluid max-width: 100%" src="https://images.hdqwalls.com/download/raya-and-the-last-dragon-2021-gp-1920x1080.jpg" alt="logo"/>
-                </div>
+              
                 <div className='text-head'>
                     <h1 className='text-light display-1'>Raya</h1>
                     <h1 className='text-light display-1'>THE LAST DRAGON</h1>
@@ -23,7 +21,7 @@ function Kids(){
                     </div>
                 </div>
             </div>
-           <div className='carousel-1'>
+           <div className='container-carousel'>
             {/* Container carousel 1 */}
 
                     <Carousel />

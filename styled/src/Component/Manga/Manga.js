@@ -15,10 +15,7 @@ function Manga(){
     return(
         <div className='manga'>
             <Navbar />
-            <div className='header'>
-                <div classs='container-image'>
-                    <img  className="img-responsive img-fluid max-width: 100%" src="https://getwallpapers.com/wallpaper/full/9/e/a/454545.jpg" alt="logo"/>
-                </div>
+            <div className='header-manga'>
                 <div className='text-head'>
                     <h1 className='text-light display-1'>Breath of</h1>
                     <h1 className='text-light display-1'>Thunder</h1>
@@ -32,7 +29,7 @@ function Manga(){
            <div className='carousel_container'>
             {/* Carousels */}
             
-                <div className='marginT'>
+                <div className='container-carousel'>
                     <Carousel />
                     {/* <Carousel_2 /> */}
                 </div>
