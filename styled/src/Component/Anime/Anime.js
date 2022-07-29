@@ -1,16 +1,18 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar';
+// import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import Carousel from './CarouselAnime/Carousel';
-import SmallNavbar from '../SmallNavbar/SmallNavbar';
+// import SmallNavbar from '../SmallNavbar/SmallNavbar';
+import Navbar from '../Nav/Navbar'
 
 import './Anime.css'
 
 const Anime = () => {
   return (
     <div className='anime'>
+      {/* <Navbar /> */}
+      {/* <SmallNavbar/> */}
       <Navbar />
-      <SmallNavbar/>
          <div className='header-anime'>
           <div className='imagHeader'></div>
                 <div className='text-head'>

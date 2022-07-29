@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css'
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../Nav/Navbar';
 function Contact(){
     return(
         <div className=''>

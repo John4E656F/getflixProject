@@ -1,10 +1,11 @@
 /* eslint-disable react/jsx-no-undef */
 import React from 'react'
 import Carousel from './CarouselManga/Carousel';
-import SmallNavbar from '../SmallNavbar/SmallNavbar';
-import Navbar from '../Navbar/Navbar';
+
+// import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import './Manga.css';
+import Navbar from '../Nav/Navbar';
 
 
 
@@ -12,8 +13,8 @@ import './Manga.css';
 function Manga(){
     return(
         <div className='manga'>
-            <SmallNavbar />
             <Navbar />
+            {/* <Navbar /> */}
             <div className='header-manga'>
                 <div className='imageHeder'></div>
                 <div className='text-head'>

@@ -1,14 +1,13 @@
 import React from 'react'
 import '../Home/Home.css';
-import Navbar from '../Navbar/Navbar';
+import Nav from '../Nav/Navbar';
 import Footer from '../Footer/Footer';
 import Carousel2 from './CarouselHome/Carousel2';
-import SmallNavbar from '../SmallNavbar/SmallNavbar';
 function Home(){
     return(
         <div className='home '>
-            <SmallNavbar />
-            <Navbar />
+          
+            <Nav />
             <div className='header-home'>
                 <div className='imagHeader'></div>
                 <div className='text-head '>

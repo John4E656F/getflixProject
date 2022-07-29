@@ -20,6 +20,7 @@ export default function BasicSpeedDial() {
 
     <div className=''>
         <div className='footer'>
+          
         <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
         <SpeedDial
             ariaLabel="SpeedDial basic example"

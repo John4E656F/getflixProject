@@ -7,7 +7,7 @@
 .header-home{
     width: 100%;
     height: 700px;
-    padding-top: 70px;
+    /* padding-top: 70px; */
 }
 .header-home .imagHeader{
     width: 100%;
@@ -27,7 +27,7 @@
 @media screen and (max-width:1298px) {
     .header-home .text-head{
         width: 400px;
-        /* margin-top: 500px; */
+       height: 400px;
     }
     .header-home .text-head h1{
         width: 400px;
@@ -41,7 +41,7 @@
     }
     .header-home .text-head{
         margin:300px auto;
-        height: 350px;
+        height: 400px;
     }
  
 }
@@ -50,7 +50,7 @@
         padding: 50px;
         margin: 150px auto;
         text-align: center;
-        padding-left: 50px;
+        
         background-color: rgba(39, 5, 5, 0.527);
     }
   
