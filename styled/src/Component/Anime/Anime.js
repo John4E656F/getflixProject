@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import Carousel from './CarouselAnime/Carousel';
-import MenuHamburger from '../MenuHam/MenuHamburger';
+import SmallNavbar from '../SmallNavbar/SmallNavbar';
 
 import './Anime.css'
 
@@ -10,7 +10,7 @@ const Anime = () => {
   return (
     <div className='anime'>
       <Navbar />
-      <MenuHamburger />
+      <SmallNavbar/>
          <div className='header-anime'>
           <div className='imagHeader'></div>
                 <div className='text-head'>

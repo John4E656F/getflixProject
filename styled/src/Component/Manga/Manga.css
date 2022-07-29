@@ -10,6 +10,21 @@
   background-position: center;
   background-size: cover;
 }
+
+@media screen and (max-width:567px) {
+  .header-manga .text-head{
+    width: 100%;
+    margin: -500px auto;
+  }
+  .header-manga .text-head h1 {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
 .manga{
   width: 90%;
   height: 100vh;

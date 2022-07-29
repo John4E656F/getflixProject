@@ -2,12 +2,13 @@ import React from 'react'
 import './Kids.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-
+import SmallNavbar from '../SmallNavbar/SmallNavbar';
 // import CarouselKids from './Carousel/CarouselKid';
 import Carousel from './Carousel/Carousel';
 function Kids(){
     return(
         <div className='kid '>
+             <SmallNavbar />
             <Navbar />
             <div className='header-kid'>
                 <div className='imageHeader'></div>

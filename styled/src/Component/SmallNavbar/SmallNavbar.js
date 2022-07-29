@@ -11,7 +11,8 @@ import Tooltip from '@mui/material/Tooltip';
 import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
-import './MenuHamburger.css';
+
+import './SmallNavbar.css';
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -23,6 +24,7 @@ export default function AccountMenu() {
   };
   return (
     <div className='menuHambuerger'>
+      
         <React.Fragment>
         <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
             <Typography sx={{ minWidth: 100 }}>Contact</Typography>
@@ -47,7 +49,7 @@ export default function AccountMenu() {
             onClose={handleClose}
             onClick={handleClose}
             PaperProps={{
-            elevation: 0,
+                elevation: 0,
             sx: {
                 overflow: 'visible',
                 filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
@@ -57,8 +59,8 @@ export default function AccountMenu() {
                 height: 32,
                 ml: -0.5,
                 mr: 1,
-                },
-                '&:before': {
+            },
+            '&:before': {
                 content: '""',
                 display: 'block',
                 position: 'absolute',
@@ -69,9 +71,9 @@ export default function AccountMenu() {
                 bgcolor: 'background.paper',
                 transform: 'translateY(-50%) rotate(45deg)',
                 zIndex: 0,
-                },
             },
-            }}
+            },
+        }}
             transformOrigin={{ horizontal: 'right', vertical: 'top' }}
             anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
         >

@@ -19,10 +19,20 @@
 }
 
 .text-head{
+    width: 100%;
     position: absolute;
     margin: -500px 100px;
     display: flex;
     flex-direction: column;
+}
+@media screen and (max-width:567px) {
+    .header-kid .text-head {
+        margin: -500px auto;
+    }
+    .header-kid .text-head h1 {
+        width: 100%;
+        font-size: 30px;
+    }
 }
 .text-head h1 {
     font-size: 60px;
