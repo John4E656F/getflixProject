@@ -17,6 +17,9 @@ const Nav = styled.nav`
     padding: 0 20px;
     display:flex;
     justify-content:space-between;
+    position: fixed;
+    background-color: black;
+    z-index: 8000;
 
     .logo {
         padding:15px 0 ;
@@ -38,7 +41,7 @@ const Navbar = () => {
             Logo
         </div>
         <div>
-        <form className='search mt-3'onSubmit={handleSubmit}>
+        <form className='search mt-3 'onSubmit={handleSubmit}>
                         <input type='text' placeholder='Serach' className='search_input filter ' />
                         <button type='submit' className='search_btn'>
                         <i class="fa-regular fa-magnifying-glass ri-serch-2-line">

@@ -14,15 +14,16 @@ import '../Filter/Filter' ;
 import styled from 'styled-components';
 
 const Ul = styled.ul`
-
+  
   list-style: none ;
   display: flex;
   flex-flow:row nowrap;
 
   li {
-      padding: 18px 10px;
+    padding: 18px 10px;
   }
 
+  @media (min-width:768px) {margin-right: 120px;}
   @media (max-width:768px) {
     flex-flow:column nowrap;
     background-color:#0D2538;
@@ -65,7 +66,7 @@ const RightNav = ({ open }) => {
                 <li>
                     <Tooltip title="Filter">
                     <IconButton className='container-filter'>
-                        <FaFilter className='text-light filterIcon mr-4' />
+                        <FaFilter className='text-light filterIcon mr-5' />
                         <ModalFilter className='modal'/>
                     </IconButton>
                     </Tooltip>

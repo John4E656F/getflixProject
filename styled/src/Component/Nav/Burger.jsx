@@ -5,22 +5,23 @@ import RightNav from './RightNav';
 const StyledBurger = styled.div`
     width:2rem;
     height:2rem;
-    psition: fixed;
+    // psition: fixed;
     top: 15px;
     right: 20px;
     display: flex;
     justify-content: space-around;
     flex-flow:column nowrap;
 
-    // @media (max-width: 768px) {
-    //     display: flex;
-    //     justify-content: space-around;
-    //     flex-flow:column nowrap;
-    // }
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        flex-flow:column nowrap;
+    }
 
     div {
         width: 2rem;
-        heiight: 0.25rem;
+        height: 0.25rem;
+        margin: 0 -24px;
         cursor: pointer;
         background-color: ${({ open }) => open ? '#ccc' : '#333'};
         border-radius: 10px;
