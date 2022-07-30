@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-
-
+import FilterIcon from '@mui/icons-material/Filter';
+import Tooltip from '@mui/material/Tooltip';
+import PersonIcon from '@mui/icons-material/Person';
+import { FaSearch, FaRegHeart, FaFilter } from 'react-icons/fa';
+import { createFilterOptions } from '@mui/material/Autocomplete';
+import IconButton from '@mui/material/IconButton';
+import ModalFilter from './ModalFilter';
+import '../Filter/Filter' ;
 
 
 import styled from 'styled-components';
@@ -48,6 +54,25 @@ const RightNav = ({ open }) => {
           <li><Link  className='text-light' to='/Manga'>Manga</Link></li>
           <li><Link className='text-light' to="/Kids">Kids</Link></li>
           <li><Link className='text-light' to="/contact">Contact</Link></li>
+          <li className=''>
+                    <Tooltip title="Profile">
+                        <IconButton>
+                        <PersonIcon className='text-light mr-3' cursor='pointer' />
+                        </IconButton>
+                    </Tooltip>
+                    
+                </li>
+                <li>
+                    <Tooltip title="Filter">
+                    <IconButton className='container-filter'>
+                        <FaFilter className='text-light filterIcon mr-4' />
+                        <ModalFilter className='modal'/>
+                    </IconButton>
+                    </Tooltip>
+                   
+                </li>
+
+
         </Ul>
        
    
