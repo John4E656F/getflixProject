@@ -8,10 +8,10 @@ const StyledBurger = styled.div`
     top: 15px;
     right: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow:column nowrap;
 
-    @media (max-width: 768px) {
+    @media (max-width: 968px) {
         display: flex;
         justify-content: space-around;
         flex-flow:column nowrap;
@@ -20,7 +20,6 @@ const StyledBurger = styled.div`
     div {
         width: 2rem;
         height: 0.25rem;
-        margin: 0 -24px;
         cursor: pointer;
         background-color: ${({ open }) => open ? '#ccc' : '#333'};
         border-radius: 10px;
@@ -44,11 +43,19 @@ const StyledBurger = styled.div`
             transform: ${({open}) => open ? 'rotate(-45deg)' : 'rotate(0)'};
         }
     }
-    @media (min-width:768px){
+    @media (min-width:968px){
         div {
             display:none
         }
     }
+ 
+  
+    @media (max-width:765px){
+        div {
+           margin: 0 20px;
+        }
+    }
+
 `;
 
 const Burger = () => {
@@ -57,7 +64,7 @@ const Burger = () => {
 
   return (
     <>
-        <StyledBurger open={open} onClick={() => setOpen( !open )} className='mt-3'>
+        <StyledBurger open={open} onClick={() => setOpen( !open )} className='mt-3 '>
            <div className='border'></div>
            <div className='border'></div>
            <div className='border'></div>

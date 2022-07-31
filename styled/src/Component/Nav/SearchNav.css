@@ -1,26 +1,14 @@
-
-/* Serch input */
-/* .search {
-    padding: 5px;
-    color: #eee;
-    background: linear-gradient(to bottom right,#460b2f60,#429bee65);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    position: relative;
-} */
-/* .search :is(input , button) {
-    color: inherit;
-    border: none;
-    background: transparent;
-    outline: none;
-} */
+.nav{
+    
+   background-color: rgba(0, 0, 0, 0.671); 
+    margin: 0 auto;
+}
 .search_input {
     width: 200px;
     margin: 15px -20px;
     padding: 3px 5px;
     background-color: transparent;
-    border: solid 1px rgb(139, 130, 130);
+    border: solid 1px rgba(158, 145, 145, 0.788);
     border-radius: 7px;
     color: aliceblue;
 
@@ -30,4 +18,9 @@
     .navbar{
         display: none;
     }
+}
+
+.logo{
+    width: 100px;
+    margin: 0 auto;
 }
