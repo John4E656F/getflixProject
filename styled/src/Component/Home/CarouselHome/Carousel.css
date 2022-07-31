@@ -44,4 +44,12 @@
 .card{
   width: 300px;
   height: auto;
+  margin: 5px;
+  border: solid 5px black;
+}
+@media screen and (max-widrh:1757px) {
+  .card{
+    height: 100px;
+   
+  }
 }
