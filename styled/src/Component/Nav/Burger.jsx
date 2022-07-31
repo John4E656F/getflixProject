@@ -5,7 +5,6 @@ import RightNav from './RightNav';
 const StyledBurger = styled.div`
     width:2rem;
     height:2rem;
-    // psition: fixed;
     top: 15px;
     right: 20px;
     display: flex;
@@ -58,7 +57,7 @@ const Burger = () => {
 
   return (
     <>
-        <StyledBurger open={open} onClick={() => setOpen( !open )} className='mt-4'>
+        <StyledBurger open={open} onClick={() => setOpen( !open )} className='mt-3'>
            <div className='border'></div>
            <div className='border'></div>
            <div className='border'></div>

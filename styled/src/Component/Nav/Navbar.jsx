@@ -3,10 +3,8 @@ import styled from 'styled-components';
 import Burger from './Burger';
 import './SearchNav.css'
 
-import { FaSearch, FaRegHeart, FaFilter } from 'react-icons/fa';
-import { createFilterOptions } from '@mui/material/Autocomplete';
-import IconButton from '@mui/material/IconButton';
-import Tooltip from '@mui/material/Tooltip';
+// import { FaSearch, FaRegHeart, FaFilter } from 'react-icons/fa';
+// import { createFilterOptions } from '@mui/material/Autocomplete';
 
 
 
@@ -31,31 +29,15 @@ const Nav = styled.nav`
 
 const Navbar = () => {
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-};
+
 
   return (
     <Nav>
-        <div className='logo text-light'>
-            Logo
-        </div>
         <div>
-        <form className='search mt-3 'onSubmit={handleSubmit}>
-                        <input type='text' placeholder='Serach' className='search_input filter ' />
-                        <button type='submit' className='search_btn'>
-                        <i class="fa-regular fa-magnifying-glass ri-serch-2-line">
-                            <Tooltip title="Search">
-                            <IconButton>
-                            <FaSearch />
-                                
-                            </IconButton>
-                            </Tooltip>
-                        </i>
-                          
-                        </button>
-                       
-                    </form>
+          <input type='text' placeholder='Serach' className='search_input  '    />
+        </div>
+        <div className='logo text-light'>
+          Logo
         </div>
         <Burger />
         

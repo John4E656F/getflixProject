@@ -1,6 +1,6 @@
 
 /* Serch input */
-.search {
+/* .search {
     padding: 5px;
     color: #eee;
     background: linear-gradient(to bottom right,#460b2f60,#429bee65);
@@ -8,45 +8,22 @@
     display: flex;
     align-items: center;
     position: relative;
-}
-.search :is(input , button) {
+} */
+/* .search :is(input , button) {
     color: inherit;
     border: none;
     background: transparent;
     outline: none;
-}
+} */
 .search_input {
-    width: 0;
-}
-.search_btn {
-    width: 25px;
-    height: 25px;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-}
-.search:focus-within input {
     width: 200px;
-    transition: 0.7s ease-in-out;
-}
-::placeholder {
-    color: inherit;
-}
-.fa-regular{
-    position: absolute;
-}
+    margin: 15px -20px;
+    padding: 3px 5px;
+    background-color: transparent;
+    border: solid 1px rgb(139, 130, 130);
+    border-radius: 7px;
+    color: aliceblue;
 
-
-.filterIcon{
-    cursor:pointer;
-    position: absolute;
-}
-.modal{
-    position: absolute;
-    z-index: 6000;
-}
-.container-filter{
-    position: relative;
 }
 
 @media screen and (max-width:996px) {
