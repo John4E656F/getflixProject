@@ -7,4 +7,26 @@
     border-left-color:transparent ;
     border-right-color:transparent ;
     margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer div {
+    width: 300px;
+    height: 300px;
+    border: solid 1px ;
+}
+@media screen and (max-width: 560px) {
+    .footer{
+        flex-direction: column;
+        height: 800px;
+        padding-bottom: 50px;
+    }
+    .footer div {
+        width: 300px;
+        height: 400px;
+        margin-top: 50px;
+        border: solid 1px ;
+    }
 }
