@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Burger from './Burger';
 import SearchBar from '../SearchBar/SearchBar';
 import './SearchNav.css';
-
+import Logo from  '../Logo/Logo'
 
 
 
@@ -36,7 +36,7 @@ const Navbar = () => {
           <SearchBar />
         </div>
         <div className='logo text-light  bg-sucss  text-right'>
-          Logo
+          <Logo />
         </div>
         <Burger />
         
