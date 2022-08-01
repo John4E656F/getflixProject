@@ -162,8 +162,10 @@ const Signup = (props) => {
             const newUser = {
                 "email" : form.email.value, 
                 "username" : form.username.value, 
-                "password" : form.password.value};
+                "password" : form.password.value
+            };
             
+                //send http post request 
             axios.post("http://localhost:4000/user/signup", newUser)
                 .then(res => { console.log(res); })
                 .catch(err => { console.log(err); });

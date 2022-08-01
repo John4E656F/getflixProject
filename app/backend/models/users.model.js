@@ -4,9 +4,16 @@ const userDB = mongoose.createConnection(`mongodb+srv://aniflex-admin:xelfina@an
 const Users = userDB.model(
   "User",
   new mongoose.Schema({
-    username: String,
-    email: String,
-    password: String,
+    email: { 
+      type: String,
+      required: true,
+      trim: true,
+      unique: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
     role: [
       {
         type: mongoose.Schema.Types.ObjectId,

@@ -10,6 +10,7 @@ import Checkbox from "@material-ui/core/Checkbox";
 import { useNavigate } from "react-router-dom";
 import { AuthenticationContext } from "../../contexts/authUser";
 import { validEmailAndPhoneNumber } from "../../utils/validation";
+import axios from "axios";
 
 /**
  * The login component, which validates the email and password
@@ -18,6 +19,7 @@ import { validEmailAndPhoneNumber } from "../../utils/validation";
  */
 
 const Login = (props) => {
+    const token = localStorage.getItem("token")
     const [form, setForm] = useState({
         email: {
             value: "",
@@ -95,11 +97,33 @@ const Login = (props) => {
 
     const formSubmitHandler = (event) => {
         event.preventDefault();
+        console.log(form.email.value);
+        console.log(form.password.value);
         if (!form.email.valid || !form.password.valid) {
             setForm((prevForm) => ({...prevForm, onSubmitnvalid: true}));
         } else {
-            authContext.login();
-            navigate("/browse", { replace: true});
+            let payload = {
+                "email": form.email.value,
+                "password": form.password.value
+            }
+
+            let config = {
+                method: "post",
+                url: "http://localhost:4000/user/login",
+                header: {
+                    "Content_type": "application/json"
+                },
+                data: payload
+            }
+
+            axios(config)
+            .then((res) => {
+                const { token } = res.data
+                localStorage.setItem("token",token)
+            dispatch(fetchLoginSuccess(res.data))
+            navigate("/browse", { replace: true})
+            })
+            .catch(err => { console.log(err); });
         }
     };
 
