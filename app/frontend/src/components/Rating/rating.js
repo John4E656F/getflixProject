@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
-import './Rating.css';
+// import './Rating.css';
 export default function RatingSIze() {
   return (
     <Stack spacing={1}>

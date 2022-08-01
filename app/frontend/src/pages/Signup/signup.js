@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import "./signup.scss";
+import "./signup.css";
 import axios from "axios";
 
 import SignupBackground from "../../assets/images/landingPage.jpg";

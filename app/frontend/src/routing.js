@@ -1,7 +1,7 @@
 //This is where we build the different states
 
 import React from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 //Import All the different States
 // import MovieState from "./contexts/movies/movieState";
@@ -13,14 +13,13 @@ import Home from "./pages/Home/home";
 // import Profil from "./pages/Profile/index";
 
 const Routing = () => {
-    const user = true;
+
 
     return (
 
         <Routes>
-            {/* <Route exact path="/" component={LandingPage}>
-                <LandingPage />
-            </Route> */}
+            <Route exact path="/" element={<Home />} />
+
             <Route exact path="/login" element={<LoginPage /> } />
 
             <Route exact path="/signup" element={<SignupPage /> } />

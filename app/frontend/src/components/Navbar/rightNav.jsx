@@ -1,28 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import FilterIcon from '@mui/icons-material/Filter';
+// import FilterIcon from '@mui/icons-material/Filter';
 import Tooltip from '@mui/material/Tooltip';
 import PersonIcon from '@mui/icons-material/Person';
-import { FaSearch, FaRegHeart, FaFilter } from 'react-icons/fa';
-import { createFilterOptions } from '@mui/material/Autocomplete';
+// import { FaSearch, FaRegHeart, FaFilter } from 'react-icons/fa';
+// import { createFilterOptions } from '@mui/material/Autocomplete';
 import IconButton from '@mui/material/IconButton';
-import ModalFilter from './ModalFilter';
-import '../Filter/Filter' ;
+// import ModalFilter from './ModalFilter';
+import '../Filter/filter' ;
+import BtnFilter from '../Filter/btnFilter'
 
 
 import styled from 'styled-components';
 
 const Ul = styled.ul`
-  
   list-style: none ;
   display: flex;
   flex-flow:row nowrap;
+ 
   li {
     padding: 18px 10px;
   }
-  @media (min-width:768px) {margin-right: 120px;}
-  @media (max-width:768px) {
+  @media (max-width:968px) {
     flex-flow:column nowrap;
     background-color:#0D2538;
     position: fixed;
@@ -46,29 +46,23 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     
-        <Ul open={open}>
+        <Ul open={open} >
           <li><Link className='text-light' to='/'>Home</Link></li>
           <li><Link className='text-light' to='/Anime'>Anime</Link></li>
           <li><Link  className='text-light' to='/Manga'>Manga</Link></li>
           <li><Link className='text-light' to="/Kids">Kids</Link></li>
           <li><Link className='text-light' to="/contact">Contact</Link></li>
           <li className=''>
-                    <Tooltip title="Profile">
-                        <IconButton>
-                        <PersonIcon className='text-light mr-3' cursor='pointer' />
-                        </IconButton>
-                    </Tooltip>
+            <Tooltip title="Profile">
+                <IconButton>
+                  <PersonIcon className='text-light mr- ' cursor='pointer' />
+                </IconButton>
+            </Tooltip>
                     
-                </li>
-                <li>
-                    <Tooltip title="Filter">
-                    <IconButton className='container-filter'>
-                        <FaFilter className='text-light filterIcon mr-5' />
-                        <ModalFilter className='modal'/>
-                    </IconButton>
-                    </Tooltip>
-                   
-                </li>
+          </li>
+            <li className='filter '>
+              <BtnFilter  />
+            </li>
 
 
         </Ul>
