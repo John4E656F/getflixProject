@@ -9,7 +9,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 // import LandingPage from "./pages/LandingPage/LandingPage";
 import LoginPage from "./pages/Login/login";
 import SignupPage from "./pages//Signup/signup";
-// import Home from "./pages/Home/index";
+import Home from "./pages/Home/home";
 // import Profil from "./pages/Profile/index";
 
 const Routing = () => {

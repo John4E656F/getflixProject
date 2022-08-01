@@ -1,8 +1,8 @@
 import React from 'react'
 import '../Home/home.css';
-import Nav from '../Nav/Navbar';
-import Footer from '../Footer/Footer';
-import Carousel2 from '../components/carouselHome';
+import Nav from '../../components/Navbar/navbar';
+import Footer from '../../components/Footer/footer';
+import Carousel2 from '../../components/Home/carouselHome';
 function Home(){
     return(
         <div className='home '>
