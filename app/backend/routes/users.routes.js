@@ -2,6 +2,7 @@
 // We use it to define our routes.
 // The router will be added as a middleware and will take control of requests starting with path /record.
 const router = require('express').Router();
+const bcrypt = require('bcrypt');
 /*Same as the code above
 const express = require("express");
 const router = express.Router();
@@ -33,7 +34,7 @@ router.route('/user').get((req, res) => {
 router.route('/signup').post((req, res) => {
     const username = req.body.username;
     const email = req.body.email;
-    const password = req.body.password;
+    const password = bcrypt.hashSync(req.body.password, 8);
 
     const newUser = new User({
         username,
