@@ -5,7 +5,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-// import CheckBox |
+import './CheckBox.css';
 import CheckBoxModal from './CheckBoxModal' ;
 
 const style = {
@@ -18,6 +18,7 @@ const style = {
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
+  
 };
 
 export default function TransitionsModal() {
@@ -26,9 +27,9 @@ export default function TransitionsModal() {
   const handleClose = () => setOpen(false);
 
   return (
-    <div>
+    <div className='' >
       <Button onClick={handleOpen} >&nbsp; </Button>
-      <Modal
+      <Modal style={{zIndex:8000}}
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         open={open}
@@ -39,16 +40,14 @@ export default function TransitionsModal() {
           timeout: 500,
         }}
       >
-        <Fade in={open}>
-          <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h6" component="h2">
+        <Fade in={open}  >
+          <Box sx={style}  > 
+            <Typography id="transition-modal-title" variant="h6" component="h2"  >
               Quick filter
             </Typography>
-            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+            <Typography id="transition-modal-description" sx={{ mt: 2 }}  >
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
               <CheckBoxModal />
-           
-              
             </Typography>
           </Box>
         </Fade>

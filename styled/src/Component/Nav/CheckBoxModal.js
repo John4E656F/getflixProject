@@ -11,8 +11,9 @@ const ITEM_PADDING_TOP = 8;
 const MenuProps = {
   PaperProps: {
     style: {
-      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250,
+      maxHeight: ITEM_HEIGHT * 5.5 + ITEM_PADDING_TOP,
+      width: 270,
+      zIndex:1,
     },
   },
 };
@@ -33,6 +34,8 @@ function getStyles(name, personName, theme) {
       personName.indexOf(name) === -1
         ? theme.typography.fontWeightRegular
         : theme.typography.fontWeightMedium,
+        
+        
   };
 }
 
@@ -47,14 +50,16 @@ export default function MultipleSelect() {
     setPersonName(
       // On autofill we get a stringified value.
       typeof value === 'string' ? value.split(',') : value,
+      
     );
   };
 
   return (
-    <div>
-      <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel id="demo-multiple-name-label">Gener All</InputLabel>
-        <Select
+    <div   >
+      <FormControl sx={{ m: 1, width: 310  }}   >
+        <InputLabel id="demo-multiple-name-label">Gener All</InputLabel >
+        <Select 
+          
           labelId="demo-multiple-name-label"
           id="demo-multiple-name"
           multiple
@@ -64,10 +69,10 @@ export default function MultipleSelect() {
           MenuProps={MenuProps}
         >
           {names.map((name) => (
-            <MenuItem
+            <MenuItem  
               key={name}
               value={name}
-              style={getStyles(name, personName, theme)}
+              style={  getStyles(name, personName, theme)  }
             >
               {name}
             </MenuItem>

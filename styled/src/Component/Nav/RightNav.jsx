@@ -54,16 +54,16 @@ const RightNav = ({ open }) => {
           <li><Link className='text-light' to="/Kids">Kids</Link></li>
           <li><Link className='text-light' to="/contact">Contact</Link></li>
           <li className=''>
-                    <Tooltip title="Profile">
-                        <IconButton>
-                          <PersonIcon className='text-light mr-3' cursor='pointer' />
-                        </IconButton>
-                    </Tooltip>
+            <Tooltip title="Profile">
+                <IconButton>
+                  <PersonIcon className='text-light mr- ' cursor='pointer' />
+                </IconButton>
+            </Tooltip>
                     
           </li>
-                <li className='filter '>
-                   <BtnFilter />
-                </li>
+            <li className='filter '>
+              <BtnFilter  />
+            </li>
 
 
         </Ul>
