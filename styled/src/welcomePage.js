@@ -35,8 +35,8 @@ const welcomePage = () => {
                 <img className=' image img-fluid w-100'  src='https://wallup.net/wp-content/uploads/2019/09/07/638920-naruto-shippuden-ultimate-ninja-storm-anime-action-fighting-1nsuns-fantasy-martial-arts.jpg'  alt='anime' />
               </div>
               <div className='Card-text'>
-                <p>Download and watch your anime or <br /> read manga offline</p>
-                <p>Save your favorites easily and always have <br /> something to watch or read</p>
+                <p className='mx-5'>Download and watch your anime or <br /> read manga offline</p>
+                <p className='mx-5'>Save your favorites easily and always have <br /> something to watch or read</p>
               </div>
 
         </div>

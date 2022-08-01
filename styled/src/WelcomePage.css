@@ -139,14 +139,15 @@
     .Card-text{
         width: 100%;
         height: auto;
+        text-align: left;
+        margin-left: 120px;
     }
     .Card-img{
         width: 90%;
-       background-color: green;
+        background-color: green;
         height: auto;
     }
     .Card-text p{
-        
         font-size: 20px;
         color: aliceblue;
         overflow: auto;
@@ -228,6 +229,16 @@
     .questions h1 {
         font-size: 30px;
     }
+    .Card-text{
+        width: 100%;
+        height: auto;
+        text-align: left;
+        margin-left: 40px;
+    }
+    .Card-text p {
+        font-size: 16px;
+    }
+
    
 }
 
