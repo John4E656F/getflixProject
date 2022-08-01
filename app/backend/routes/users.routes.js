@@ -8,28 +8,33 @@ const express = require("express");
 const router = express.Router();
 */
 
+const handleLogin = require("../controllers/login.controller");
+
+
 //Importing the connection to the database
 const db = require("../config/connectDB");
 
 let User = require('../models/users.model');
 
 //Get a list of all users.
-router.route('/user').get((req, res) => {
-    let db_connect = db.getDb("users");
-    db_connect
-    .collection("users")
-    .find({})
-    .toArray((err, res) => {
-        if (err) throw err;
-        res.json(result);
-    });
+// router.route('/user').get((req, res) => {
+//     let db_connect = db.getDb("users");
+//     db_connect
+//     .collection("users")
+//     .find({})
+//     .toArray((err, res) => {
+//         if (err) throw err;
+//         res.json(result);
+//     });
+// });
+
+router.route('/').get((req, res) =>{
+    User.find()
+    .then(users => res.json(users))
+    .catch(err => res.status(400).json('Error: ' + err));
 });
 
-// router.route('/').get((req, res) =>{
-//     User.find()
-//     .then(users => res.json(users))
-//     .catch(err => res.status(400).json('Error: ' + err));
-// });
+router.post("/login", handleLogin);
 
 router.route('/signup').post((req, res) => {
     const username = req.body.username;
@@ -47,6 +52,21 @@ router.route('/signup').post((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
+router.route('/login').post((req, res) => {
+    const { email, password } = req.body;
+
+    const getUser = User.find((users) => users.email === email);
+
+    if (!getUser) {
+        res.sendStatus(404);
+        return;
+    }
+    getUser.email = email;
+    getUser.password = password;
+
+    res.sendStatus(200);
+})
+
 router.put('/update/:id', (req, res) => {
     const { id } = req.param;
     const { newUsername, newEmail, newPassword } = req.body;
@@ -62,7 +82,7 @@ router.put('/update/:id', (req, res) => {
     getUser.email = newEmail;
     getUser.password = newPassword;
 
-    res.sentStatus(200);
+    res.sendStatus(200);
 });
 
 module.exports = router;
