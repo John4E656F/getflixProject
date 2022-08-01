@@ -42,6 +42,9 @@
     margin-top: 50px;
     gap: 50px;
 }
+.margin-text {
+    margin-left: 50px;
+}
 .container-cards{
     width: 100%;
     height: auto;
@@ -263,5 +266,34 @@
     .container-questions .question {
         font-size: 16px;
    }
+   .header p {
+    font-size: 16px;
+   }
    
+}
+
+@media screen and (max-width: 414px) {
+    .header h1 {
+     font-size: 20px;
+    }
+    .header p {
+     font-size: 16px;
+    }
+     .container-questions .question {
+         width: 250px;
+         font-size: 14px;
+    }
+}
+
+ @media screen and (max-width: 361px) {
+    .header h1 {
+     font-size: 20px;
+    }
+    .header p {
+     font-size: 16px;
+    }
+     .container-questions .question {
+         width: 250px;
+         font-size: 14px;
+    }
 }
