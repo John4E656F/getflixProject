@@ -34,3 +34,19 @@
 .search {
     margin-left: 70px;
 }
+
+@media screen and (max-width: 1111px) {
+    .search {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 984px) {
+    .search {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .search {
+        margin-left: 0;
+    }
+}
