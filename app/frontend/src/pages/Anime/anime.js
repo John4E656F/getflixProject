@@ -5,9 +5,9 @@ import Carousel from './CarouselAnime/Carousel';
 // import SmallNavbar from '../SmallNavbar/SmallNavbar';
 import Navbar from '../Nav/Navbar'
 
-import './Anime.css'
+import './anime.css'
 
-const Anime = () => {
+const anime = () => {
   return (
     <div className='anime'>
       {/* <Navbar /> */}
@@ -37,4 +37,4 @@ const Anime = () => {
   )
 }
 
-export default Anime
+export default anime

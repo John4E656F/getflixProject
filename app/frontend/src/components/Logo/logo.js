@@ -5,7 +5,7 @@ import logo from '../../assets/images/Logo-aniflix.png'; // Tell webpack this JS
 
 function Logo() {
   // Import result is the URL of your image
-  return <img src={logo} alt="Logo" className='w-100' />;
+  return <img src={logo} alt="Logo" className='w-50 mb-5' />;
 }
 
 export default Logo;
