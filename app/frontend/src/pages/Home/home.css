@@ -7,20 +7,21 @@
 .header-home{
     width: 100%;
     height: 700px;
-    /* padding-top: 70px; */
+    padding-top: 70px;
 }
 .header-home .imagHeader{
     width: 100%;
-    height: 700px;
+    height: 1000px;
     background-image: url(https://www.itl.cat/pngfile/big/202-2024159_one-piece-monkey-d-luffy-straw-hat-portrait.jpg);
     background-position: center;
     background-size: cover;
+    
 }
 
 .header-home .text-head{
     width: 400px;
     height: 500px;
-    margin: -500px 100px;
+    margin: -600px 100px;
     display: flex;
     flex-direction: column;
 }
@@ -29,6 +30,7 @@
 }
 .text-head p {
     width: 350px;
+    line-height: 30px;
 }
 .container-btn{
     display: flex;
@@ -53,7 +55,7 @@
     margin-left: 15px;
 }
 .carousel {
-    margin: 100px auto;
+    margin: 200px auto;
 }
 .info-carousel{
     padding: 5px;
@@ -76,15 +78,15 @@
         justify-content: center;
     }
     .header-home .text-head{
-        margin:300px auto;
-        height: 400px;
+        margin:400px auto;
+        height: 460px;
     }
  
 }
 @media screen and (max-width:567px) {
     .text-head{
         padding: 50px;
-        margin: 150px auto;
+        margin: 250px auto;
         text-align: center;
         
         background-color: rgba(39, 5, 5, 0.527);
