@@ -34,7 +34,7 @@ const Navbar = () => {
           {/* Search */}
           <SearchBar />
         </div>
-        <div className='logo text-light  bg-sucess  text-right'>
+        <div className='logo text-light  bg-success  text-right'>
           <Logo />
         </div>
         <Burger />
