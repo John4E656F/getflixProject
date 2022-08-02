@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import "./login.scss";
+import "./login.css";
 
 import LoginBackground from "../../assets/images/landingPage.jpg";
 import AniflixLogo from "../../assets/images/logo.png";
@@ -120,7 +120,7 @@ const Login = (props) => {
             .then((res) => {
                 const { token } = res.data
                 localStorage.setItem("token",token)
-            dispatch(fetchLoginSuccess(res.data))
+            // dispatch(fetchLoginSuccess(res.data))
             navigate("/browse", { replace: true})
             })
             .catch(err => { console.log(err); });
