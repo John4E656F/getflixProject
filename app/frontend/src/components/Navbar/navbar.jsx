@@ -31,12 +31,12 @@ const navbar = () => {
 
   return (
     <Nav className='nav'>
-        <div className='search'>
+        <div className='container-search'>
           {/* Search */}
-          <SearchBar />
+          <SearchBar className='search' />
         </div>
-        <div className='logo text-light  bg-sucess  text-right'>
-          <Logo />
+        <div className='logo text-light  bg-sucess  text-right' >
+          <Logo  />
         </div>
         <Burger />
         

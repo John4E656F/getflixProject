@@ -2,51 +2,62 @@
     width: 90%;
     background-color: rgba(0, 0, 0, 0.747); 
 }
-.search_input {
-    width: 200px;
-    margin: 15px -20px;
-    padding: 3px 5px;
-    background-color: transparent;
-    border: solid 1px rgba(158, 145, 145, 0.788);
-    border-radius: 7px;
-    color: aliceblue;
- 
-}
- 
-@media screen and (max-width:996px) {
-    .navbar{
-        display: none;
-    }
-}
+
+
  
 .logo{
-    width: 100px;
-    margin: 0 auto;
+    width:150px;
+    height: 50px;
+    margin: -15px;
+    padding: 0;
+    float: right;
 }
 
 .MuiButtonBase-root {
     width: 50px;
     padding: 0 5px;
 }
-.filter {
-    margin-right: 20px;
-}
+
 .search {
-    margin-left: 70px;
+    width: 200px;
+    margin: 20px 50px;
+    padding: 3px 5px;
+    background-color: transparent;
+    border: solid 1px rgba(158, 145, 145, 0.788);
+    border-radius: 7px;
+    color: aliceblue;
 }
 
-@media screen and (max-width: 1111px) {
-    .search {
-        margin-left: 20px;
+@media screen and (max-width: 1085px) {
+    .search{
+        margin: 15px -15px;
+        float: right;
+    }
+    .filter {
+        margin-right: 0;
     }
 }
-@media screen and (max-width: 984px) {
-    .search {
-        margin-left: 10px;
+@media screen and (max-width: 1052px) {
+    .search{
+        margin: 15px -10px;
+        float: right;
     }
 }
-@media screen and (max-width: 620px) {
-    .search {
-        margin-left: 0;
+
+
+@media screen and (max-width: 1005px) {
+    .logo {
+       margin-left: 0;
+    }
+}
+@media screen and (max-width:996px) {
+    .navbar{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .contaner-search {
+        display: none;
     }
 }
