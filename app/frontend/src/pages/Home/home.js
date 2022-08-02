@@ -1,14 +1,14 @@
 import React from 'react'
 import './home.css';
 import { FiPlay }  from 'react-icons/fi'
-import Nav from '../../components/Navbar/navbar';
+import Navbar from '../../components/Navbar/navbar';
 // import Footer from '../../components/Footer/footer';
 import Carousel2 from '../../components/Home/carouselHome';
 function home(){
     return(
         <div className='home '>
           
-            <Nav />
+            <Navbar />
             <div className='header-home'>
                 <div className='imagHeader'></div>
                 <div className='text-head '>

@@ -9,9 +9,10 @@ import Logo from  '../Logo/logo'
 
 
 const Nav = styled.nav`
-  width:90%;
+  width:100%;
   height:70px;
-  padding: 0 30px;
+  margin: 0 auto;
+  padding: 0 50px;
   display:flex;
   justify-content:space-between;
   align-item: center;
@@ -30,7 +31,7 @@ const navbar = () => {
 
   return (
     <Nav className='nav'>
-        <div>
+        <div className='search'>
           {/* Search */}
           <SearchBar />
         </div>

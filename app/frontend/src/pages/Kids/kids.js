@@ -1,10 +1,10 @@
 import React from 'react'
-import './Kids.css';
-import Navbar from '../Nav/Navbar';
-import Footer from '../Footer/Footer';
+import './kids.css';
+import Navbar from '../../components/Navbar/navbar'
+import Footer from '../../components/Footer/footer';
 
 // import CarouselKids from './Carousel/CarouselKid';
-import Carousel from './Carousel/Carousel';
+import Carousel from '../../components/Kids/carouselKids';
 function Kids(){
     return(
         <div className='kid '>

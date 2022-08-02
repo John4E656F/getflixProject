@@ -10,7 +10,7 @@ import IconButton from '@mui/material/IconButton';
 // import ModalFilter from './ModalFilter';
 import '../Filter/filter' ;
 import BtnFilter from '../Filter/btnFilter'
-
+import './searchNav.css'
 
 import styled from 'styled-components';
 
