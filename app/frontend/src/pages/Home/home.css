@@ -20,7 +20,7 @@
 .header-home .text-head{
     width: 400px;
     height: 500px;
-    margin-top: -500px;
+    margin: -500px 100px;
     display: flex;
     flex-direction: column;
 }
@@ -63,9 +63,11 @@
 }
 .container-btn{
     display: flex;
+    justify-content: space-between;
 }
 button{
     background-color: rgb(12, 44, 44);
+    width: 150px;
 }
 
 .btn-carousel button:hover{
@@ -90,5 +92,3 @@ button{
     display: flex;
     justify-content: space-between;
 }
-
-/* Media Query */
