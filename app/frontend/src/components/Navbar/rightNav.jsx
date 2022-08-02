@@ -47,7 +47,7 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     
-        <Ul open={open}  className='ulList'>
+        <Ul open={open}  className=''>
           <li><Link className='text-light' to='/'>Home</Link></li>
           <li><Link className='text-light' to='/anime'>Anime</Link></li>
           <li><Link  className='text-light' to='/manga'>Manga</Link></li>
