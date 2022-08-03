@@ -6,6 +6,8 @@ import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
 import Carousel2 from '../../components/Home/carouselHome';
 function home(){
+
+    
     return(
         <div className='home '>
           
