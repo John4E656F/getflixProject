@@ -64,12 +64,6 @@ export default class Responsive extends Component {
 
 
 
-
-
-
-
-
-
         
         <Slider {...settings}>
                     <div className="card">
