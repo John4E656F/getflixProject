@@ -40,10 +40,6 @@ export default class Responsive extends Component {
     };
     return (
       <div>
-        
-        
-        {/*  */}
-
        
             <Slider {...settings}>
                     <div className="card">
