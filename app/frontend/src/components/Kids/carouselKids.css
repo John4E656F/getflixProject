@@ -37,3 +37,6 @@
     opacity: 1;
     cursor: pointer;
 }
+.titleCarousel {
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+  }

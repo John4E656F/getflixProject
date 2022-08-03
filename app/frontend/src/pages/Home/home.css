@@ -71,7 +71,7 @@
         font-size: 50px;
     }
 }
-@media screen and (max-width:963px) {
+@media screen and (max-width:964px) {
     .header-home{
         display: flex;
         justify-content: center;
@@ -80,8 +80,17 @@
         margin:400px auto;
         height: 460px;
     }
+    .home .carousel {
+        margin-top: 0px;
+    }
  
 }
+@media screen and (max-width: 570px) {
+    .home .carousel {
+        margin-top: 90px;
+    }
+}
+
 @media screen and (max-width:567px) {
     .text-head{
         padding: 50px;
