@@ -169,7 +169,11 @@ const Signup = (props) => {
             axios.post("http://localhost:4000/user/signup", newUser)
                 .then(res => { console.log(res); })
                 .catch(err => { console.log(err); });
+<<<<<<< HEAD
             navigate('/login');
+=======
+            navigate('/');
+>>>>>>> 7235d50ea4a5deffdaa2a32114df70388cc66bdf
         }
     };
 

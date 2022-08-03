@@ -11,9 +11,10 @@ import Welcome from './pages/Landing/landingPage.component'
 import LoginPage from "./pages/Login/login";
 import SignupPage from "./pages//Signup/signup";
 import Home from "./pages/Home/home";
-import Anime from './pages/Anime/anime'
-import Manga from './pages/Manga/manga'
-import Kids from './pages/Kids/kids'
+import Anime from './pages/Anime/anime';
+import Manga from './pages/Manga/manga';
+import Kids from './pages/Kids/kids';
+import Contact from './components/Contact/contact'
 
 // import Profil from "./pages/Profile/index";
 
@@ -24,6 +25,15 @@ const Routing = () => {
 
         <Routes>
             <Route exact path="/" element={<Home />} />
+
+            <Route exact path="/anime" element={<Anime />} />
+
+            <Route exact path="/manga" element={<Manga />} />
+
+            <Route exact path="/kids" element={<Kids />} />
+
+            <Route exact path="/contact" element={<Contact />} />
+
 
             <Route exact path="/login" element={<LoginPage /> } />
 
