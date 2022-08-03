@@ -1,18 +1,3 @@
-/* .anime{
-    width: 90%;
-    margin: auto;
-  }
-  .header{
-    width: 100%;
-    height: 800px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  } */
-  
-
-
-  
   .container-carousel h2{
     margin-left: 90px;
     color: rgba(250, 235, 215, 0.336);
@@ -33,6 +18,7 @@
   .card{
     width: 300px;
     height: auto;
+    background-color: brown;
   }
 
 
@@ -42,4 +28,7 @@
     border-radius: 50%;
     background-color: rgb(27, 34, 34);
     z-index: 5;
+  }
+  .titleCarousel {
+    text-shadow: 0 0 5px rgb(0, 0, 0);
   }
