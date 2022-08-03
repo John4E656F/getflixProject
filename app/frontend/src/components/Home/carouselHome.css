@@ -1,0 +1,45 @@
+/* .anime{
+    width: 90%;
+    margin: auto;
+  }
+  .header{
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  } */
+  
+
+
+  
+  .container-carousel h2{
+    margin-left: 90px;
+    color: rgba(250, 235, 215, 0.336);
+  }
+  .container-carousel{
+    margin-top: -100px;
+  }
+  .container-play-rating{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 2px;
+  }
+  .slider{
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .card{
+    width: 300px;
+    height: auto;
+  }
+
+
+  .slick-slider .slick-arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(27, 34, 34);
+    z-index: 5;
+  }

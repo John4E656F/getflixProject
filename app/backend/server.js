@@ -4,8 +4,8 @@ const express = require("express");
 const cors = require("cors");
 //cookie-session helps to stores the session data on the client within a cookie without requiring any database/resources on the server side
 // const cookieSession = require("cookie-session");
-
-require('dotenv').config();
+const dotenv = require("dotenv");
+dotenv.config({ path: "./config.env" });
 
 //Create an Express app, then add request parsing, cookie-based session middleware and cors middlewares using app.use() method. 
 const app = express();
@@ -41,10 +41,10 @@ connectDB();
 const usersRouter = require('./routes/users.routes');
 
 
-app.use('/users', usersRouter);
+app.use('/user', usersRouter);
 
 // set port, listen on port 8080 for incoming requests.
-const PORT = process.env.PORT || 5001
+const PORT = process.env.PORT || 4000
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
