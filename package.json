@@ -1,20 +1,26 @@
 {
-    "name": "Aniflixroot",
+    "name": "Aniflix root",
     "version": "0.1.0",
     "description": "Aniflix- A fully functional Netflix Clone made with MERN Stack and other technologies, check them in README for more details.",
     "scripts": {
-      "start": "cd app/backend && npm run server\" \"cd app/frontend && npm start\" "
+        "start": "concurrently \"cd app/frontend && npm start\" \"cd app/backend && nodemon server.js\"  "
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/John4E656F/getflixProject.git"
+        "type": "git",
+        "url": "git+https://github.com/John4E656F/getflixProject.git"
     },
     "author": "John4e656f",
     "license": "GPL-3.0 License",
     "bugs": {
-      "url": "https://github.com/John4E656F/getflixProject/issues"
+        "url": "https://github.com/John4E656F/getflixProject/issues"
     },
-    "homepage": "https://github.com/John4E656F/getflixProject#readme",
+    "dependencies": {
+        "concurrently": "^7.3.0"
+    }
+}
 
-  }
+    
+   // "homepage": "https://github.com/John4E656F/getflixProject#readme",
+
+
   
