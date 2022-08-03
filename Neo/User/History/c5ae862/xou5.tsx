@@ -6,10 +6,18 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const Card = (props) => {
+type CardProps = {
+  altText: string,
+  cardTitle: string,
+  cardDesc: string,
+  imgSrc: string,
+  height: number,
+}
 
+const Card = ({altText, cardTitle, cardDesc, imgSrc, height}: CardProps) => {
 
     return (
+      <div key={key}>
         <CardMui sx={{ maxWidth: 300 }}>
             <CardMedia
             component="cardImg"
@@ -22,7 +30,7 @@ const Card = (props) => {
                 { cardTitle }
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    { cardText }
+                    { cardDesc }
                 </Typography>
             </CardContent>
             <CardActions>
@@ -30,8 +38,8 @@ const Card = (props) => {
                 <Button size="small">Learn More</Button>
             </CardActions>
         </CardMui>
+      </div>
     );
 };
 
 export default Card;
-
