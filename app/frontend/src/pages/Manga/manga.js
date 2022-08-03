@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import navbar from '../../components/Navbar/navbar'
-import footer from '../../components/Footer/footer';
+import Navbar from '../../components/Navbar/navbar'
+import Footer from '../../components/Footer/footer';
 import '../../components/Manga/carouselManga'
 export default class Responsive extends Component {
   render() {
@@ -44,7 +44,7 @@ export default class Responsive extends Component {
     return (
       <div>
         
-        <navbar />
+        <Navbar />
         {/*  */}
 
         
@@ -197,7 +197,7 @@ export default class Responsive extends Component {
         </Slider>
 
 
-      <footer />
+      <Footer />
         
       </div>
     );
