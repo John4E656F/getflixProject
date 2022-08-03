@@ -1,4 +1,3 @@
-file:///root/Github/getflixProject/app/frontend/src/components/Anime/carouselAnime.js {"mtime":1659512967173,"ctime":1659512967173,"size":13817,"etag":"395qoip8rebm","orphaned":false,"typeId":""}
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
