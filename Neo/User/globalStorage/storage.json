@@ -1547,9 +1547,9 @@
             "folder": "file:///root/Github/getflixProject",
             "backupPath": "/root/Github/getflixProject/Neo/Backups/73bf915c5e5fbc72e4cba665e55acc33",
             "uiState": {
-                "mode": 0,
-                "x": 0,
-                "y": 62,
+                "mode": 1,
+                "x": -76,
+                "y": 144,
                 "width": 1600,
                 "height": 838
             }

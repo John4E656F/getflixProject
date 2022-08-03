@@ -13,3 +13,4 @@
 [2022-08-03 13:59:36.321] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
 [2022-08-03 13:59:36.331] [exthost] [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: '*'
 [2022-08-03 13:59:36.410] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-08-03 14:00:17.295] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 254
