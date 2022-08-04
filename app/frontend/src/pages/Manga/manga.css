@@ -13,7 +13,9 @@
   .marginT{
     margin-top: 20px;
   }
-
+  .header-manga .imagHeader {
+    background-image: url(../../assets/images/Breath-Of-The-Wild-2-Link-Confused-AMvmra.webp);
+  }
 
 .header-manga .text-head{
   width: 400px;
