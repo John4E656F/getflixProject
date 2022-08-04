@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Card from '../Card/card.component'
+import Card from '../Card/card'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Carousel = (props) => {
 
     let settings= {
-      dots: true,
+      dots: false,
       infinite: false,
       speed: 500,
       slidesToShow: 4,
@@ -44,7 +44,7 @@ const Carousel = (props) => {
       return (
         <div>
         <Slider {...settings }>
-            <Card key={''} component={''} altText={''} cardTitle={''} cardDesc={''} imgSrc={''} height={0} ></Card>
+            <Card key={''} component={''} altText={''} cardTitle={''} cardDesc={''} imgSrc={''} />
         </Slider>
         </div>
       )
