@@ -4,7 +4,7 @@ import Icon from "@material-ui/core/Icon";
 
 
 /**
- * A custom button componet. It has a set color scheme and takes in height, weight, 
+ * A custom button component. It has a set color scheme and takes in height, weight, 
  * and image as props. Try building a build a standard button component with different widths.
 */
 
