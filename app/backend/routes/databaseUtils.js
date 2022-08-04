@@ -17,7 +17,7 @@ async function pullAnimes(){
     try {
         const query= await animes.find({})
         arr.push(JSON.stringify(query))
-        console.log(arr)
+        //console.log(arr)
          return arr;
          
     } catch (e) {
