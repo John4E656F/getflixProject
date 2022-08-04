@@ -25,6 +25,7 @@
 }
 .text-head p , h1{
     text-align: left;
+    text-shadow: 0 0 2px black;
 }
 .text-head p {
     width: 350px;
