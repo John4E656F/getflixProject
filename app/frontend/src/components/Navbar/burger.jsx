@@ -1,7 +1,7 @@
 import React , { useState } from 'react';
 import styled from 'styled-components';
 import RightNav from './rightNav';
-
+// import { css } from '@emotion/react'
 const StyledBurger = styled.div`
     width:2rem;
     height:2rem;
@@ -40,7 +40,7 @@ const StyledBurger = styled.div`
     }
     @media (min-width:968px){
         div {
-            display:none
+            visibility: hidden;
         }
     }
  
@@ -58,12 +58,12 @@ const Burger = () => {
 
   return (
     <>
-        <StyledBurger open={open} onClick={() => setOpen( !open )} className='mt-3 '>
+        <RightNav open={open} />
+        <StyledBurger open={open} onClick={() => setOpen( !open )} className='mt-3' >
            <div className='border'></div>
            <div className='border'></div>
            <div className='border'></div>
         </StyledBurger>
-        <RightNav open={open} />
     </>
   )
 }

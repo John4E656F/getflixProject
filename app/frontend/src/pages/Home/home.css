@@ -7,7 +7,6 @@
 .header-home{
     width: 100%;
     height: 700px;
-    /* padding-top: 70px; */
 }
 .header-home .imagHeader{
     width: 100%;
@@ -54,7 +53,7 @@
     margin-left: 15px;
 }
 .carousel {
-    margin: 200px auto;
+    margin: -200px auto;
 }
 .info-carousel{
     padding: 5px;
