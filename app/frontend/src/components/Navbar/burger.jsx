@@ -12,10 +12,10 @@ const StyledBurger = styled.div`
     display: flex;
     justify-content: space-between;
     flex-flow:column nowrap;
-    @media (max-width: 969px) {
+    @media (max-width: 1122px) {
         display: flex;
         justify-content: space-around;
-        flex-flow:column nowrap;
+        /* flex-flow:column nowrap; */
     }
     div {
         width: 2rem;
@@ -39,19 +39,17 @@ const StyledBurger = styled.div`
             
             transform: ${({open}) => open ? 'rotate(-45deg)' : 'rotate(0)'};
         }
+        visibility: visible;
     }
     @media (min-width:968px){
         div {
-            visibility: hidden;
+           position: absolute;
+           display: none;
         }
     }
  
   
-    @media (max-width:765px){
-        div {
-           margin: 0 20px;
-        }
-    }
+  
 `;
 
 const Burger = () => {
@@ -61,7 +59,6 @@ const Burger = () => {
   return (
     <>
     <div className='container-logo'>
-
         <Logo />
     </div>
         <RightNav open={open} />
