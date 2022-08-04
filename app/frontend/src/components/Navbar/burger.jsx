@@ -58,7 +58,7 @@ const Burger = () => {
 
   return (
     <>
-    <div className='container-logo'>
+    <div className=''>
         <Logo />
     </div>
         <RightNav open={open} />
