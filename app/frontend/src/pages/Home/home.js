@@ -1,6 +1,10 @@
 import React from 'react'
 import './home.css';
+<<<<<<< HEAD
 //import Carousel from '../../components/Carousel/carousel.component'
+=======
+// import Carousel from '../../components/Carousel/carousel.component'
+>>>>>>> 315d1eec (margin top -50 for carousel kids in  pags kids)
 import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
@@ -24,7 +28,11 @@ function home(){
                 </div>
             </div>
 
+<<<<<<< HEAD
                 {/*<Carousel />*/}
+=======
+            {/* <Carousel /> */}
+>>>>>>> 315d1eec (margin top -50 for carousel kids in  pags kids)
 
             <div className='carousel'>
                 <Carousel2 />
