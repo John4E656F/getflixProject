@@ -9,9 +9,10 @@ import Logo from  '../Logo/logo'
 
 
 const Nav = styled.nav`
-  width:90%;
-  height:70px;
-  padding: 0 30px;
+  width:100%;
+  height:90px;
+  margin: 0 auto;
+  padding: 0 50px;
   display:flex;
   justify-content:space-between;
   align-item: center;
@@ -26,16 +27,16 @@ const Nav = styled.nav`
 
 
 
-const Navbar = () => {
+const navbar = () => {
 
   return (
     <Nav className='nav'>
-        <div>
+        <div className='container-search'>
           {/* Search */}
-          <SearchBar />
+          <SearchBar className='search' />
         </div>
-        <div className='logo text-light  bg-success  text-right'>
-          <Logo />
+        <div className='logo text-light  bg-sucess  text-right' >
+          <Logo  />
         </div>
         <Burger />
         
@@ -43,4 +44,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default navbar

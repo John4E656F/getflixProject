@@ -1,10 +1,7 @@
 .btnFilter{
-    margin: -10px;
+    width: 50px;
+    margin: -10px 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
- 
 }
 .FaFilter{
     position: absolute;

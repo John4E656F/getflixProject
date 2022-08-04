@@ -1,13 +1,13 @@
 import React from 'react'
 // import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
-import Carousel from './CarouselAnime/Carousel';
+import Footer from '../../components/Footer/footer';
+import Carousel from '../../components/Anime/carouselAnime';
 // import SmallNavbar from '../SmallNavbar/SmallNavbar';
-import Navbar from '../Nav/Navbar'
+import Navbar from '../../components/Navbar/navbar';
 
-import './Anime.css'
+import './anime.css'
 
-const Anime = () => {
+const anime = () => {
   return (
     <div className='anime'>
       {/* <Navbar /> */}
@@ -37,4 +37,4 @@ const Anime = () => {
   )
 }
 
-export default Anime
+export default anime

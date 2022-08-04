@@ -34,7 +34,8 @@ router.route('/').get((req, res) =>{
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.post("/login", handleLogin);
+// router.post("/login", handleLogin);
+router.route('/login').post(handleLogin);
 
 router.route('/signup').post((req, res) => {
     const username = req.body.username;

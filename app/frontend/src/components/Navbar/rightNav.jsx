@@ -9,8 +9,9 @@ import PersonIcon from '@mui/icons-material/Person';
 import IconButton from '@mui/material/IconButton';
 // import ModalFilter from './ModalFilter';
 import '../Filter/filter' ;
-import BtnFilter from '../Filter/btnFilter'
-
+import BtnFilter from '../Filter/btnFilter';
+// import search from '../SearchBar/searchBar';
+import './searchNav.css';
 
 import styled from 'styled-components';
 
@@ -46,16 +47,16 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     
-        <Ul open={open} >
+        <Ul open={open}  className=''>
           <li><Link className='text-light' to='/'>Home</Link></li>
-          <li><Link className='text-light' to='/Anime'>Anime</Link></li>
-          <li><Link  className='text-light' to='/Manga'>Manga</Link></li>
-          <li><Link className='text-light' to="/Kids">Kids</Link></li>
+          <li><Link className='text-light' to='/anime'>Anime</Link></li>
+          <li><Link  className='text-light' to='/manga'>Manga</Link></li>
+          <li><Link className='text-light' to="/kids">kids</Link></li>
           <li><Link className='text-light' to="/contact">Contact</Link></li>
           <li className=''>
             <Tooltip title="Profile">
                 <IconButton>
-                  <PersonIcon className='text-light mr- ' cursor='pointer' />
+                  <PersonIcon className='text-light ' cursor='pointer' />
                 </IconButton>
             </Tooltip>
                     
@@ -63,6 +64,7 @@ const RightNav = ({ open }) => {
             <li className='filter '>
               <BtnFilter  />
             </li>
+          
 
 
         </Ul>

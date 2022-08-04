@@ -1,56 +1,75 @@
+.nav{
+    width: 90%;
+    height: 70px;
+}
 
-/* Serch input */
+
+ 
+.logo{
+    width:250px;
+    height: 70px;
+    margin: -35px;
+    padding: 0;
+    float: right;
+}
+
+.MuiButtonBase-root {
+    width: 50px;
+    padding: 0 5px;
+}
+
 .search {
-    padding: 5px;
-    color: #eee;
-    background: linear-gradient(to bottom right,#460b2f60,#429bee65);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-.search :is(input , button) {
-    color: inherit;
-    border: none;
-    background: transparent;
-    outline: none;
-}
-.search_input {
-    width: 0;
-}
-.search_btn {
-    width: 25px;
-    height: 25px;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-}
-.search:focus-within input {
     width: 200px;
-    transition: 0.7s ease-in-out;
+    margin: 20px 50px;
+    padding: 3px 5px;
+    background-color: transparent;
+    border: solid 1px rgba(158, 145, 145, 0.788);
+    border-radius: 7px;
+    color: aliceblue;
 }
-::placeholder {
-    color: inherit;
+@media screen and (max-width: 1106px) {
+    .logo {
+        width:200px;
+        margin-top: -25px;
+    }
 }
-.fa-regular{
-    position: absolute;
+
+@media screen and (max-width: 1085px) {
+    .search{
+        margin: 15px -15px;
+        float: right;
+    }
+    .filter {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 1052px) {
+    .search{
+        margin: 15px -10px;
+        float: right;
+    }
 }
 
 
-.filterIcon{
-    cursor:pointer;
-    position: absolute;
+@media screen and (max-width: 1005px) {
+    .logo {
+       margin-left: 0;
+    }
 }
-.modal{
-    position: absolute;
-    z-index: 6000;
-}
-.container-filter{
-    position: relative;
-}
-
 @media screen and (max-width:996px) {
     .navbar{
         display: none;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .contaner-search {
+        display: none;
+    }
+}
+@media screen and (max-width: 477px) {
+    .logo {
+        width:170px;
+        margin-top: -22px;
     }
 }
