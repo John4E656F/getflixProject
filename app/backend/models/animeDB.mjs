@@ -8,7 +8,8 @@ export const animes = mongoose.model('series',
     genre: Array,
     trailer: String,
     picture: String,
-    comments: Array
+    comments: Array,
+    ratings: Array
   })
   
   )

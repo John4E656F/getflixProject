@@ -6,8 +6,8 @@ mongoose.connect(`mongodb+srv://aniflex-admin:xelfina@aniflex-db.yqpgc8j.mongodb
 const input_string= 'Ai Yori Aoshi';
 
 class Comment {
-  constructor(user, comment) {
-    this.user = user
+  constructor(userId, comment) {
+    this.userId = userId
     this.comment = comment
   }
 }
@@ -25,9 +25,9 @@ class Comment {
   }
 })();
 
-(async (titleOfAnime, user, comment)=> {
+(async (titleOfAnime, userId, comment)=> {
 
-  const testComment = new Comment(user, comment)
+  const testComment = new Comment(userId, comment)
   try {
     const animeObject = await animes.findOne({title: titleOfAnime})
     var arrayOfComments = animeObject.comments
