@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Burger from './burger';
 import SearchBar from '../SearchBar/searchBar';
 import './searchNav.css';
-import Logo from  '../Logo/logo'
+// import Logo from  '../Logo/logo'
 
 
 
@@ -11,9 +11,8 @@ import Logo from  '../Logo/logo'
 const Nav = styled.nav`
   width:100%;
   height:70px;
-  margin: 0 auto;
-  padding: 0 50px;
   display:flex;
+  padding:  0 50px;
   justify-content:space-between;
   align-item: center;
   position: fixed;
@@ -35,9 +34,9 @@ const navbar = () => {
           {/* Search */}
           <SearchBar className='search' />
         </div>
-        <div className='logo text-light  bg-sucess  text-right' >
+        {/* <div className='logo text-light  bg-sucess  text-right' >
           <Logo  />
-        </div>
+        </div> */}
         <Burger />
         
     </Nav>
