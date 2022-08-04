@@ -1,0 +1,6 @@
+const Kitsu = require('../');
+const kitsu = new Kitsu();
+
+kitsu.getAnime(5).then(response => {
+    console.log(response);
+}).catch(console.error);
