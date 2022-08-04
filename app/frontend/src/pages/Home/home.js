@@ -4,7 +4,7 @@ import './home.css';
 import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
-import Carousel2 from '../../components/Home/carouselHome';
+// import Carousel2 from '../../components/Home/carouselHome';
 function home(){
 
     
@@ -27,7 +27,7 @@ function home(){
             {/* <Carousel /> */}
 
             <div className='carousel'>
-                <Carousel2 />
+                {/* <Carousel2 /> */}
             </div>
             <Footer />
 
