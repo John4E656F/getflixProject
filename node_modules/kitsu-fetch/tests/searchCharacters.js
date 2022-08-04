@@ -1,0 +1,6 @@
+const Kitsu = require('../');
+const kitsu = new Kitsu();
+
+kitsu.searchCharacters('fubuki').then(response => {
+    console.log(response);
+}).catch(console.error);
