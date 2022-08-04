@@ -58,12 +58,12 @@ const Burger = () => {
 
   return (
     <>
+        <RightNav open={open} />
         <StyledBurger open={open} onClick={() => setOpen( !open )} className='mt-3' >
            <div className='border'></div>
            <div className='border'></div>
            <div className='border'></div>
         </StyledBurger>
-        <RightNav open={open} />
     </>
   )
 }
