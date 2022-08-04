@@ -236,7 +236,7 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p></p>
-              <p><Rating /></p>
+              <Rating />
             </div>
           </div>
 
