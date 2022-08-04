@@ -1,13 +1,18 @@
 .nav{
     width: 90%;
-    height: 70px;
+    height: 50px;
 }
-
-
- 
+.container-logo {
+    width:250px;
+    height: 50px;
+    margin-top: -18px ;
+    margin-left: 400px;
+    padding: 0;
+    float: right;
+}
 .logo{
     width:250px;
-    height: 70px;
+    height: 50px;
     margin: -35px;
     padding: 0;
     float: right;
@@ -15,7 +20,7 @@
 
 .MuiButtonBase-root {
     width: 50px;
-    padding: 0 5px;
+    padding: 0 7px;
 }
 
 .search {

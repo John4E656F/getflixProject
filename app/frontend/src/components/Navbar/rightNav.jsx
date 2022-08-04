@@ -10,7 +10,7 @@ import IconButton from '@mui/material/IconButton';
 // import ModalFilter from './ModalFilter';
 import '../Filter/filter' ;
 import BtnFilter from '../Filter/btnFilter';
-import search from '../SearchBar/searchBar';
+// import search from '../SearchBar/searchBar';
 import './searchNav.css';
 
 import styled from 'styled-components';
@@ -19,7 +19,7 @@ const Ul = styled.ul`
   list-style: none ;
   display: flex;
   flex-flow:row nowrap;
- 
+  float: right;
   li {
     padding: 18px 10px;
   }
