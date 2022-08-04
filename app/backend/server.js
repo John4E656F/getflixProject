@@ -32,8 +32,11 @@ app.use(express.json());
 
 const connectDB = require("./config/connectDB");
 
+const db_util = require("./routes/databaseUtils.js")
+const animeDB = require ("./models/animeDB");
+
 // Connection to DB
-connectDB();
+//connectDB();
 
 
 // routes
@@ -85,3 +88,19 @@ app.listen(PORT, () => {
 //     }
 //   });
 // }
+
+
+app.get('/animes', (req, res)=> {
+  // res.send(db_util.pullAnimes())
+
+   animeDB.find({}, function (err, result){
+  //  console.log('TYPE OF ' + typeof result)
+    if(err){
+      res.send(err);
+    }else{
+      
+      // res.send(JSON.stringify(result))
+      res.send(result[2].title)
+    } 
+   })
+})
