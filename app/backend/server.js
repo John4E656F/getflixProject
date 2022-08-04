@@ -32,8 +32,11 @@ app.use(express.json());
 
 const connectDB = require("./config/connectDB");
 
+const db_util = require("./routes/databaseUtils.js")
+const animeDB = require ("./models/animeDB");
+
 // Connection to DB
-connectDB();
+//connectDB();
 
 
 // routes
@@ -50,38 +53,19 @@ app.listen(PORT, () => {
 });
 
 
-// function initial() {
-//   Role.estimatedDocumentCount((err, count) => {
-//     if (!err && count === 0) {
-//       new Role({
-//         name: "user"
-//       }).save(err => {
-//         if (err) {
-//           console.log("error", err);
-//         }
 
-//         console.log("added 'user' to roles collection");
-//       });
 
-//       new Role({
-//         name: "moderator"
-//       }).save(err => {
-//         if (err) {
-//           console.log("error", err);
-//         }
+app.get('/animes', (req, res)=> {
+  // res.send(db_util.pullAnimes())
 
-//         console.log("added 'moderator' to roles collection");
-//       });
-
-//       new Role({
-//         name: "admin"
-//       }).save(err => {
-//         if (err) {
-//           console.log("error", err);
-//         }
-
-//         console.log("added 'admin' to roles collection");
-//       });
-//     }
-//   });
-// }
+   animeDB.find({}, function (err, result){
+  //  console.log('TYPE OF ' + typeof result)
+    if(err){
+      res.send(err);
+    }else{
+      
+      // res.send(JSON.stringify(result))
+      res.send(result[2].title)
+    } 
+   })
+})
