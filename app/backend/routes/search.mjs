@@ -38,4 +38,4 @@ class Comment {
   } catch (e) {
     console.error(e.message);
   }
-})('Cowboy Bebop', 'Jomama', 'I like this show so much I can die in peace now')           // search on title ('string'), name of user ('string'), actual comment('string')
+})('Cowboy Bebop', 'Jomama', '3th fuck')           // search on title ('string'), name of user ('string'), actual comment('string')
