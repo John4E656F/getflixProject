@@ -19,6 +19,7 @@ const Ul = styled.ul`
   list-style: none ;
   display: flex;
   flex-flow:row nowrap;
+  margin-right: -180px;
   float: right;
   li {
     padding: 18px 10px;
