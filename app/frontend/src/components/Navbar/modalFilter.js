@@ -30,7 +30,7 @@ export default function TransitionsModal() {
   return (
     <div className='' >
       <Button onClick={handleOpen} >&nbsp; </Button>
-      <Modal style={{zIndex:8000}}
+      <Modal style={{zIndex:2}}
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         open={open}

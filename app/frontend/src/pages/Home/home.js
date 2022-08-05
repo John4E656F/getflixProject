@@ -4,21 +4,10 @@ import './home.css';
 import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
-// import Carousel2 from '../../components/Home/carouselHome';
-function home(){
+function Home(){
 
 
-    const infoComponents = textualMaterial.infoComponent.map((darkcomp) => (
-		<div className="tv-section" key={darkcomp.id}>
-			<div className="responsive-tv-inner">
-				<InfoComponent
-					topText={darkcomp.topText}
-					bottomText={darkcomp.bottomText}
-					image={darkcomp.image}
-				/>
-			</div>
-		</div>
-	));
+ 
     
     return(
         <div className='home '>
@@ -39,9 +28,9 @@ function home(){
             {/* <Carousel /> */}
 
             <div className='carousel'>
-                {/* <Carousel2 /> */}
+
             </div>
-             <Footer />
+              <Footer />
 
            {/* End structure */}
         </div>
@@ -50,4 +39,4 @@ function home(){
     )
 }
 
-export default home;
+export default Home;

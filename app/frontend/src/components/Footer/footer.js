@@ -1,15 +1,14 @@
 import * as React from 'react';
-import { css } from '@emotion/react'
 import './footer.css'
 import styled from 'styled-components';
 
-const Ul = css`
-  text-decoration: none;
-  padding-top: 20px;
+const Ul = styled.ul`
+  padding-Top: 20px;
+
   li {
     color: #ccc;
-    line-height: 35px;
-    text-decoration: none;
+    line-Height: 35px;
+    text-Decoration: none;
   }
 
 `;
