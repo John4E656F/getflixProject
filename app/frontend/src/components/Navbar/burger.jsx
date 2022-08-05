@@ -55,6 +55,9 @@ const StyledBurger = styled.div`
     @media screen and (max-width: 380px) {
         margin-left:  50px ;
     }
+    @media screen and (max-width: 375px) {
+       margin-right: -10px;
+    }
   
 `;
 

@@ -28,8 +28,10 @@ width: 250px;
 @media screen and (max-width: 390px) {
   margin: 0 3px;
 }
-@media screen and (max-width: 360px) {
-  margin: 0 40px;
+@media screen and (max-width: 375px) {
+  width: 200px;
+  margin: -20px -5px;
+  position: absolute;
 }
 
 

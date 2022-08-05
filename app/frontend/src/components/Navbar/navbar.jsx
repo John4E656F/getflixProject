@@ -24,7 +24,7 @@ const Nav = styled.nav`
       padding:15px 0 ;
   }
   @media screen and (max-width: 390px) {
-    padding: 0 ;
+    padding:  ;
   }   
    
 `

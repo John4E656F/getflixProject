@@ -11,13 +11,21 @@ import styled from 'styled-components';
 
 const Img = styled.img`
 
-width: 250px;
+  width: 250px;
    margin-top: -20px;
+   @media screen and (min-width:1345px) {
+      margin-left: 200px;
+   }
+ 
    @media screen and (max-width: 668px) {
      width: 200px;
      margin-top: 1px;
    }
-   @media screen and (max-width:528px) {  
+   @media screen and (max-width:528px) { 
+    width :150px ;
+   }
+   @media screen and (max-width:375px) { 
+    display: none;
    }
 
 `;
