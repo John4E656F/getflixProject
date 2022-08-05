@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-// import '../Navbar/searchNav.css'
+
 
 const Input = styled.input`
 
@@ -34,11 +34,10 @@ width: 250px;
   position: absolute;
 }
 
-
-
-`
+`;
 
 const SearchBar = () => {
+
   return (
     <div>
         <Input type='text' placeholder='Search' className='search  '    />
