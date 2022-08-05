@@ -3,13 +3,13 @@ import { css } from '@emotion/react'
 import './footer.css'
 import styled from 'styled-components';
 
-const UL = css`
-  textDecoration: none;
-  paddingTop: 20px;
+const Ul = css`
+  text-decoration: none;
+  padding-top: 20px;
   li {
     color: #ccc;
-    lineHeight: 35px;
-    textDecoration: none;
+    line-height: 35px;
+    text-decoration: none;
   }
 
 `;
