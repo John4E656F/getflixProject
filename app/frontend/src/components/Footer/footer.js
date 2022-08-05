@@ -3,7 +3,7 @@ import './footer.css'
 
 
 const Ul = styled.ul`
-  
+  text-decoration: none;
   padding-top: 20px;
   li { color:#ccc; line-height:35px; text-decoration: none;}
 
