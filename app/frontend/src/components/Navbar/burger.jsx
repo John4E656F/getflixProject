@@ -25,7 +25,7 @@ const StyledBurger = styled.div`
         border-radius: 10px;
         transform-origin:1px;
         transition: all 0.3s linear;
-        z-index: 5000;
+        z-index: 1;
         &:nth-child(1) {
             
             transform: ${({open}) => open ? 'rotate(45deg)' : 'rotate(0)'};
@@ -67,9 +67,9 @@ const Burger = () => {
 
   return (
     <>
-    <div className=''>
+    
         <Logo />
-    </div>
+    
         <RightNav open={open} />
         <StyledBurger open={open} onClick={() => setOpen( !open )} className='position-absolute' >
            <div className='border'></div>
