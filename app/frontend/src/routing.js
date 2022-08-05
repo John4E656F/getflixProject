@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 // import MovieState from "./contexts/movies/movieState";
 
 // import LandingPage from "./pages/LandingPage/LandingPage";
-import Welcome from './pages/Landing/landingPage.component'
+import Welcome from './pages/Landing/landing'
 import LoginPage from "./pages/Login/login";
 import SignupPage from "./pages//Signup/signup";
 import Home from "./pages/Home/home";
@@ -24,6 +24,8 @@ const Routing = () => {
     return (
 
         <Routes>
+            <Route exact path="/welcome" element={<Welcome />} />
+
             <Route exact path="/" element={<Home />} />
 
             <Route exact path="/anime" element={<Anime />} />
