@@ -11,17 +11,10 @@
     float: right;
 }
 .logo{
-    width:250px;
-    height: 50px;
-    margin: -35px;
     padding: 0;
     float: right;
 }
 
-.MuiButtonBase-root {
-    width: 50px;
-    padding: 0 7px;
-}
 
 .search {
     width: 200px;
@@ -32,25 +25,18 @@
     border-radius: 7px;
     color: aliceblue;
 }
-@media screen and (max-width: 1106px) {
-    .logo {
-        width:200px;
-        margin-top: -25px;
-    }
-}
 
-@media screen and (max-width: 1085px) {
-    .search{
-        margin: 15px -15px;
+
+@media screen and (max-width: 1545px) {
+    .container-logo {
+        margin-left: -15px;
         float: right;
     }
-    .filter {
-        margin-right: 0;
-    }
+ 
 }
-@media screen and (max-width: 1052px) {
-    .search{
-        margin: 15px -10px;
+@media screen and (max-width: 1022px) {
+    .container-logo {
+        margin-left: -70px;
         float: right;
     }
 }
@@ -68,13 +54,19 @@
 }
 
 @media screen and (max-width: 968px) {
-    .contaner-search {
-        display: none;
+    .contaner-logo {
+        width: 120px;
     }
 }
 @media screen and (max-width: 477px) {
     .logo {
         width:170px;
-        margin-top: -22px;
+        margin: -22px 20px;
+    }
+}
+@media screen and (max-width: 667px) {
+    .search {
+        width:170px;
+        margin: 25px -22px;
     }
 }

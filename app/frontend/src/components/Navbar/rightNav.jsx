@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-
-// import FilterIcon from '@mui/icons-material/Filter';
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import Tooltip from '@mui/material/Tooltip';
 import PersonIcon from '@mui/icons-material/Person';
 // import { FaSearch, FaRegHeart, FaFilter } from 'react-icons/fa';
@@ -14,16 +13,18 @@ import BtnFilter from '../Filter/btnFilter';
 import './searchNav.css';
 
 import styled from 'styled-components';
+import FilterAlt from '@mui/icons-material/FilterAlt';
 
 const Ul = styled.ul`
   list-style: none ;
   display: flex;
   flex-flow:row nowrap;
+  margin-right: -180px;
   float: right;
   li {
     padding: 18px 10px;
   }
-  @media (max-width:968px) {
+  @media (max-width:1122px) {
     flex-flow:column nowrap;
     background-color:#0D2538;
     position: fixed;
@@ -52,7 +53,6 @@ const RightNav = ({ open }) => {
           <li><Link className='text-light' to='/anime'>Anime</Link></li>
           <li><Link  className='text-light' to='/manga'>Manga</Link></li>
           <li><Link className='text-light' to="/kids">kids</Link></li>
-          <li><Link className='text-light' to="/contact">Contact</Link></li>
           <li className=''>
             <Tooltip title="Profile">
                 <IconButton>
@@ -61,7 +61,8 @@ const RightNav = ({ open }) => {
             </Tooltip>
                     
           </li>
-            <li className='filter '>
+            <li className='filter d-flex justify-content-center align-items-center '>
+              <FilterAlt className='position-absolute'/>
               <BtnFilter  />
             </li>
           

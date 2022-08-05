@@ -2,6 +2,12 @@ import * as React from 'react';
 import './footer.css'
 
 
+const Ul = styled.ul`
+  text-decoration: none;
+  padding-top: 20px;
+  li { color:#ccc; line-height:35px; text-decoration: none;}
+
+`;
 export default function BasicSpeedDial() {
   return (
 
@@ -9,31 +15,36 @@ export default function BasicSpeedDial() {
       <div className='row'>
       
         <div className='item'>
-          <h3>1</h3>
-          <ul>
-            <li></li>  
-            <li></li>  
-            <li></li>  
-            <li></li>  
-          </ul>  
+          
+          <Ul>
+            <li>FAQ</li>  
+            <li>Investor Relations</li>  
+            <li>Ways to watch</li>  
+            <li>Corporation Information</li> 
+            <li>Legal Notice</li> 
+          </Ul>  
         </div>        
+
         <div className='item'>
-          <h3>1</h3>
-          <ul>
-            <li></li>  
-            <li></li>  
-            <li></li>  
-            <li></li>  
-          </ul>  
+          
+          <Ul>
+            <li>Help Center</li>  
+            <li>Jobs</li>  
+            <li>Terms of Use</li>  
+            <li>Contact Us</li>  
+            <li>Only on Netflix</li>  
+          </Ul>  
         </div>        
+
         <div className='item'>
-          <h3>1</h3>
-          <ul>
-            <li></li>  
-            <li></li>  
-            <li></li>  
-            <li></li>  
-          </ul>  
+          
+          <Ul>
+            <li>Account</li>  
+            <li>Redeem Git Cards</li>  
+            <li>Privacy</li>  
+            <li>Speed Test</li>  
+            <li>Media Center</li>  
+          </Ul>  
         </div>        
         
       </div> 
