@@ -6,20 +6,18 @@ import "./faq.css";
 import Icon from "@material-ui/core/Icon";
 import { CSSTransition } from "react-transition-group";
 
-
-const FaqComponent = (props) => {
-
+const faqComponent = (props) => {
+	const { faqOpenHandler, text, boxOpen, boxText } = props;
 	return (
 		<>
-		{/*<div className="FaqComponent" onClick={onClick}>*/}
-			<div className="FaqComponent" onClick={faqOpenHandler}>
+			<div className="faqComponent" onClick={faqOpenHandler}>
 				<div>{text}</div>
 				<Icon className={boxOpen ? "fas fa-plus" : "fas fa-minus"} />
 				{/* <FontAwesomeIcon icon={boxOpen ? faMinus : faPlus} /> */}
 			</div>
 
 			<CSSTransition in={boxOpen} classNames="faq-animation" timeout={500} unmountOnExit>
-				<div className="FaqComponent" style={{ marginTop: "1.5px" }}>
+				<div className="faqComponent" style={{ marginTop: "1.5px" }}>
 					{boxText}
 				</div>
 			</CSSTransition>
@@ -27,4 +25,4 @@ const FaqComponent = (props) => {
 	);
 };
 
-export default FaqComponent;
+export default faqComponent;

@@ -24,7 +24,7 @@ const LandingScreen = (props) => {
 
 	const infoComponents = textualMaterial.infoComponent.map((darkcomp) => (
 		<div className="tv-section" key={darkcomp.id}>
-			<div className="responsive-tv-inner">
+			<div className="respons ive-tv-inner">
 				<InfoComponent
 					topText={darkcomp.topText}
 					bottomText={darkcomp.bottomText}
