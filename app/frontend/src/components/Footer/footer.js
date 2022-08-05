@@ -1,13 +1,19 @@
 import * as React from 'react';
+import { css } from '@emotion/react'
 import './footer.css'
 
 
-const Ul = styled.ul`
-  text-decoration: none;
-  padding-top: 20px;
-  li { color:#ccc; line-height:35px; text-decoration: none;}
+const UL = css`
+  textDecoration: none;
+  paddingTop: 20px;
+  li {
+    color: #ccc;
+    lineHeight: 35px;
+    textDecoration: none;
+  }
 
 `;
+
 export default function BasicSpeedDial() {
   return (
 
@@ -25,27 +31,7 @@ export default function BasicSpeedDial() {
           </Ul>  
         </div>        
 
-        <div className='item'>
-          
-          <Ul>
-            <li>Help Center</li>  
-            <li>Jobs</li>  
-            <li>Terms of Use</li>  
-            <li>Contact Us</li>  
-            <li>Only on Netflix</li>  
-          </Ul>  
-        </div>        
 
-        <div className='item'>
-          
-          <Ul>
-            <li>Account</li>  
-            <li>Redeem Git Cards</li>  
-            <li>Privacy</li>  
-            <li>Speed Test</li>  
-            <li>Media Center</li>  
-          </Ul>  
-        </div>        
         
       </div> 
        

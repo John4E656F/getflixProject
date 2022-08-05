@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Navbar from '../../components/Navbar/navbar'
-import Footer from '../../components/Footer/footer';
+//import Footer from '../../components/Footer/footer';
 import { FiPlay }  from 'react-icons/fi';
 import '../../components/Manga/carouselManga'
 import './manga.css'
@@ -216,7 +216,7 @@ export default class Responsive extends Component {
         
 
 
-      <Footer />
+       {/*  <Footer />*/}
         
       </div>
     );
