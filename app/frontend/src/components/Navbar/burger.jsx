@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import RightNav from './rightNav';
 import Logo from '../Logo/logo'
 import './searchNav.css';
+
 const StyledBurger = styled.div`
     width:2rem;
     height:2rem;

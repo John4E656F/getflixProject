@@ -5,7 +5,7 @@ import NavBar from "../../components/Navbar/navbar";
 import LandingPage from "../../assets/images/landingPage.jpg";
 import { TextField } from "@material-ui/core";
 import Button from "../../components/Button/btn.component";
-import DarkComponent from "../../components/Dark/Dark";
+import InfoComponent from "../../components/Info/Info";
 import FAQComponent from "../../components/FAQ/faq";
 import Footer from "../../components/Footer/footer";
 import { Link } from "react-router-dom";
@@ -21,10 +21,10 @@ const LandingScreen = (props) => {
 		}));
 	};
 
-	const darkComponents = textualMaterial.darkComponent.map((darkcomp) => (
+	const infoComponents = textualMaterial.infoComponent.map((darkcomp) => (
 		<div className="tv-section" key={darkcomp.id}>
 			<div className="responsive-tv-inner">
-				<DarkComponent
+				<InfoComponent
 					topText={darkcomp.topText}
 					bottomText={darkcomp.bottomText}
 					image={darkcomp.image}
@@ -77,11 +77,11 @@ const LandingScreen = (props) => {
 				</div>
 			</div>
 
-			{darkComponents}
+			{infoComponents}
 
 			<div className="faq-section">
 				<div className="tv-inner">
-					<DarkComponent fontSize="2.5rem" topText="Frequently Asked Questions" />
+					<InfoComponent fontSize="2.5rem" topText="Frequently Asked Questions" />
 
 					{faqComponents}
 
