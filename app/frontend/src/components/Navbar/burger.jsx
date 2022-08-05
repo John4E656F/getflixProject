@@ -2,14 +2,13 @@ import React , { useState } from 'react';
 import styled from 'styled-components';
 import RightNav from './rightNav';
 import Logo from '../Logo/logo'
-import './searchNav.css';
+// import './searchNav.css';
 
 const StyledBurger = styled.div`
     width:2rem;
     height:2rem;
     top: 15px;
     right: 20px;
-    position: absolute;
     display: flex;
     justify-content: space-between;
     flex-flow:column nowrap;
@@ -42,9 +41,8 @@ const StyledBurger = styled.div`
         }
         visibility: visible;
     }
-    @media (min-width:968px){
+    @media (min-width:1122px){
         div {
-           position: absolute;
            display: none;
         }
     }
@@ -70,7 +68,7 @@ const Burger = () => {
         <Logo />
     </div>
         <RightNav open={open} />
-        <StyledBurger open={open} onClick={() => setOpen( !open )} className='mt-3' >
+        <StyledBurger open={open} onClick={() => setOpen( !open )} className='position-absolute' >
            <div className='border'></div>
            <div className='border'></div>
            <div className='border'></div>

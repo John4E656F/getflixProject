@@ -1,16 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import Tooltip from '@mui/material/Tooltip';
 import PersonIcon from '@mui/icons-material/Person';
-// import { FaSearch, FaRegHeart, FaFilter } from 'react-icons/fa';
-// import { createFilterOptions } from '@mui/material/Autocomplete';
 import IconButton from '@mui/material/IconButton';
-// import ModalFilter from './ModalFilter';
 import '../Filter/filter' ;
 import BtnFilter from '../Filter/btnFilter';
-// import search from '../SearchBar/searchBar';
-import './searchNav.css';
 
 import styled from 'styled-components';
 import FilterAlt from '@mui/icons-material/FilterAlt';
@@ -19,9 +13,8 @@ const Ul = styled.ul`
   list-style: none ;
   display: flex;
   flex-flow:row nowrap;
-  margin-right: -180px;
-  float: right;
   position: relative;
+  float: right;
   li {
     padding: 18px 10px;
   }

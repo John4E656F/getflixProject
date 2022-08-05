@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import Burger from './burger';
 import SearchBar from '../SearchBar/searchBar';
-import './searchNav.css';
+// import './searchNav.css';
 // import Logo from  '../Logo/logo'
 
 
@@ -14,7 +14,8 @@ const Nav = styled.nav`
   padding: 0 50px;
   display:flex;
   padding:  0 50px;
-  justify-content:space-around;
+  position: relative;
+  justify-content:space-between;
   align-items: center;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.671); 
