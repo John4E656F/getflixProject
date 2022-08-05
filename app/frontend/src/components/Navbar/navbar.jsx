@@ -22,6 +22,9 @@ const Nav = styled.nav`
   .logo {
       padding:15px 0 ;
   }
+  @media screen and (max-width: 390px) {
+    padding: 0 ;
+  }   
    
 `
 

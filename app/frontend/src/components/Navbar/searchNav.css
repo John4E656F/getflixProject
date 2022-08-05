@@ -27,8 +27,14 @@
     position: absolute;
 
 }
+@media screen and (max-width:668px ) {
+    .search {
+        margin-top: -15px;
+    }
+}
 
 
+<<<<<<< HEAD
 @media screen and (max-width: 1545px) {
     .container-logo {
         margin-left: -15px;
@@ -42,6 +48,8 @@
         float: right;
     }
 }
+=======
+>>>>>>> 51e8c7bd (Update navbar)
 
 
 @media screen and (max-width: 1005px) {
@@ -49,6 +57,7 @@
        margin-left: 0;
     }
 }
+<<<<<<< HEAD
 @media screen and (max-width:996px) {
     .navbar{
         display: none;
@@ -66,9 +75,19 @@
         margin: -22px 20px;
     }
 }
+=======
+
+
+>>>>>>> 51e8c7bd (Update navbar)
 @media screen and (max-width: 667px) {
     .search {
         width:170px;
         margin: 25px -22px;
     }
+}
+@media screen and (max-width: 390px) {
+    .search { margin: 0 3px;}
+}
+@media screen and (max-width: 360px) {
+    .search { margin: 0 40px;}
 }

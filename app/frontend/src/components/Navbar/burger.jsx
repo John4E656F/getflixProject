@@ -48,8 +48,15 @@ const StyledBurger = styled.div`
            display: none;
         }
     }
- 
-  
+    @media screen and (max-width: 390px) {
+        width: 80px;
+    }
+    @media screen and (max-width: 380px) {
+        margin-right: 50px ;
+    }
+    @media screen and (max-width: 380px) {
+        margin-left:  50px ;
+    }
   
 `;
 
