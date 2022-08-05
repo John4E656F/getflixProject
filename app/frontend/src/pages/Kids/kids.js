@@ -1,7 +1,7 @@
 import React from 'react'
 import './kids.css';
 import Navbar from '../../components/Navbar/navbar'
-//import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/footer';
 
 // import CarouselKids from './Carousel/CarouselKid';
 import Carousel from '../../components/Kids/carouselKids';
@@ -31,7 +31,7 @@ function Kids(){
            </div>
 
 
-            {/*  <Footer />*/}
+             <Footer />
 
            {/* End structure */}
         </div>
