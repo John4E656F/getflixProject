@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { css } from '@emotion/react'
 import './footer.css'
-
+import styled from 'styled-components';
 
 const UL = css`
   textDecoration: none;
