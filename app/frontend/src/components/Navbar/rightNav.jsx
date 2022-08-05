@@ -21,6 +21,7 @@ const Ul = styled.ul`
   flex-flow:row nowrap;
   margin-right: -180px;
   float: right;
+  position: relative;
   li {
     padding: 18px 10px;
   }

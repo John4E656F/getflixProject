@@ -11,10 +11,11 @@ import './searchNav.css';
 const Nav = styled.nav`
   width:100%;
   height:70px;
+  padding: 0 50px;
   display:flex;
   padding:  0 50px;
-  justify-content:space-between;
-  align-item: center;
+  justify-content:space-around;
+  align-items: center;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.671); 
   z-index: 8000;
