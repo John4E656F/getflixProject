@@ -53,7 +53,6 @@ const RightNav = ({ open }) => {
           <li><Link className='text-light' to='/anime'>Anime</Link></li>
           <li><Link  className='text-light' to='/manga'>Manga</Link></li>
           <li><Link className='text-light' to="/kids">kids</Link></li>
-          <li><Link className='text-light' to="/contact">Contact</Link></li>
           <li className=''>
             <Tooltip title="Profile">
                 <IconButton>
