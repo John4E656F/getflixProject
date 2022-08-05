@@ -2,7 +2,6 @@ import React from 'react';
 import logo from '../../assets/images/Logo-aniflix.png'; // Tell webpack this JS file uses this image
 // The style of the Navbar section is used for the logo style
 import '../Navbar/searchNav.css';
-<<<<<<< Updated upstream
 import styled from 'styled-components';
 
 
@@ -15,14 +14,8 @@ const Img = styled.img`
 `;
 
 
-=======
-<<<<<<< HEAD
-import { css } from '@emotion/react';
-=======
 
 
-// import { css } from '@emotion/react';
-import styled from 'styled-components';
 
 const StyleLogo = styled.div`
   width: 300px;
@@ -63,8 +56,6 @@ const StyleLogo = styled.div`
 
 
 
->>>>>>> 51e8c7bd (Update navbar)
->>>>>>> Stashed changes
 
 function Logo() {
   // Import result is the URL of your image
