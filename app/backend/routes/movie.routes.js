@@ -1,11 +1,17 @@
 const router = require('express').Router();
 // let Movie = require('../models/movie.model');
 
-const addRatingToDBandCalculateAverage = require('../controllers/rating.controller.mjs')
+const addRating = require('../controllers/rating.controller.mjs')
 
 router.route('/newAddedRating').post((req, res) => {
-    console.log(res)
-    addRatingToDBandCalculateAverage(req, res)
+    const value = req.body.value
+    const newValue = new Value({
+        value
+    })
+
+    newValue.save()
+    .then(() => res.json('Hooray, I got here! And this is the new value: ' + value))
+    .catch(err => res.status(400).json('Error: ' + err))
 })
 
 // router.route('/').get((req, res) =>{
