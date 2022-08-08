@@ -65,7 +65,7 @@ app.get('/animes', (req, res)=> {
     }else{
       
       // res.send(JSON.stringify(result))
-      res.send(result[1])
+      res.send(result)
     } 
    })
 })

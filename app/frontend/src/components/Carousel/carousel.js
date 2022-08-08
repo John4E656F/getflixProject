@@ -2,27 +2,16 @@ import  React, {useEffect, useState} from 'react';
 import Card from '../Card/card'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";+
+import "slick-carousel/slick/slick-theme.css";
 
-type CarouselProps = {
-  backend: datatype,
-  variable: dataye,
-}
 
-const Carousel = ({backend}: carouselProps) => {
+const Carousel = ({animes}) => {
 
-  const [backendData, setBackendData] = useState([{}]);
-
-  useEffect(()=> {
-    fetch("http://localhost:4000/animes").then(
-      response => response.json
-    ).then(
-      data => {
-        setBackendData(data)
-      }
-      )
-  }, [])
-
+  console.log("at carousel " + animes);
+  // animes.map(anime => {
+  //   return <Card key= {anime.id} anime={anime}/>
+  // })
+   
     let settings= {
       dots: false,
       infinite: false,
@@ -59,9 +48,14 @@ const Carousel = ({backend}: carouselProps) => {
     }
 
       return (
+
+      
+      
+    
         <div>
         <Slider {...settings }>
-            <Card key={''} component={''} altText={''} cardTitle={''} cardDesc={''} imgSrc={''} />
+            {/* <Card /> */}
+           
         </Slider>
         </div>
       )

@@ -1,14 +1,35 @@
-import React from 'react'
+import  React, {useEffect, useState} from 'react';
 import './home.css';
-// import Carousel from '../../components/Carousel/carousel.component'
+import Carousel from '../../components/Carousel/carousel';
 import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
-import Carousel2 from '../../components/Home/carouselHome';
+import axios from 'axios'
+//import Carousel2 from '../../components/Home/carouselHome';
 function home(){
 
-    
+  
+    const [backendData, setBackendData] = useState([{}]);
+
+    function fetcher(){
+        fetch("http://localhost:4000/animes").then(
+      response => response.json()
+    ).then( data => {
+        setBackendData(JSON.stringify(data, null, 2))
+       // console.log('hey data ' + data[1].title)
+      }).catch(error => {
+        console.error(error.message)
+      })
+    }
+
+
+    useEffect(() => {
+        fetcher();
+       }, [])
+
+     console.log("at home " + backendData);
     return(
+        
         <div className='home '>
           
             <Navbar />
@@ -24,10 +45,10 @@ function home(){
                 </div>
             </div>
 
-            {/* <Carousel /> */}
+            <Carousel animes= {backendData} />
 
             <div className='carousel'>
-                <Carousel2 />
+              {/* <Carousel2 /> */} 
             </div>
             <Footer />
 
