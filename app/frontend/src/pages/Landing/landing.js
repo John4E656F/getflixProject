@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./landing.css";
 
 
-import NavBar from "../../components/Navbar/navbar";
+import NavBar from "../../components/Navbar/oldnavbar/navbar.component";
 import welcomeImg from "../../assets/images/welcome.jpg";
 import { TextField } from "@material-ui/core";
 import Button from "../../components/Button/btn.component";

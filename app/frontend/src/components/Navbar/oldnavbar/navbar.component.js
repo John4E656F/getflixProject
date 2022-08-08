@@ -1,47 +1,99 @@
-import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
-import { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./navbar.css";
 
-const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+//import logo from "assets/images/";
+import logo from "../../../assets/images/logo.png";
 
-  window.onscroll = () => {
-    setIsScrolled(window.pageYOffset === 0 ? false : true);
-    return () => (window.onscroll = null);
-  };
-  return (
-    <div className={isScrolled ? "navbar scrolled" : "navbar"}>
-      <div className="container">
-        <div className="left">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
-            alt=""
-          />
-          <span>Home</span>
-          <span>Series</span>
-          <span>Movies</span>
-          <span>New and Popular</span>
-          <span>My List</span>
-        </div>
-        <div className="right">
-          <Search className="icon" />
-          <span>KID</span>
-          <Notifications className="icon" />
-          <img
-            src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt=""
-          />
-          <div className="profile">
-            <ArrowDropDown className="icon" />
-            <div className="options">
-              <span>Settings</span>
-              <span>Logout</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+import Button from "../../Button/btn.component";
+import { NavLink, Link } from "react-router-dom";
+import Icon from "@material-ui/core/Icon";
+/* import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGift, faBell } from "@fortawesome/free-solid-svg-icons";
+import Search from "../Search/Search"; */
+
+const NavBar = (props) => {
+	const { navigation, profileDropdown, navDropdown, loginButton } = props;
+	const [isNavbarAtTop, setIsNavbarAtTop] = useState(true);
+
+	const scrollNavbarStateHandler = useCallback(() => {
+		const navbarAtTop = window.scrollY < 45;
+		if (navbarAtTop !== isNavbarAtTop) {
+			setIsNavbarAtTop(navbarAtTop);
+		}
+	}, [isNavbarAtTop]);
+
+	useEffect(() => {
+		document.addEventListener("scroll", scrollNavbarStateHandler);
+		return () => {
+			document.removeEventListener("scroll", scrollNavbarStateHandler);
+		};
+	}, [scrollNavbarStateHandler]);
+
+	let navTiles = null;
+	let flexStyle = { justifyContent: "space-between", backgroundColor: !isNavbarAtTop && "rgba(0,0,0,0)" };
+
+	if (navigation) {
+		navTiles = (
+			<>
+				<div className="LinkContainer">
+					<div className="Horizontal">
+						<NavLink className="inactive" activeClassName="active" to="/browse" exact>
+							Home
+						</NavLink>
+						<NavLink className="inactive" activeClassName="active" to="/browse/tv" exact>
+							TV Shows
+						</NavLink>
+						<NavLink
+							className="inactive"
+							activeClassName="active"
+							to="/browse/movies"
+							exact
+						>
+							Movies
+						</NavLink>
+						<NavLink
+							className="inactive"
+							activeClassName="active"
+							to="/browse/latest"
+							exact
+						>
+							Latest
+						</NavLink>
+						<NavLink className="inactive" activeClassName="active" to="/browse/list" exact>
+							My List
+						</NavLink>
+					</div>
+					<div className="Vertical">{navDropdown}</div>
+				</div>
+
+				<div className="OptionsContainer">
+					{/* <Search /> */}
+					<span className="ExtraOptions" style={{ fontWeight: "350" }}>
+						KIDS
+					</span>
+					<Icon className="fas fa-gift ExtraOptions" fontSize="small" />
+					<Icon className="fas fa-bell ExtraOptions" fontSize="small" />
+					{/* <FontAwesomeIcon className="ExtraOptions" size="lg" icon={faGift} />
+					<FontAwesomeIcon className="ExtraOptions" size="lg" icon={faBell} /> */}
+					{profileDropdown}
+				</div>
+			</>
+		);
+	}
+
+	return (
+		<div className="NavBar Sticky" style={flexStyle}>
+			<img src={logo} alt="Colosseum Logo" />
+			{navTiles}
+			{loginButton && (
+				<Link to="/login">
+					<Button height="34px" width="75px" backgroundColor="#e50914" textColor="#fff">
+						Sign In
+					</Button>
+				</Link>
+			)}
+		</div>
+	);
 };
 
-export default Navbar;
+export default NavBar;
