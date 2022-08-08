@@ -2,6 +2,7 @@ import React from 'react'
 import './kids.css';
 import Navbar from '../../components/Navbar/navbar'
 import Footer from '../../components/Footer/footer';
+import { FiPlay }  from 'react-icons/fi'
 
 // import CarouselKids from './Carousel/CarouselKid';
 import Carousel from '../../components/Kids/carouselKids';
@@ -18,7 +19,7 @@ function Kids(){
                     <p className='text-light '>Shonen Adventure Super-powers Samourai</p>
                     <p className='text-light '>Dive into the of Zenitsu and discover <br /> his over half and why Zenitsu's true <br /> streght awakens when he is asleep</p>
                     <div className='container-btn'>
-                    <button className='btn btn-light mr-5 px-4'>&#128898; Play</button><button className='btn btn-light'>Mor info</button>
+                    <button className='btn btn-light mr-5 px-4'><FiPlay /> Play</button><button className='btn btn-light'>Mor info</button>
                     </div>
                 </div>
             </div>
