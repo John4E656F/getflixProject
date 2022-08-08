@@ -48,7 +48,7 @@ const Carousel = (props) => {
       return (
         <div>
         <Slider {...settings }>
-            <Card key={''} altText={''} cardTitle={''} cardDesc={''} imgSrc={''} />
+            <Card   key={''} altText={''} cardTitle={''} cardDesc={''} imgSrc={''} />
         </Slider>
         </div>
       )
