@@ -23,6 +23,8 @@ export default function RatingSize() {
           data: newValue
         }
 
+        console.log(config)
+
         axios(config)
         .then((res) => {
           console.log(res)
