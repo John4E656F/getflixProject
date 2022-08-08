@@ -4,7 +4,6 @@ import { CSSTransition } from "react-transition-group";
 
 
 const Card = (props) => {
-  const []
 
     return (
       <>
@@ -14,7 +13,7 @@ const Card = (props) => {
                 <p className="cardDesc">{cardDesc}</p>
         </div>
 
-        <CSSTransition in
+        <CSSTransition></CSSTransition>
       </>
     );
 };
