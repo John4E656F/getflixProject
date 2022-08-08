@@ -4,6 +4,7 @@ import './home.css';
 import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
+
 function Home(){
 
 

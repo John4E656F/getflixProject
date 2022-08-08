@@ -2,11 +2,11 @@ import React , { useState } from 'react';
 import styled from 'styled-components';
 import RightNav from './rightNav';
 import Logo from '../Logo/logo'
-// import './searchNav.css';
 
 const StyledBurger = styled.div`
     width:2rem;
     height:2rem;
+    position: fixed;
     top: 15px;
     right: 20px;
     display: flex;
@@ -15,7 +15,7 @@ const StyledBurger = styled.div`
     @media (max-width: 1123px) {
         display: flex;
         justify-content: space-around;
-        /* flex-flow:column nowrap; */
+        flex-flow:column nowrap;
     }
     div {
         width: 2rem;
@@ -23,9 +23,9 @@ const StyledBurger = styled.div`
         cursor: pointer;
         background-color: ${({ open }) => open ? '#ccc' : '#333'};
         border-radius: 10px;
+        z-index: 2000;
         transform-origin:1px;
         transition: all 0.3s linear;
-        z-index: 1;
         &:nth-child(1) {
             
             transform: ${({open}) => open ? 'rotate(45deg)' : 'rotate(0)'};
@@ -71,7 +71,7 @@ const Burger = () => {
         <Logo />
     
         <RightNav open={open} />
-        <StyledBurger open={open} onClick={() => setOpen( !open )} className='position-absolute' >
+        <StyledBurger open={open} onClick={() => setOpen( !open )} className='' >
            <div className='border'></div>
            <div className='border'></div>
            <div className='border'></div>

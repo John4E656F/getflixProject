@@ -18,7 +18,8 @@ const style = {
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
-  p: 4,
+  p:5,
+  
   
 };
 
@@ -27,10 +28,12 @@ export default function TransitionsModal() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+
+
   return (
     <div className='' >
       <Button onClick={handleOpen} >&nbsp; </Button>
-      <Modal style={{zIndex:2}}
+      <Modal style={{zIndex:'8000'}}
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         open={open}

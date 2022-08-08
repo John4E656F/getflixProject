@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import '../Filter/filter'
 
 const Input = styled.input`
 
@@ -40,7 +40,7 @@ const SearchBar = () => {
 
   return (
     <div>
-        <Input type='text' placeholder='Search' className='search  '    />
+      <Input type='text' placeholder='Search' className='search  '  id=''  />
     </div>
   )
 }

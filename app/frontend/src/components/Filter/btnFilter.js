@@ -11,8 +11,6 @@ const Div = styled.div`
   width: 50px;
   margin: -10px 0;
   display: flex;
-
-
 `;
 
 

@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Rating from '../Rating/rating';
 import "./carouselKids.css";
+
+
+
 export default class Responsive extends Component {
   render() {
     var settings = {
