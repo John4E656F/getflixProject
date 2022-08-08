@@ -42,9 +42,11 @@ const animeDB = require ("./models/animeDB");
 // routes
 // require('./routes/auth.routes');
 const usersRouter = require('./routes/users.routes');
+const movieRouters = require('./routes/movie.routes');
 
 
 app.use('/user', usersRouter);
+app.use('/rating', movieRouters)
 
 // set port, listen on port 8080 for incoming requests.
 const PORT = process.env.PORT || 4000

@@ -1,55 +1,62 @@
 const router = require('express').Router();
-let Movie = require('../models/movie.model');
+// let Movie = require('../models/movie.model');
 
-router.route('/').get((req, res) =>{
-    Movie.find()
-    .then(Movie => res.json(Movie))
-    .catch(err => res.status(400).json('Error: ' + err));
-});
+const addRatingToDBandCalculateAverage = require('../controllers/rating.controller.mjs')
 
-router.route('/add').post((req, res) => {
-    const name = req.body.name;
-    const description = req.body.description;
-    const duration = Number(req.body.duration);
-    const date = Date.parse(req.body.date);
+router.route('/newAddedRating').post((req, res) => {
+    console.log(res)
+    addRatingToDBandCalculateAverage(req, res)
+})
 
-    const newMovie = new Movie({
-        name,
-        description,
-        duration,
-        date,    
-    });
+// router.route('/').get((req, res) =>{
+//     Movie.find()
+//     .then(Movie => res.json(Movie))
+//     .catch(err => res.status(400).json('Error: ' + err));
+// });
 
-    newMovie.save()
-    .then(() => res.json('Movie added!'))
-    .catch(err => res.status(400).json('Error: ' + err));
-});
+// router.route('/add').post((req, res) => {
+//     const name = req.body.name;
+//     const description = req.body.description;
+//     const duration = Number(req.body.duration);
+//     const date = Date.parse(req.body.date);
 
-router.route('/:id').get((req, res) => {
-    Movie.findById(req.params.id)
-        .then(Movie => res.json(Movie))
-        .catch(err => res.status(400).json('Error: ' + err));
-});
+//     const newMovie = new Movie({
+//         name,
+//         description,
+//         duration,
+//         date,    
+//     });
 
-router.route('/:id').delete((req, res) => {
-    Movie.findByIdAndDelete(req.params.id)
-        .then(() => res.json('Movie deleted.'))
-        .catch(err => res.status(400).json('Error: ' + err));
-});
+//     newMovie.save()
+//     .then(() => res.json('Movie added!'))
+//     .catch(err => res.status(400).json('Error: ' + err));
+// });
 
-router.route('/update/:id').post((req, res) => {
-    Movie.findById(req.params.id)
-        .then(Movie => {
-            Movie.name = req.body.name;
-            Movie.description = req.body.description;
-            Movie.duration = Number(req.body.duration);
-            Movie.date = Date.parse(req.body.date);
+// router.route('/:id').get((req, res) => {
+//     Movie.findById(req.params.id)
+//         .then(Movie => res.json(Movie))
+//         .catch(err => res.status(400).json('Error: ' + err));
+// });
 
-            Movie.save()
-                .then(() => res.json('Movie Updated!'))
-                .catch(err => res.status(400).json('Error: ' + err));
-        })
-        .catch(err => res.status(400).json('Error: ' + err));
-});
+// router.route('/:id').delete((req, res) => {
+//     Movie.findByIdAndDelete(req.params.id)
+//         .then(() => res.json('Movie deleted.'))
+//         .catch(err => res.status(400).json('Error: ' + err));
+// });
+
+// router.route('/update/:id').post((req, res) => {
+//     Movie.findById(req.params.id)
+//         .then(Movie => {
+//             Movie.name = req.body.name;
+//             Movie.description = req.body.description;
+//             Movie.duration = Number(req.body.duration);
+//             Movie.date = Date.parse(req.body.date);
+
+//             Movie.save()
+//                 .then(() => res.json('Movie Updated!'))
+//                 .catch(err => res.status(400).json('Error: ' + err));
+//         })
+//         .catch(err => res.status(400).json('Error: ' + err));
+// });
 
 module.exports = router;
