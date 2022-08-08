@@ -5,6 +5,10 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import './checkbox.css';
+
+
+
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -16,6 +20,7 @@ const MenuProps = {
     },
   },
 };
+
 
 const names = [
   'Action',
@@ -36,9 +41,11 @@ function getStyles(name, personName, theme) {
   };
 }
 
+
 export default function MultipleSelect() {
   const theme = useTheme();
   const [personName, setPersonName] = React.useState([]);
+
 
   const handleChange = (event) => {
     const {
@@ -51,28 +58,31 @@ export default function MultipleSelect() {
   };
 
   return (
-    <div>
-      <FormControl sx={{ m: 1, width: 300 }}>
+    <div style={{zInsex:'9000'}}  >
+      <FormControl sx={{ m: 1, width: 300 ,  }} >
         <InputLabel id="demo-multiple-name-label">Gener All</InputLabel>
-        <Select
-          labelId="demo-multiple-name-label"
-          id="demo-multiple-name"
-          multiple
-          value={personName}
-          onChange={handleChange}
-          input={<OutlinedInput label="Name" />}
-          MenuProps={MenuProps}
-        >
-          {names.map((name) => (
-            <MenuItem
-              key={name}
-              value={name}
-              style={getStyles(name, personName, theme)}
-            >
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
+      
+          <Select 
+            labelId="demo-multiple-name-label"
+            id="demo-multiple-name"
+            multiple
+            value={personName}
+            onChange={handleChange}
+            input={<OutlinedInput label="Name"  />}
+            MenuProps={MenuProps}
+          >
+            {names.map((name) => (
+              <MenuItem
+                key={name}
+                value={name}
+                style={getStyles(name, personName, theme ,)  }
+                
+              >
+                {name}
+              </MenuItem>
+            ))}
+          </Select>
+        
       </FormControl>
     </div>
   );
