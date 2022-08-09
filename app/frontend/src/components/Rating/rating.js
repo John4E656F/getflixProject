@@ -5,13 +5,15 @@ import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 import axios from 'axios'
 import { Navigate } from 'react-router-dom';
+import { AirlineSeatIndividualSuite, SettingsOverscanOutlined } from "@material-ui/icons";
 // import './Rating.css';
 export default function RatingSize() {
 
   const navigate = useNavigate()
 
-  async function changeRating (event, newValue) {
+  /*async function changeRating (event, newValue) {
     event.preventDefault()
+    //setValue(newValue)
 
       console.log(newValue)
       const newRating = {
@@ -40,10 +42,10 @@ export default function RatingSize() {
         }
       })
       navigate('/kids')
-  }
+  }*/
   return (
     <Stack spacing={1}>
-      <Rating className='starRating'  name="size-small" defaultValue={2} size="small" onChange={changeRating}/>
+      <Rating className='starRating' name="size-small" defaultValue={2} value={value}  size="small" onChange={changeRating}/>
     </Stack>
   );
 }
