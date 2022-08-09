@@ -1,9 +1,9 @@
 const router = require('express').Router();
-let Movie = require('../models/movie.model');
+let Anime = require('../models/anime.model');
 
 router.route('/').get((req, res) =>{
-    Movie.find()
-    .then(Movie => res.json(Movie))
+    Anime.find()
+    .then(Anime => res.json(Anime))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
@@ -13,40 +13,40 @@ router.route('/add').post((req, res) => {
     const duration = Number(req.body.duration);
     const date = Date.parse(req.body.date);
 
-    const newMovie = new Movie({
+    const newAnime = new Anime({
         name,
         description,
         duration,
         date,    
     });
 
-    newMovie.save()
-    .then(() => res.json('Movie added!'))
+    newAnime.save()
+    .then(() => res.json('Anime added!'))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/:id').get((req, res) => {
-    Movie.findById(req.params.id)
-        .then(Movie => res.json(Movie))
+    Anime.findById(req.params.id)
+        .then(Anime => res.json(Anime))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/:id').delete((req, res) => {
-    Movie.findByIdAndDelete(req.params.id)
-        .then(() => res.json('Movie deleted.'))
+    Anime.findByIdAndDelete(req.params.id)
+        .then(() => res.json('Anime deleted.'))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/update/:id').post((req, res) => {
-    Movie.findById(req.params.id)
-        .then(Movie => {
-            Movie.name = req.body.name;
-            Movie.description = req.body.description;
-            Movie.duration = Number(req.body.duration);
-            Movie.date = Date.parse(req.body.date);
+    Anime.findById(req.params.id)
+        .then(Anime => {
+            Anime.name = req.body.name;
+            Anime.description = req.body.description;
+            Anime.duration = Number(req.body.duration);
+            Anime.date = Date.parse(req.body.date);
 
-            Movie.save()
-                .then(() => res.json('Movie Updated!'))
+            Anime.save()
+                .then(() => res.json('Anime Updated!'))
                 .catch(err => res.status(400).json('Error: ' + err));
         })
         .catch(err => res.status(400).json('Error: ' + err));

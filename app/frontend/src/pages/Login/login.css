@@ -5,9 +5,7 @@
 }
 
 
-h1 {
-	background-color: #1b1b1b;
-}
+
 
 .LoginCard {
 	background-color: rgba(27, 27, 27);
@@ -47,6 +45,7 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding-top: 20px;
 }
 @media (min-width: 600px) {
 	.LoginCard {
@@ -59,14 +58,15 @@ button {
 @media (min-width: 1650px) {
 	.LoginCard {
 		width: 550px;
-		height: 880px;
+		height: 700px;
 		padding: 60px 68px 40px;
 		margin: auto;
-		form {
-			span {
-				font-size: 20px;
-			}
-		}
+	}
+	form {
+		font-size: 20px;
+	}
+	span {
+		font-size: 20px;
 	}
 }
 

@@ -30,42 +30,17 @@ app.use(express.json());
 //   })
 // );
 
-const connectDB = require("./config/connectDB");
-
-const db_util = require("./routes/databaseUtils.js")
-const animeDB = require ("./models/animeDB");
-
-// Connection to DB
-//connectDB();
-
-
 // routes
 // require('./routes/auth.routes');
 const usersRouter = require('./routes/users.routes');
-
+const animeRouter = require('./routes/anime.routes')
 
 app.use('/user', usersRouter);
+
+app.use('/watch', animeRouter);
 
 // set port, listen on port 8080 for incoming requests.
 const PORT = process.env.PORT || 4000
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
-
-
-
-
-app.get('/animes', (req, res)=> {
-  // res.send(db_util.pullAnimes())
-
-   animeDB.find({}, function (err, result){
-  //  console.log('TYPE OF ' + typeof result)
-    if(err){
-      res.send(err);
-    }else{
-      
-      // res.send(JSON.stringify(result))
-      res.send(result[1])
-    } 
-   })
-})

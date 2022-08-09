@@ -174,7 +174,8 @@ const Signup = (props) => {
     };
 
     return (  
-        <div className="Signup" style={{ backgroundImage: `url(${SignupBackground})` }}>
+        <div className="Signup" >
+        {/* style={{ backgroundImage: `url(${SignupBackground})` }}> */}
             <img src={AniflexLogo} alt="Aniflex Logo" />
             <div className="SignupCard">
                 <h1>Sign Up</h1>

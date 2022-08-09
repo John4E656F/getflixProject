@@ -1,15 +1,47 @@
-import * as React from 'react';
+import  React, {useEffect, useState} from 'react';
 import Card from '../Card/card'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Carousel = (props) => {
+import axios from "axios";
 
-  () =>  {
-    
-  }
 
+const Carousel = () => {
+
+  // animes.map(anime => {
+  //   return <Card key= {anime.id} anime={anime}/>
+  // })
+  const [anime, setAnimes] = useState([
+    {
+      _id: "",
+      title: "",
+      genre: [""],
+      trailer: "",
+      picture: "",
+      comments: "",
+      ratings: "",
+    },
+  ]);
+
+  const [error] =useState(null);
+
+
+    useEffect(() => {
+    axios.get("http://localhost:4000/watch")
+    // .then(res => setAnimes(res))
+    // .catch(error => setError(error));
+    .then((res) => {
+      const animeData = res.data;
+      console.log(res.data);
+      setAnimes(animeData);
+    })
+    .catch((error) => {
+      console.log(error);
+    })
+  });
+
+   
     let settings= {
       dots: false,
       infinite: false,
@@ -46,12 +78,27 @@ const Carousel = (props) => {
     }
 
       return (
-        <div>
+        <>
         <Slider {...settings }>
-            <Card />
+
+          { error ? <div> Some Nice Ui saying that we cannot load </div> 
+          :
+          anime.slice(0, 4).map(anime => <Card altText={anime.altText} 
+            title={anime.title}
+            src={anime.picture}
+            trailer={anime.trailer}
+            key={anime._id}/>)}
+           
         </Slider>
-        </div>
+        </>
       )
 };
 
 export default Carousel;
+
+  // useEffect(() => {
+  //   fetch("http://localhost:4000/watch", anime)
+  //   .then((res) => res.json())
+  //   .then((jsonRes) => setAnime(jsonRes))
+  //   .catch(err => { console.log(err); });
+  // });

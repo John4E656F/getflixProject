@@ -1,16 +1,20 @@
-import React from 'react'
+import  React from 'react';
 import './home.css';
-// import Carousel from '../../components/Carousel/carousel.component'
+import Carousel from '../../components/Carousel/carousel';
 import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
 
-function Home(){
-
+//import Carousel2 from '../../components/Home/carouselHome';
+function home(){
 
  
-    
+
+      //  for(let i= 0; i < backendData.length; i++){
+      //   console.log('this is id  ' + backendData[i].title);
+      //  }
     return(
+        
         <div className='home '>
           
             <Navbar />
@@ -26,12 +30,12 @@ function Home(){
                 </div>
             </div>
 
-            {/* <Carousel /> */}
+            <Carousel />
 
             <div className='carousel'>
-
+              {/* <Carousel2 /> */} 
             </div>
-              <Footer />
+            <Footer />
 
            {/* End structure */}
         </div>
@@ -40,4 +44,4 @@ function Home(){
     )
 }
 
-export default Home;
+export default home;
