@@ -184,9 +184,9 @@ const Login = (props) => {
                     control={<Checkbox style={{ color: "rgb(229, 9, 20)"}} name="checkB" />}
                     label="Remember Me"
                     />
-                    <Link to="/signup">
+                    <span className="spanLink" onClick={() =>navigate("/login")}>
 							Signup
-					</Link>
+                    </span>
                 </div>
             </div>
             <div className="videoPlayer">
