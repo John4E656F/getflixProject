@@ -16,8 +16,7 @@
         "url": "https://github.com/John4E656F/getflixProject/issues"
     },
     "dependencies": {
-        "concurrently": "^7.3.0"
+        "concurrently": "^7.3.0",
+        "react-script": "^2.0.5"
     }
 }
-
-  
