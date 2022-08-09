@@ -8,6 +8,8 @@ import axios from 'axios'
 //import Carousel2 from '../../components/Home/carouselHome';
 function home(){
 
+ 
+
   
     const [backendData, setBackendData] = useState([{}]);
 
@@ -15,7 +17,8 @@ function home(){
         fetch("http://localhost:4000/animes").then(
       response => response.json()
     ).then( data => {
-        setBackendData(JSON.stringify(data, null, 2))
+        setBackendData(data)
+
        // console.log('hey data ' + data[1].title)
       }).catch(error => {
         console.error(error.message)
@@ -27,7 +30,10 @@ function home(){
         fetcher();
        }, [])
 
-     console.log("at home " + backendData);
+
+      //  for(let i= 0; i < backendData.length; i++){
+      //   console.log('this is id  ' + backendData[i].title);
+      //  }
     return(
         
         <div className='home '>

@@ -4,16 +4,39 @@ import * as React from 'react';
 
 const Card = ({anime}) => {
 
+  console.log("at card " + anime.id);
+  
+  anime.map(ani => {
+    console.log( "ani title " + ani.title);
+  })
+
+
     return (
-      <div key={key}>
-        <div className="card">
+
+
+      <div className="card">
+         {anime.map(ani => {
+          if(typeof ani.id === 'undefined'){
+            <p>loading... </p>
+          }else{
+            
+          {console.log('this is title ' + ani.title )
+           console.log('this is pic ' + ani.picture)}
+
             <div className="blurImg">
-                <img src={anime.picture} alt={altText} className="cardImg"/>
-                <h1 className="cardTitle">{anime.title}</h1>
-                <p className="cardDesc">{anime.title}</p>
-            </div>
+            <img src={ani.picture}  className="cardImg"/>
+            <h1 className="cardTitle">{ani.title}</h1>
+            <p className="cardDesc">{ani.title}</p>
         </div>
-      </div>
+          }
+         })}
+
+  
+  </div>
+     
+      
+    
+      
     );
 };
 

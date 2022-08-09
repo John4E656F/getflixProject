@@ -7,7 +7,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = ({animes}) => {
 
-  console.log("at carousel " + animes);
+
+  (()=> {
+   
+  })();
   // animes.map(anime => {
   //   return <Card key= {anime.id} anime={anime}/>
   // })
@@ -54,7 +57,18 @@ const Carousel = ({animes}) => {
     
         <div>
         <Slider {...settings }>
-            {/* <Card /> */}
+
+          {animes.map(anime=> {
+            
+            if(typeof anime.title === 'undefined'){
+              <p>loading...</p>
+            }else{
+             // console.log("at carousel news " + anime.id);
+              <Card key={anime.id} anime={anime} />
+              console.log('exed')
+            }
+           })}
+           <Card anime= {animes} />
            
         </Slider>
         </div>
