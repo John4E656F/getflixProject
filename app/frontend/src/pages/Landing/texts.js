@@ -1,3 +1,5 @@
+import tv from "../../assets/images/tv.jpg"
+
 // A file for all texual material used in 'LandingSection.js'
 export const textualMaterial = {
 	infoComponent: [
@@ -6,7 +8,7 @@ export const textualMaterial = {
 			topText: "Enjoy on your TV.",
 			bottomText:
 				"Watch on NotSmart TVs, Pausestation, Ybox, Chromeretract, Orange TV, Red-ray players, and less.",
-			image: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png",
+			image: "tv",
 		},
 		{
 			id: 2,

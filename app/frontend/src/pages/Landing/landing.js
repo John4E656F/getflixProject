@@ -22,13 +22,13 @@ const LandingScreen = (props) => {
 		}));
 	};
 
-	const infoComponents = textualMaterial.infoComponent.map((darkcomp) => (
-		<div className="tv-section" key={darkcomp.id}>
-			<div className="respons ive-tv-inner">
+	const infoComponents = textualMaterial.infoComponent.map((infocomp) => (
+		<div className="tv-section" key={infocomp.id}>
+			<div className="responsive-tv-inner">
 				<InfoComponent
-					topText={darkcomp.topText}
-					bottomText={darkcomp.bottomText}
-					image={darkcomp.image}
+					topText={infocomp.topText}
+					bottomText={infocomp.bottomText}
+					image={infocomp.image}
 				/>
 			</div>
 		</div>
@@ -46,7 +46,11 @@ const LandingScreen = (props) => {
 
 	return (
 		<>
-			<div className="landingSection" style={{ backgroundImage: `url(${welcomeImg})` }}>
+			<div className="landingSection" style={{ backgroundImage: `url(${welcomeImg})`,
+		  		backgroundPosition: 'center',
+		  		backgroundSize: 'cover',
+		  		backgroundRepeat: 'no-repeat'
+			}}>
 				<NavBar loginButton />
 				<div className="landingTexts">
 					<h1>Unlimited movies, TV shows, and more.</h1>

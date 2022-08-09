@@ -1,23 +1,23 @@
 import React from "react";
 
-const darkComponentTextAlignStyles = {
+const infoComponentTextAlignStyles = {
 	display: "flex",
 	flexDirection: "column",
 	textAlign: "center",
 };
 
-const darkComponent = (props) => {
+const infoComponent = (props) => {
 	const { topText, fontSize, bottomText, image } = props;
 	return (
 		<>
-			<div style={darkComponentTextAlignStyles}>
+			<div style={infoComponentTextAlignStyles}>
 				{topText && <h3 style={{ fontSize: fontSize }}>{topText}</h3>}
 				{bottomText && <h3 style={{ fontSize: fontSize }}>{bottomText}</h3>}
 			</div>
 
-			{image && <img src={image} alt="dark component" />}
+			{image && <img src={image} alt="info component" />}
 		</>
 	);
 };
 
-export default darkComponent;
+export default infoComponent;

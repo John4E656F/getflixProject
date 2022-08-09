@@ -25,9 +25,9 @@ const Routing = () => {
     return (
 
         <Routes>
-            <Route exact path="/welcome" element={<Welcome />} />
+            <Route exact path="/" element={<Welcome />} />
 
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/home" element={<Home />} />
 
             <Route exact path="/anime" element={<Anime />} />
 
