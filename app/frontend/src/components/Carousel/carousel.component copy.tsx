@@ -6,6 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = (props) => {
 
+  () =>  {
+    
+  }
+
     let settings= {
       dots: false,
       infinite: false,
@@ -44,7 +48,7 @@ const Carousel = (props) => {
       return (
         <div>
         <Slider {...settings }>
-            <Card key={''} component={''} altText={''} cardTitle={''} cardDesc={''} imgSrc={''} />
+            <Card   key={''} altText={''} cardTitle={''} cardDesc={''} imgSrc={''} />
         </Slider>
         </div>
       )

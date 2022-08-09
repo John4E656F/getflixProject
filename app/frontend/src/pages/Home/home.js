@@ -4,9 +4,11 @@ import './home.css';
 import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
-// import Carousel2 from '../../components/Home/carouselHome';
-function home(){
 
+function Home(){
+
+
+ 
     
     return(
         <div className='home '>
@@ -27,9 +29,9 @@ function home(){
             {/* <Carousel /> */}
 
             <div className='carousel'>
-                {/* <Carousel2 /> */}
+
             </div>
-            <Footer />
+              <Footer />
 
            {/* End structure */}
         </div>
@@ -38,4 +40,4 @@ function home(){
     )
 }
 
-export default home;
+export default Home;

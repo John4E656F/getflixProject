@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./landing.css";
 
-import NavBar from "../../components/Navbar/navbar";
-import LandingPage from "../../assets/images/landingPage.jpg";
+
+import NavBar from "../../components/Navbar/oldnavbar/navbar.component";
+import welcomeImg from "../../assets/images/welcome.jpg";
 import { TextField } from "@material-ui/core";
 import Button from "../../components/Button/btn.component";
-import DarkComponent from "../../components/Dark/Dark";
+import InfoComponent from "../../components/Info/Info";
 import FAQComponent from "../../components/FAQ/faq";
-import Footer from "../../components/Footer/footer";
+//import Footer from "../../components/Footer/footer";
 import { Link } from "react-router-dom";
 //import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { textualMaterial } from "./texts";
@@ -21,10 +22,10 @@ const LandingScreen = (props) => {
 		}));
 	};
 
-	const darkComponents = textualMaterial.darkComponent.map((darkcomp) => (
+	const infoComponents = textualMaterial.infoComponent.map((darkcomp) => (
 		<div className="tv-section" key={darkcomp.id}>
-			<div className="responsive-tv-inner">
-				<DarkComponent
+			<div className="respons ive-tv-inner">
+				<InfoComponent
 					topText={darkcomp.topText}
 					bottomText={darkcomp.bottomText}
 					image={darkcomp.image}
@@ -38,14 +39,14 @@ const LandingScreen = (props) => {
 			key={faqcomp.id}
 			text={faqcomp.text}
 			boxOpen={faqBoxOpen[`box${faqcomp.id}`]}
-			faqOpenHandler={() => faqOpenHandler(`box${faqcomp.id}`)}
+			onClick={() => faqOpenHandler(`box${faqcomp.id}`)}
 			boxText={faqcomp.boxText}
 		/>
 	));
 
 	return (
 		<>
-			<div className="landingSection" style={{ backgroundImage: `url(${LandingPage})` }}>
+			<div className="landingSection" style={{ backgroundImage: `url(${welcomeImg})` }}>
 				<NavBar loginButton />
 				<div className="landingTexts">
 					<h1>Unlimited movies, TV shows, and more.</h1>
@@ -77,11 +78,11 @@ const LandingScreen = (props) => {
 				</div>
 			</div>
 
-			{darkComponents}
+			{infoComponents}
 
 			<div className="faq-section">
 				<div className="tv-inner">
-					<DarkComponent fontSize="2.5rem" topText="Frequently Asked Questions" />
+					<InfoComponent fontSize="2.5rem" topText="Frequently Asked Questions" />
 
 					{faqComponents}
 
@@ -113,7 +114,7 @@ const LandingScreen = (props) => {
 					</div>
 				</div>
 			</div>
-			<Footer />
+			 {/*  <Footer />*/}
 		</>
 	);
 };

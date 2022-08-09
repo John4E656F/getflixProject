@@ -2,12 +2,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Rating from '../Rating/rating';
-import "./carouselKids.css";
-
-
-
+// import "./carouselHome.css";
+import Rating from '../Rating/rating'
 export default class Responsive extends Component {
+  
   render() {
     var settings = {
       dots: true,
@@ -16,10 +14,11 @@ export default class Responsive extends Component {
       slidesToShow: 4,
       slidesToScroll: 4,
       initialSlide: 0,
+      left: 5 ,
       responsive: [
         {
           breakpoint: 1024,
-            settings: {
+          settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
@@ -45,23 +44,8 @@ export default class Responsive extends Component {
     };
     return (
       <div>
-        
-        
-        {/*  */}
-
-       
-            <Slider {...settings}>
-            <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
-                <p>&#9655; Play</p>
-              </div>
-            <div  className="info-carousel">
-              <p>anime</p>
-              <p><Rating /></p>
-            </div>
-          </div>
-
+        <h2 className='titleCarousel'>Anime</h2>
+        <Slider {...settings} className=''>
           <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
@@ -78,184 +62,192 @@ export default class Responsive extends Component {
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-                     <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-                     <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-                     <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-                      <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
-                     <div className="card">
+
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-            </Slider>
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p></p>
+              <p><Rating /></p>
+            </div>
+          </div>
+        </Slider>
+{/*  */}
 
-        
-
-        {/*  */}
-
+        <h2 className='titleCarousel'>Manga</h2>
         <Slider {...settings}>
-          <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <div className="card">
+                <div className='blurImg'>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
-              <p><Rating /></p>
-            </div>
-          </div>
+                    <div className="info-carousel">
+                      <p></p>
+                      <p><Rating /></p>
+                    </div>
+                </div>
 
-           <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <div className="card">
+                <div className='blurImg'>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
-              <p><Rating /></p>
-            </div>
-          </div>
+                    <div className="info-carousel">
+                      <p></p>
+                      <p><Rating /></p>
+                    </div>
+                </div>
 
-          <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <div className="card">
+                <div className='blurImg'>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
-              <p><Rating /></p>
-            </div>
-          </div>
+                    <div className="info-carousel">
+                      <p></p>
+                      <p><Rating /></p>
+                    </div>
+                </div>
 
-           <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <div className="card">
+                <div className='blurImg'>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
-              <p><Rating /></p>
-            </div>
-          </div>
+                    <div className="info-carousel">
+                      <p></p>
+                      <p><Rating /></p>
+                    </div>
+                </div>
 
-           <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <div className="card">
+                <div className='blurImg'>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
-              <p><Rating /></p>
-            </div>
-          </div>
+                    <div className="info-carousel">
+                      <p></p>
+                      <p><Rating /></p>
+                    </div>
+                </div>
 
-          <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <div className="card">
+                <div className='blurImg'>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
-              <p><Rating /></p>
-            </div>
-          </div>
+                    <div className="info-carousel">
+                      <p></p>
+                      <p><Rating /></p>
+                    </div>
+                </div>
 
-           <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <div className="card">
+                <div className='blurImg'>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
-              <p><Rating /></p>
-            </div>
-          </div>
+                    <div className="info-carousel">
+                      <p></p>
+                      <p><Rating /></p>
+                    </div>
+                </div>
 
-        <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <div className="card">
+                <div className='blurImg'>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
-              <p><Rating /></p>
-            </div>
-          </div>
-
+                    <div className="info-carousel">
+                      <p></p>
+                      <p><Rating /></p>
+                    </div>
+                </div>
         </Slider>
 
 {/*  */}
-
+        <h2 className='titleCarousel'>Kids</h2>
         <Slider {...settings}>
           <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
-              <p><Rating /></p>
+            <div className="info-carousel">
+              <p></p>
+              <Rating />
             </div>
           </div>
 
-        <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
@@ -265,8 +257,8 @@ export default class Responsive extends Component {
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
@@ -276,67 +268,64 @@ export default class Responsive extends Component {
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-      <div className="card">
-          <div className='blurImg'>
+          <div className="card">
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
-                <p>&#9655; Play</p>
-              </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-        <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-         <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-         <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
         </Slider>
 
-        {/*  */}
-
+{/*  */}
+        <h2 className='titleCarousel'>Film</h2>
         <Slider {...settings}>
-         <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
@@ -346,77 +335,169 @@ export default class Responsive extends Component {
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-           <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
+              <p><Rating /></p>
+            </div>
+          </div>
+          
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-           <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-           <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-         <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
-              <p><Rating /></p>
-            </div>
-          </div>
-                     <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
-                <p>&#9655; Play</p>
-              </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
 
-           <div className="card">
+          <div className="card">
           <div className='blurImg'>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
                 <p>&#9655; Play</p>
               </div>
-            <div  className="info-carousel">
-              <p>anime</p>
+            <div className="info-carousel">
+              <p></p>
               <p><Rating /></p>
             </div>
           </div>
-                    
+        </Slider>
+
+{/*  */}
+        {/* <h2></h2> */}
+        <Slider {...settings}>
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p></p>
+              <p><Rating /></p>
+            </div>
+          </div>
+
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p></p>
+              <p><Rating /></p>
+            </div>
+          </div>
+          
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p></p>
+              <p><Rating /></p>
+            </div>
+          </div>
+
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p></p>
+              <p><Rating /></p>
+            </div>
+          </div>
+
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p></p>
+              <p><Rating /></p>
+            </div>
+          </div>
+
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p></p>
+              <p><Rating /></p>
+            </div>
+          </div>
+
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p></p>
+              <p><Rating /></p>
+            </div>
+          </div>
+
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p></p>
+              <p><Rating /></p>
+            </div>
+          </div>
         </Slider>
 
 

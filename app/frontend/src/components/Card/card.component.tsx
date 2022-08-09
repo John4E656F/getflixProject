@@ -20,7 +20,7 @@ const Card = ({component, key, altText, cardTitle, cardDesc, imgSrc, height}: Ca
 
     return (
       <div key={key}>
-        <CardMui sx={{ maxWidth: 300 }}>
+        <CardMui sx={{ maxWidth: 300  }}>
             <CardMedia
             component="cardImg"
             alt={ altText }

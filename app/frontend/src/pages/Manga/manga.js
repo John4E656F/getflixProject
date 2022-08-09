@@ -216,7 +216,7 @@ export default class Responsive extends Component {
         
 
 
-      <Footer />
+        <Footer />
         
       </div>
     );

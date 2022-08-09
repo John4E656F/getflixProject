@@ -1,6 +1,6 @@
 // A file for all texual material used in 'LandingSection.js'
 export const textualMaterial = {
-	darkComponent: [
+	infoComponent: [
 		{
 			id: 1,
 			topText: "Enjoy on your TV.",
