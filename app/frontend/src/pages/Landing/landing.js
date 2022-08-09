@@ -59,7 +59,7 @@ const LandingScreen = (props) => {
 
 					<div className="ButtonSticker">
 
-						<Link to="/login">
+						<Link to="/signup">
 							<Button
 								height="56px"
 								width="150px"
@@ -69,7 +69,7 @@ const LandingScreen = (props) => {
 								textColor="#fff"
 								buttonSize="small"
 							>
-								GET STARTED
+								Join Now!
 							</Button>
 						</Link>
 					</div>
@@ -88,25 +88,20 @@ const LandingScreen = (props) => {
 						<h3>Ready to watch? Enter your email to create or restart your membership.</h3>
 
 						<div className="ButtonSticker">
-							<TextField
-								className="TextField"
-								label="Email Address"
-								variant="filled"
-								color="secondary"
-							/>
+
 
 							<Link to="/login">
-								<Button
-									height="56px"
-									width="150px"
-									image
-									icon={"fas fa-chevron-right"}
-									backgroundColor="#e50914"
-									textColor="#fff"
-									buttonSize="small"
-								>
-									GET STARTED
-								</Button>
+							<Button
+								height="56px"
+								width="150px"
+								image
+								icon={"fas fa-chevron-right"}
+								backgroundColor="#e50914"
+								textColor="#fff"
+								buttonSize="small"
+							>
+								Signup
+							</Button>
 							</Link>
 						</div>
 					</div>
