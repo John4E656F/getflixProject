@@ -1,7 +1,8 @@
 import React, { useState, useContext } from "react";
 import "./login.css";
+import ReactPlayer from "react-player";
 
-import LoginBackground from "../../assets/images/landingPage.jpg";
+
 import AniflixLogo from "../../assets/images/logo.png";
 import { TextField } from "@material-ui/core";
 import Button from "../../components/Button/btn.component";
@@ -130,7 +131,7 @@ const Login = (props) => {
     };
 
     return (
-        <div className="Login" style={{ backgroundImages: `url(${LoginBackground})` }}>
+        <div className="Login" >
             <img src={AniflixLogo} alt="Logo" />
             <div className="LoginCard">
                 <h1>Sign In</h1>
@@ -185,6 +186,15 @@ const Login = (props) => {
                     />
                     <span>Need help?</span>
                 </div>
+            </div>
+            <div className="videoPlayer">
+            <ReactPlayer
+                  url='https://www.youtube.com/watch?v=juiHHzIvrYs'
+                  playing={true}
+                    width='100%'
+                  height='800px'
+                  muted
+            />
             </div>
         </div>
     );

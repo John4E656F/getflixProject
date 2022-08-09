@@ -13,7 +13,7 @@ export const textualMaterial = {
 			id: 2,
 			topText: "Download your shows to watch offline, because mobile internet are expensive.",
 			image:
-				"https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg",
+				"https://github.com/John4E656F/getflixProject/blob/main/app/frontend/src/assets/images/mobile.jpg?raw=true",
 		},
 		{
 			id: 3,
@@ -21,7 +21,7 @@ export const textualMaterial = {
 			bottomText:
 				"Stream unlimited animes, anime movie, manga and hentai on your phone, tablet, laptop, smart watch, smart fridge, smart door, smart mirror, smart smart, and TV without paying more.",
 			image:
-				"https://github.com/John4E656F/getflixProject/blob/main/app/frontend/src/assets/images/mac.jpg?raw=true",
+				"https://github.com/John4E656F/getflixProject/blob/main/app/frontend/src/assets/images/mac.png?raw=true",
 		},
 	],
 

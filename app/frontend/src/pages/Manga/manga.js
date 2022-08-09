@@ -7,6 +7,7 @@ import Footer from '../../components/Footer/footer';
 import { FiPlay }  from 'react-icons/fi';
 import '../../components/Manga/carouselManga'
 import './manga.css'
+
 export default class Responsive extends Component {
   render() {
     var settings = {

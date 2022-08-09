@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "./signup.css";
 import axios from "axios";
 
-import SignupBackground from "../../assets/images/landingPage.jpg";
+//import SignupBackground from "../../assets/images/landingPage.jpg";
 import AniflexLogo from "../../assets/images/logo.png";
 import { TextField } from "@material-ui/core";
 import Button from "../../components/Button/btn.component";
