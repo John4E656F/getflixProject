@@ -5,7 +5,11 @@ import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
 const filterOptions = createFilterOptions({
   matchFrom: 'start',
   stringify: (option) => option.title,
+  
 });
+const values =  (props) => {
+  
+}
 
 export default function Filter() {
   return (
@@ -16,6 +20,7 @@ export default function Filter() {
       filterOptions={filterOptions}
       sx={{ width: 300 }}
       renderInput={(params) => <TextField {...params} label="Custom filter" />}
+      value={{ value }}
     />
   );
 }
