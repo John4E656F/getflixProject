@@ -124,7 +124,7 @@ const Login = (props) => {
                 const { token } = res.data
                 localStorage.setItem("token",token)
             // dispatch(fetchLoginSuccess(res.data))
-            navigate("/", { replace: true})
+            navigate("/home", { replace: true})
             })
             .catch(err => { console.log(err); });
         }
