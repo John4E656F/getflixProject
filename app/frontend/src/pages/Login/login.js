@@ -112,7 +112,7 @@ const Login = (props) => {
 
             let config = {
                 method: "post",
-                url: "http://localhost:4000/user/login",
+                url: "https://aniflix-getflix.herokuapp.com/user/login",
                 header: {
                     "Content_type": "application/json"
                 },

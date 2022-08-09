@@ -28,7 +28,7 @@ const Carousel = () => {
 
 
     useEffect(() => {
-    axios.get("http://localhost:4000/watch")
+    axios.get("https://aniflix-getflix.herokuapp.com/watch")
     // .then(res => setAnimes(res))
     // .catch(error => setError(error));
     .then((res) => {

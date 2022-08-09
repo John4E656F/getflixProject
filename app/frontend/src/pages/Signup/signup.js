@@ -166,7 +166,7 @@ const Signup = (props) => {
             };
             
                 //send http post request 
-            axios.post("http://localhost:4000/user/signup", newUser)
+            axios.post("https://aniflix-getflix.herokuapp.com/user/signup", newUser)
                 .then(res => { console.log(res); })
                 .catch(err => { console.log(err); });
             navigate('/login');
