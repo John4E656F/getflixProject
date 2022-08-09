@@ -18,6 +18,8 @@ import axios from "axios";
  * textfields.
  */
 
+
+
 const Login = (props) => {
     const token = localStorage.getItem("token")
     const [form, setForm] = useState({
@@ -121,7 +123,7 @@ const Login = (props) => {
                 const { token } = res.data
                 localStorage.setItem("token",token)
             // dispatch(fetchLoginSuccess(res.data))
-            navigate("/browse", { replace: true})
+            navigate("/", { replace: true})
             })
             .catch(err => { console.log(err); });
         }

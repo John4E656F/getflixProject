@@ -1,16 +1,18 @@
 import React , { useState } from 'react';
 import styled from 'styled-components';
 import RightNav from './rightNav';
+import Logo from '../Logo/logo'
 
 const StyledBurger = styled.div`
     width:2rem;
     height:2rem;
+    position: fixed;
     top: 15px;
     right: 20px;
     display: flex;
     justify-content: space-between;
     flex-flow:column nowrap;
-    @media (max-width: 969px) {
+    @media (max-width: 1123px) {
         display: flex;
         justify-content: space-around;
         flex-flow:column nowrap;
@@ -21,9 +23,9 @@ const StyledBurger = styled.div`
         cursor: pointer;
         background-color: ${({ open }) => open ? '#ccc' : '#333'};
         border-radius: 10px;
+        z-index: 2000;
         transform-origin:1px;
         transition: all 0.3s linear;
-        z-index: 5000;
         &:nth-child(1) {
             
             transform: ${({open}) => open ? 'rotate(45deg)' : 'rotate(0)'};
@@ -37,19 +39,26 @@ const StyledBurger = styled.div`
             
             transform: ${({open}) => open ? 'rotate(-45deg)' : 'rotate(0)'};
         }
+        visibility: visible;
     }
-    @media (min-width:968px){
+    @media (min-width:1122px){
         div {
-            display:none
+           display: none;
         }
     }
- 
+    @media screen and (max-width: 390px) {
+        width: 80px;
+    }
+    @media screen and (max-width: 380px) {
+        margin-right: 50px ;
+    }
+    @media screen and (max-width: 380px) {
+        margin-left:  50px ;
+    }
+    @media screen and (max-width: 375px) {
+       margin-right: -10px;
+    }
   
-    @media (max-width:765px){
-        div {
-           margin: 0 20px;
-        }
-    }
 `;
 
 const Burger = () => {
@@ -58,12 +67,15 @@ const Burger = () => {
 
   return (
     <>
-        <StyledBurger open={open} onClick={() => setOpen( !open )} className='mt-3 '>
+    
+        <Logo />
+    
+        <RightNav open={open} />
+        <StyledBurger open={open} onClick={() => setOpen( !open )} className='' >
            <div className='border'></div>
            <div className='border'></div>
            <div className='border'></div>
         </StyledBurger>
-        <RightNav open={open} />
     </>
   )
 }

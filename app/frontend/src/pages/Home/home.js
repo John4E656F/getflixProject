@@ -1,11 +1,15 @@
 import React from 'react'
 import './home.css';
-import Carousel from '../../components/Carousel/carousel.component'
+// import Carousel from '../../components/Carousel/carousel.component'
 import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
-import Carousel2 from '../../components/Home/carouselHome';
-function home(){
+
+function Home(){
+
+
+ 
+    
     return(
         <div className='home '>
           
@@ -13,8 +17,7 @@ function home(){
             <div className='header-home'>
                 <div className='imagHeader'></div>
                 <div className='text-head '>
-                    <h1 className='text-light display-1 ml-5'>Breath of</h1>
-                    <h1 className='text-light display-1 '>Thunder</h1>
+                    <h1 className='text-light display-1 ml-5'>mikasa ackerman</h1>
                     <p className='text-light '>Shonen Adventure Super-powers <strong>Samourai</strong></p>
                     <p className='text-light '>Dive into the of Zenitsu and discover <br /> his over half and why Zenitsu's true <br /> streght awakens when he is asleep</p>
                     <div className='container-btn'>
@@ -23,12 +26,12 @@ function home(){
                 </div>
             </div>
 
-            <Carousel />
+            {/* <Carousel /> */}
 
             <div className='carousel'>
-                <Carousel2 />
+
             </div>
-            <Footer />
+              <Footer />
 
            {/* End structure */}
         </div>
@@ -37,4 +40,4 @@ function home(){
     )
 }
 
-export default home;
+export default Home;

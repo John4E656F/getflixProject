@@ -7,15 +7,13 @@
 .header-home{
     width: 100%;
     height: 700px;
-    padding-top: 70px;
 }
 .header-home .imagHeader{
     width: 100%;
-    height: 1000px;
-    background-image: url(https://www.itl.cat/pngfile/big/202-2024159_one-piece-monkey-d-luffy-straw-hat-portrait.jpg);
+    height: 800px;
+    background-image: url(../../assets/images/mikasa-ackerman-attack-on-titan-shingeki-no-kyojin-levi-ackerman.jpg);
     background-position: center;
     background-size: cover;
-    
 }
 
 .header-home .text-head{
@@ -27,6 +25,7 @@
 }
 .text-head p , h1{
     text-align: left;
+    text-shadow: 0 0 2px black;
 }
 .text-head p {
     width: 350px;
@@ -55,7 +54,7 @@
     margin-left: 15px;
 }
 .carousel {
-    margin: 200px auto;
+    margin: -200px auto;
 }
 .info-carousel{
     padding: 5px;
@@ -72,7 +71,7 @@
         font-size: 50px;
     }
 }
-@media screen and (max-width:963px) {
+@media screen and (max-width:964px) {
     .header-home{
         display: flex;
         justify-content: center;
@@ -81,8 +80,17 @@
         margin:400px auto;
         height: 460px;
     }
+    .home .carousel {
+        margin-top: 0px;
+    }
  
 }
+@media screen and (max-width: 570px) {
+    .home .carousel {
+        margin-top: 90px;
+    }
+}
+
 @media screen and (max-width:567px) {
     .text-head{
         padding: 50px;
@@ -93,6 +101,10 @@
     }
     .container-btn button{
         width: 120px;
+    }
+    .header-home .imagHeader{
+        width: 100%;
+       
     }
   
 }

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./carouselHome.css";
+// import "./carouselHome.css";
 import Rating from '../Rating/rating'
 export default class Responsive extends Component {
   
@@ -14,6 +14,7 @@ export default class Responsive extends Component {
       slidesToShow: 4,
       slidesToScroll: 4,
       initialSlide: 0,
+      left: 5 ,
       responsive: [
         {
           breakpoint: 1024,

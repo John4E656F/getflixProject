@@ -1,10 +1,17 @@
 import React from 'react'
-import { FaSearch, FaRegHeart, FaFilter } from 'react-icons/fa';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import ModalFilter from '../Navbar/modalFilter';
-import './btnFilter.css'
+import styled from 'styled-components';
 
+
+
+const Div = styled.div`
+
+  width: 50px;
+  margin: -10px 0;
+  display: flex;
+`;
 
 
 
@@ -15,14 +22,13 @@ import './btnFilter.css'
 
 const BtnFilter = () => {
   return (
-    <div className='btnFilter'>
+    <Div className='btnFilter'>
                     <Tooltip title="Filter">
                     <IconButton className=''>
-                        <FaFilter className='text-light FaFilter' />
                         <ModalFilter className='modal ModalFilter'/>
                     </IconButton>
                     </Tooltip>
-    </div>
+    </Div>
   )
 }
 

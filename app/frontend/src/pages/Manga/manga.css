@@ -1,31 +1,5 @@
-.header-manga{
-    width: 100%;
-    height: 700px;
-  }
-  .header-manga .imageHeder{
-    width: 100%;
-    height: 700px;
-    background-image: url(https://getwallpapers.com/wallpaper/full/9/e/a/454545.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  @media (max-width:567px) {
-    .header-manga .text-head{
-      width: 100%;
-      margin: -500px auto;
-    }
-    .header-manga .text-head h1 {
-      font-size: 30px;
-    }
-  }
-  
-  
-  
-  
-  
   .manga{
-    width: 90%;
+    width: 100%;
     height: 100vh;
     margin: auto;
   }
@@ -39,3 +13,28 @@
   .marginT{
     margin-top: 20px;
   }
+  .header-manga .imagHeader {
+    background-image: url(../../assets/images/Breath-Of-The-Wild-2-Link-Confused-AMvmra.webp);
+  }
+
+.header-manga .text-head{
+  width: 400px;
+  height: 500px;
+  margin: -600px 100px;
+  display: flex;
+  flex-direction: column;
+}
+.text-head p , h1{
+  text-align: left;
+}
+.text-head p {
+  width: 350px;
+  line-height: 30px;
+}
+.container-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.container-btn button{
+  width: 150px;
+}
