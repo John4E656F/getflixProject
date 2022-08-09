@@ -1,4 +1,3 @@
-import tv from "../../assets/images/tv.jpg"
 
 // A file for all texual material used in 'LandingSection.js'
 export const textualMaterial = {
@@ -8,7 +7,7 @@ export const textualMaterial = {
 			topText: "Enjoy on your TV.",
 			bottomText:
 				"Watch on NotSmart TVs, Pausestation, Ybox, Chromeretract, Orange TV, Red-ray players, and less.",
-			image: "tv",
+			image: "https://github.com/John4E656F/getflixProject/blob/main/app/frontend/src/assets/images/tv.jpg?raw=true",
 		},
 		{
 			id: 2,
