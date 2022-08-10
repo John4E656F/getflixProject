@@ -1,9 +1,10 @@
 import  React from 'react';
 import './home.css';
-import Carousel from '../../components/Carousel/carousel';
+// import Carousel from '../../components/Carousel/carousel';
 import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
+import Carousel2 from '../../components/Home/carouselHome'
 
 //import Carousel2 from '../../components/Home/carouselHome';
 function home(){
@@ -30,13 +31,23 @@ function home(){
                 </div>
             </div>
 
-            <Carousel />
 
             <div className='carousel'>
-              {/* <Carousel2 /> */} 
+                {/* <Carousel /> */}
+
+                
+
+                <Carousel2 />
+
+
+
+
+
+
+
+
             </div>
             <Footer />
-
            {/* End structure */}
         </div>
 

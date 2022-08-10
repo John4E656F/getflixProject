@@ -40,7 +40,6 @@
 }
 
 .btn-carousel button:hover{
-    background-color: rgb(23, 65, 56);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,13 +53,9 @@
     margin-left: 15px;
 }
 .carousel {
-    margin: -200px auto;
+    margin: -500px auto;
 }
-.info-carousel{
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-}
+
 @media screen and (max-width:1298px) {
     .header-home .text-head{
         width: 400px;

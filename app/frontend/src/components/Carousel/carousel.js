@@ -93,6 +93,7 @@ const Carousel = (props) => {
             {console.log(anime.picture)}
            
         </Slider>
+        
         </>
       )
 };

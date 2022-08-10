@@ -10,15 +10,15 @@ const Card = ({id, picture, title, genre, trailer}) => {
 
       <div className="card" key={id}>
 
-            <div className="blurImg">
-            <img src={picture}  className="cardImg" alt="alt text goes here"/>
-            <h1 className="cardTitle">{title}</h1>
-            <p className="cardDesc">{genre}</p>
-            <p>{trailer}</p>
+        <div className="blurImg">
+            <img src={"https://s4.anilist.co/file/anilistcdn/media/anime/banner/31-pYM5NdKIRa5h.jpg"}  className="cardImg" alt="alt text goes here"/>
+            <a className="href">Play{trailer}</a>
             
         </div>
+            <h1 className="cardTitle">{title}</h1>
+            <p className="cardDesc">{genre}</p>
   
-  </div>
+      </div>
      
       
     
