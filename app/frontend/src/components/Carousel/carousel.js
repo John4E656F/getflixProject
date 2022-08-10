@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
 
 
-const Carousel = () => {
+const Carousel = (props) => {
 
   // animes.map(anime => {
   //   return <Card key= {anime.id} anime={anime}/>
@@ -40,12 +40,6 @@ const Carousel = () => {
       console.log(error);
     })
   });
-
-  console.log(anime.id);
-  console.log(anime.picture);
-  console.log(anime.title);
-  console.log(anime.genre);
-  console.log(anime.trailer);
   
 
    
@@ -87,14 +81,16 @@ const Carousel = () => {
       return (
         <>
         <Slider {...settings }>
-{/* 
+
           { error ? <div> Some Nice Ui saying that we cannot load </div> 
           :
           anime.slice(0, 10).map(anime => <Card altText={anime.altText} 
             title={anime.title}
             src={anime.picture}
             trailer={anime.trailer}
-            key={anime._id}/>)} */}
+            key={anime._id}/>)} 
+
+            {console.log(anime.picture)}
            
         </Slider>
         </>
