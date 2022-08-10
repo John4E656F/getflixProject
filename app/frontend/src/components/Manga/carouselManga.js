@@ -50,12 +50,12 @@ export default class Responsive extends Component {
         <h2 className='titleCarousel'>Anime</h2>
         <Slider {...settings} className=''>
           <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
-                <p>&#9655; Play</p>
-              </div>
+            <div className='blurImg'>
+              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+              <p>&#9655; Play</p>
+            </div>
             <div  className="info-carousel">
-              <p>anime</p>
+              <p>Panda</p>
               <p><Rating /></p>
             </div>
           </div>

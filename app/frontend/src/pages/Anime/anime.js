@@ -22,7 +22,7 @@ const anime = () => {
                     <p className='text-light '>The society we live in today is the result of millions of years of gradual scientific advancements and struggle. But what if all of that advancement suddenly disappeared?</p>
                     <p className='text-light '>The Dr. Stone manga series explores these questions</p>
                     <div className='container-btn'>
-                    <button className='btn btn-light mr-5 px-4'><FiPlay/> Play</button><button className='btn btn-light'>Mor info</button>
+                    <button className='btn btn-light mr-5 px-4'><FiPlay/> Play</button><button className='btn btn-light opacity-50'>Mor info</button>
                     </div>
                 </div>
             </div>

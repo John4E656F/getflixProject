@@ -65,14 +65,15 @@
 
 
 .card{
-    height: 270px;
+    height: 320px;
     margin:  0 15px;
-    background-color: rgb(90, 72, 72);
-    color: aliceblue;
 }
 .info-carousel{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
+    color: black;
 }
 .blurImg{
     width: 100%;
