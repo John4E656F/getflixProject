@@ -4,7 +4,7 @@ import "./landing.css";
 
 import NavBar from "../../components/Navbar/oldnavbar/navbar.component";
 import welcomeImg from "../../assets/images/welcome.jpg";
-import { TextField } from "@material-ui/core";
+//import { TextField } from "@material-ui/core";
 import Button from "../../components/Button/btn.component";
 import InfoComponent from "../../components/Info/Info";
 import FAQComponent from "../../components/FAQ/faq";

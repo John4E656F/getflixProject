@@ -1,15 +1,15 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import "./login.css";
 import ReactPlayer from "react-player";
 
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import AniflixLogo from "../../assets/images/logo.png";
 import { TextField } from "@material-ui/core";
 import Button from "../../components/Button/btn.component";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { useNavigate } from "react-router-dom";
-import { AuthenticationContext } from "../../contexts/authUser";
+//import { AuthenticationContext } from "../../contexts/authUser";
 import { validEmailAndPhoneNumber } from "../../utils/validation";
 import axios from "axios";
 
@@ -22,7 +22,7 @@ import axios from "axios";
 
 
 const Login = (props) => {
-    const token = localStorage.getItem("token")
+    //const token = localStorage.getItem("token")
     const [form, setForm] = useState({
         email: {
             value: "",
@@ -40,7 +40,7 @@ const Login = (props) => {
     });
 
     const navigate = useNavigate();
-    const authContext = useContext(AuthenticationContext);
+    //const authContext = useContext(AuthenticationContext);
 
     const inputChangeHandler = (event) => {
         const  { name, value } = event.target;
@@ -100,8 +100,8 @@ const Login = (props) => {
 
     const formSubmitHandler = (event) => {
         event.preventDefault();
-        console.log(form.email.value);
-        console.log(form.password.value);
+        // console.log(form.email.value);
+        // console.log(form.password.value);
         if (!form.email.valid || !form.password.valid) {
             setForm((prevForm) => ({...prevForm, onSubmitnvalid: true}));
         } else {
@@ -184,7 +184,7 @@ const Login = (props) => {
                     control={<Checkbox style={{ color: "rgb(229, 9, 20)"}} name="checkB" />}
                     label="Remember Me"
                     />
-                    <span className="spanLink" onClick={() =>navigate("/login")}>
+                    <span className="spanLink" onClick={() =>navigate("/signup")}>
 							Signup
                     </span>
                 </div>

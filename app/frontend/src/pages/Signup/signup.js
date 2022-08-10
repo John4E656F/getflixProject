@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./signup.css";
 import axios from "axios";
 
@@ -6,12 +6,12 @@ import axios from "axios";
 import AniflexLogo from "../../assets/images/logo.png";
 import { TextField } from "@material-ui/core";
 import Button from "../../components/Button/btn.component";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
+//import FormControlLabel from "@material-ui/core/FormControlLabel";
+//import Checkbox from "@material-ui/core/Checkbox";
 import { useNavigate } from "react-router-dom";
-import { AuthenticationContext } from "../../contexts/authUser";
+//import { AuthenticationContext } from "../../contexts/authUser";
 import { validEmailAndPhoneNumber } from "../../utils/validation";
-import { Event } from "@material-ui/icons";
+//import { Event } from "@material-ui/icons";
 
 /**
  * The SignUp component, which validates the email,password,phoneNumber ...
@@ -132,7 +132,7 @@ const Signup = (props) => {
         }
     };
 
-    let [emailSpan, nameSpan, passwordSpan, repeatPasswordSpan] = [null, null, null, null];
+    let [emailSpan, passwordSpan, repeatPasswordSpan] = [null, null, null, null];
 
     if ((!form.email.valid && form.email.touched) || (form.onSubmitInvalid && !form.email.valid)) {
         emailSpan = <span>Please enter a valid email or phone number.</span>
@@ -180,7 +180,7 @@ const Signup = (props) => {
             <div className="SignupCard">
                 <h1>Sign Up</h1>
                 <form onSubmit={formSubmitHandler}>
-                    <TextField
+                    {/* <TextField
 					name="username"
 					className="textField"
 					label="Username"
@@ -195,7 +195,7 @@ const Signup = (props) => {
 					InputLabelProps={{
 						style: { color: "#8c8c8c" },
 					}}
-					/>
+					/> */}
 
 					{/* {nameSpan} */}
 

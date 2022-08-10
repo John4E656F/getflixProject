@@ -2,12 +2,13 @@ import React from "react";
 import './card.css';
 
 
-const Card = ({_id, picture, title, genre, trailer}) => {
+const Card = ({id, picture, title, genre, trailer}) => {
+
 
     return (
 
 
-      <div className="card" key={_id}>
+      <div className="card" key={id}>
 
             <div className="blurImg">
             <img src={picture}  className="cardImg" alt="alt text goes here"/>
