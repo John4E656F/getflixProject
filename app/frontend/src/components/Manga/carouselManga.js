@@ -5,8 +5,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Rating from '../../components/Rating/rating'
+import './carouselManga.css'
 
-import './carouselManga.css';
 export default class Responsive extends Component {
   render() {
     var settings = {
