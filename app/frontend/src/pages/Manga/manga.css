@@ -1,0 +1,40 @@
+  .manga{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+  }
+  .container-carousel{
+    margin-top: 200px;
+  }
+  .container-carousel{
+    width: 90%;
+    margin: 250px auto;
+  }
+  .marginT{
+    margin-top: 20px;
+  }
+  .header-manga .imagHeader {
+    background-image: url(../../assets/images/Breath-Of-The-Wild-2-Link-Confused-AMvmra.webp);
+  }
+
+.header-manga .text-head{
+  width: 400px;
+  height: 500px;
+  margin: -600px 100px;
+  display: flex;
+  flex-direction: column;
+}
+.text-head p , h1{
+  text-align: left;
+}
+.text-head p {
+  width: 350px;
+  line-height: 30px;
+}
+.container-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.container-btn button{
+  width: 150px;
+}

@@ -4,8 +4,8 @@ const express = require("express");
 const cors = require("cors");
 //cookie-session helps to stores the session data on the client within a cookie without requiring any database/resources on the server side
 // const cookieSession = require("cookie-session");
-
-require('dotenv').config();
+const dotenv = require("dotenv");
+dotenv.config({ path: "./config.env" });
 
 //Create an Express app, then add request parsing, cookie-based session middleware and cors middlewares using app.use() method. 
 const app = express();
@@ -30,58 +30,17 @@ app.use(express.json());
 //   })
 // );
 
-const connectDB = require("./config/connectDB");
-
-// Connection to DB
-connectDB();
-
-
 // routes
 // require('./routes/auth.routes');
 const usersRouter = require('./routes/users.routes');
+const animeRouter = require('./routes/anime.routes')
 
+app.use('/user', usersRouter);
 
-app.use('/users', usersRouter);
+app.use('/watch', animeRouter);
 
 // set port, listen on port 8080 for incoming requests.
-const PORT = process.env.PORT || 5001
+const PORT = process.env.PORT || 4000
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
-
-
-// function initial() {
-//   Role.estimatedDocumentCount((err, count) => {
-//     if (!err && count === 0) {
-//       new Role({
-//         name: "user"
-//       }).save(err => {
-//         if (err) {
-//           console.log("error", err);
-//         }
-
-//         console.log("added 'user' to roles collection");
-//       });
-
-//       new Role({
-//         name: "moderator"
-//       }).save(err => {
-//         if (err) {
-//           console.log("error", err);
-//         }
-
-//         console.log("added 'moderator' to roles collection");
-//       });
-
-//       new Role({
-//         name: "admin"
-//       }).save(err => {
-//         if (err) {
-//           console.log("error", err);
-//         }
-
-//         console.log("added 'admin' to roles collection");
-//       });
-//     }
-//   });
-// }

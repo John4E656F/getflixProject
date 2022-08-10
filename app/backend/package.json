@@ -4,9 +4,15 @@
   "description": "\"Aniflex Backend\"",
   "private": true,
   "main": "server.js",
+  "engine": {
+    "node": "16.x",
+    "npm": "8.15.1"
+  },
   "scripts": {
     "test": "react-scripts test",
-    "start": "node server.js"
+    "start": "node server",
+    "dev":  "nodemon server"
+
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +29,8 @@
     "express-jwt"
   ],
   "dependencies": {
+    "anilist-node": "^1.12.1",
+    "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "cookie-session": "^2.0.0",
     "cors": "^2.8.5",
@@ -32,6 +40,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.5",
     "node-fetch": "3.2.9",
-    "nodemon": "2.0.19"
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
