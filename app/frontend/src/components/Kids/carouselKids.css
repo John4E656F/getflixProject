@@ -30,8 +30,7 @@
 }
 .blurImg:hover img{
     transform: scale(1.1);
-    -webkit-filter: grayscale(100%) blur(2px);
-    filter: grayscale(100%) blur(2px);
+   
 }
 .blurImg:hover p {
     opacity: 1;

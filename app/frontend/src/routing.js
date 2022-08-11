@@ -15,7 +15,7 @@ import Anime from './pages/Anime/anime';
 import Manga from './pages/Manga/manga';
 import Kids from './pages/Kids/kids';
 import Contact from './components/Contact/contact'
-import VideoPage from "./pages/Video/video";
+import VideoPage from "./pages/Video/video1";
 
 // import Profil from "./pages/Profile/index";
 
