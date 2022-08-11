@@ -84,7 +84,7 @@ const Carousel = (props) => {
 
           { error ? <div> Some Nice Ui saying that we cannot load </div> 
           :
-          anime.slice(0, 10).map(anime => <Card altText={anime.altText} 
+          anime.slice(0, 10).map(animeData => <Card altText={anime.altText} 
             title={anime.title}
             src={anime.picture}
             trailer={anime.trailer}

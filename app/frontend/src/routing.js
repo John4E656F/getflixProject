@@ -17,6 +17,8 @@ import Kids from './pages/Kids/kids';
 import Contact from './components/Contact/contact'
 import VideoPage from "./pages/Video/video";
 
+
+
 // import Profil from "./pages/Profile/index";
 
 const Routing = () => {

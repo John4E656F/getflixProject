@@ -1,7 +1,12 @@
 .card{
+    width: 150px;
     height: 270px;
     background-color: rgb(90, 72, 72);
     color: aliceblue;
+}
+
+.card img{
+    width: auto;
 }
 .info-carousel{
     display: flex;

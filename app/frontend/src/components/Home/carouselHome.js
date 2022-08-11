@@ -1,19 +1,16 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-// import "./carouselHome.css";
 import Rating from '../Rating/rating'
 export default class Responsive extends Component {
   
   render() {
     var settings = {
-      dots: true,
+      dots: false,
       infinite: false,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 4,
-      initialSlide: 0,
+      // initialSlide: 0,
       left: 5 ,
       responsive: [
         {
@@ -45,21 +42,52 @@ export default class Responsive extends Component {
     return (
       <div>
         <h2 className='titleCarousel'>Anime</h2>
-        <Slider {...settings} className=''>
+        <Slider {...settings} >
           <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="https://cdn.myanimelist.net/images/anime/1566/122794.jpg" alt="Kingdom 4th Season" />
                 <p>&#9655; Play</p>
-              </div>
             <div  className="info-carousel">
-              <p>anime</p>
+              <p>Kingdom 4th Season</p>
               <p><Rating /></p>
             </div>
           </div>
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="https://cdn.myanimelist.net/images/anime/1346/119505.jpg" alt="Rurouni Kenshin" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p>Rurouni Kenshin</p>
+              <p><Rating /></p>
+            </div>
+          </div>
+
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://cdn.myanimelist.net/images/anime/1375/121599.jpg" alt="Samurai Champloo" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p>Samurai Champloo</p>
+              <p><Rating /></p>
+            </div>
+          </div>
+
+          <div className="card">
+          <div className='blurImg'>
+            <img src="https://cdn.myanimelist.net/images/anime/3/15874.jpg" alt="Afro Samurai" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p>Afro Samurai</p>
+              <p><Rating /></p>
+            </div>
+          </div>
+
+          <div className="card">
+          <div className='blurImg'>
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -70,7 +98,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -81,7 +109,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -92,40 +120,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
-                <p>&#9655; Play</p>
-              </div>
-            <div className="info-carousel">
-              <p></p>
-              <p><Rating /></p>
-            </div>
-          </div>
-
-          <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
-                <p>&#9655; Play</p>
-              </div>
-            <div className="info-carousel">
-              <p></p>
-              <p><Rating /></p>
-            </div>
-          </div>
-
-          <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
-                <p>&#9655; Play</p>
-              </div>
-            <div className="info-carousel">
-              <p></p>
-              <p><Rating /></p>
-            </div>
-          </div>
-
-          <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -140,7 +135,7 @@ export default class Responsive extends Component {
         <Slider {...settings}>
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                    <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
@@ -151,7 +146,7 @@ export default class Responsive extends Component {
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                    <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
@@ -162,7 +157,7 @@ export default class Responsive extends Component {
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                    <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
@@ -173,7 +168,7 @@ export default class Responsive extends Component {
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                    <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
@@ -184,7 +179,7 @@ export default class Responsive extends Component {
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                    <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
@@ -195,7 +190,7 @@ export default class Responsive extends Component {
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                    <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
@@ -206,7 +201,7 @@ export default class Responsive extends Component {
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                    <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
@@ -217,7 +212,7 @@ export default class Responsive extends Component {
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+                    <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
@@ -232,7 +227,7 @@ export default class Responsive extends Component {
         <Slider {...settings}>
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -243,7 +238,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -254,7 +249,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -265,7 +260,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -275,7 +270,7 @@ export default class Responsive extends Component {
           </div>
 
           <div className="card">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
             <div className="info-carousel">
               <p></p>
               <p><Rating /></p>
@@ -284,18 +279,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
-                <p>&#9655; Play</p>
-              </div>
-            <div className="info-carousel">
-              <p></p>
-              <p><Rating /></p>
-            </div>
-          </div>
-
-          <div className="card">
-          <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -306,7 +290,18 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
+                <p>&#9655; Play</p>
+              </div>
+            <div className="info-carousel">
+              <p></p>
+              <p><Rating /></p>
+            </div>
+          </div>
+
+          <div className="card">
+          <div className='blurImg'>
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -321,7 +316,7 @@ export default class Responsive extends Component {
         <Slider {...settings}>
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -332,7 +327,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -343,7 +338,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -354,7 +349,7 @@ export default class Responsive extends Component {
           
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -365,7 +360,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -376,7 +371,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -387,7 +382,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -398,7 +393,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -413,7 +408,7 @@ export default class Responsive extends Component {
         <Slider {...settings}>
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -424,7 +419,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -435,7 +430,7 @@ export default class Responsive extends Component {
           
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -446,7 +441,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -457,7 +452,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -468,7 +463,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -479,7 +474,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
@@ -490,7 +485,7 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.xuU85cUqf_33odWy5rgTAwHaEK%26pid%3DApi&f=1" alt="" />
+            <img src="" alt="" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
