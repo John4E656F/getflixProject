@@ -87,136 +87,136 @@ export default class Responsive extends Component {
 
           <div className="card">
           <div className='blurImg'>
-            <img src="" alt="" />
+            <img src="https://cdn.myanimelist.net/images/anime/3/21834.jpg" alt="Claymore" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
-              <p></p>
+              <p>Claymore</p>
               <p><Rating /></p>
             </div>
           </div>
 
           <div className="card">
           <div className='blurImg'>
-            <img src="" alt="" />
+            <img src="" alt="Elfen Lied" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
-              <p></p>
+              <p>Elfen Lied</p>
               <p><Rating /></p>
             </div>
           </div>
 
           <div className="card">
           <div className='blurImg'>
-            <img src="" alt="" />
+            <img src="https://cdn.myanimelist.net/images/anime/13/33465.jpg" alt="Mirai Nikki" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
-              <p></p>
+              <p>Mirai Nikki</p>
               <p><Rating /></p>
             </div>
           </div>
 
           <div className="card">
           <div className='blurImg'>
-            <img src="" alt="" />
+            <img src="https://cdn.myanimelist.net/images/anime/4/24648.jpg" alt="Chobits" />
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
-              <p></p>
+              <p>Chobits</p>
               <p><Rating /></p>
             </div>
           </div>
         </Slider>
 {/*  */}
 
-        <h2 className='titleCarousel'>Manga</h2>
+        <h2 className='titleCarousel'>John's Recommendation</h2>
         <Slider {...settings}>
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="" alt="" />
+                    <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="Fullmetal Alchemist: Brotherhood" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
-                      <p></p>
+                      <p>Fullmetal Alchemist: Brotherhood</p>
                       <p><Rating /></p>
                     </div>
                 </div>
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="" alt="" />
+                    <img src="https://cdn.myanimelist.net/images/anime/1337/99013.jpg" alt="Hunter x Hunter" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
-                      <p></p>
+                      <p>Hunter x Hunter</p>
                       <p><Rating /></p>
                     </div>
                 </div>
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="" alt="" />
+                    <img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="Demon Slayer" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
-                      <p></p>
+                      <p>Kimetsu no Yaiba</p>
                       <p><Rating /></p>
                     </div>
                 </div>
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="" alt="" />
+                    <img src="https://cdn.myanimelist.net/images/anime/5/50331.jpg" alt="Code Geass: Hangyaku no Lelouch" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
-                      <p></p>
+                      <p>Code Geass: Hangyaku no Lelouch</p>
                       <p><Rating /></p>
                     </div>
                 </div>
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="" alt="" />
+                    <img src="https://cdn.myanimelist.net/images/anime/10/75195.jpg" alt="Ao no Exorcist" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
-                      <p></p>
+                      <p>Ao no Exorcist</p>
                       <p><Rating /></p>
                     </div>
                 </div>
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="" alt="" />
+                    <img src="https://cdn.myanimelist.net/images/anime/1314/108941.jpg" alt="Neon Genesis Evangelion" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
-                      <p></p>
+                      <p>Neon Genesis Evangelion</p>
                       <p><Rating /></p>
                     </div>
                 </div>
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="" alt="" />
+                    <img src="https://cdn.myanimelist.net/images/anime/5/43399.jpg" alt="Psycho-Pass" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
-                      <p></p>
+                      <p>Psycho-Pass</p>
                       <p><Rating /></p>
                     </div>
                 </div>
 
                 <div className="card">
                 <div className='blurImg'>
-                    <img src="" alt="" />
+                    <img src="https://cdn.myanimelist.net/images/anime/4/5123.jpg" alt="Tengen Toppa Gurren Lagann" />
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
-                      <p></p>
+                      <p>Tengen Toppa Gurren Lagann</p>
                       <p><Rating /></p>
                     </div>
                 </div>

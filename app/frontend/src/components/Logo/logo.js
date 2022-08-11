@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/images/Logo-aniflix.png'; // Tell webpack this JS file uses this image
+import logo from '../../assets/images/logo.png'; // Tell webpack this JS file uses this image
 // The style of the Navbar section is used for the logo style
 // import '../Navbar/searchNav.css';
 import styled from 'styled-components';

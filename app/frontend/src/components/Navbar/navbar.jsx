@@ -18,7 +18,7 @@ const Nav = styled.nav`
   justify-content:space-between;
   align-items: center;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.671); 
+  // background-color: rgba(0, 0, 0, 0.671); 
   z-index: 8000;
   .logo {
       padding:15px 0 ;
