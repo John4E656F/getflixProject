@@ -5,7 +5,7 @@
   "private": true,
   "main": "server.js",
   "engine": {
-    "node": ">= 16.x",
+    "node": "16.x",
     "npm": "8.15.1"
   },
   "scripts": {
