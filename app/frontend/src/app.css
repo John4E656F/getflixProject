@@ -1,3 +1,23 @@
 body {
     background-color: black;
 }
+.video-page {
+    width: 100%;
+    height : 2000px;
+}
+.discription- {
+    width: 80%;
+    height: 350px;
+    margin-top: 50px;
+    display: flex;
+    border: solid 1px gray;
+
+}
+.discription- .container-img {
+    width: 250px;
+    height: 300px;
+}
+.container-description {
+    padding: 20px;
+    color: antiquewhite;
+}

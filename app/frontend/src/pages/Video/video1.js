@@ -2,7 +2,7 @@ import React from 'react';
 import './video.css';
 import Navbar from '../../components/Navbar/navbar';
 import ReactPlayer from 'react-player/youtube';
-
+import Footer from '../../components/Footer/footer'
 /*--------------------------------------------------------
 *Video player pages.
 *This page containtes the title, description, and other details
@@ -25,11 +25,18 @@ const VideoPage = (props) => {
                 controls 
                 url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
                 />
-                <div className='container-info'>
-                    <h1 className='' > John in Becode</h1>
-                    <p>hbabaksjbasas 2</p>
+             
+                <div className='discription-'>
+                    <div className='container-img'>
+                            <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="Shingeki no Kyojin" />
+                    </div>
+                    <div className='container-description'>
+                        <h3>Shingeki no Kyojin</h3>
+                        <p></p>
+                    </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 };
