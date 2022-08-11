@@ -32,6 +32,7 @@ const VideoPage = (props) => {
                     </div>
                     <div className='container-description'>
                         <h3>Fullmetal Alchemist: Brotherhood</h3>
+                        <span>TV series</span>
                         <p>Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes awry and leaves them in damaged physical forms.</p>
                     </div>
                 </div>

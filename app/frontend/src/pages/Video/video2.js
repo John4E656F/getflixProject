@@ -32,6 +32,7 @@ const VideoPage = (props) => {
                     </div>
                     <div className='container-description'>
                         <h3>Death Note</h3>
+                        <span>TV series</span>
                         <p>An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.</p>
                     </div>
                 </div>

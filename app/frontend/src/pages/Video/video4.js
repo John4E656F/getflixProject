@@ -32,6 +32,7 @@ const VideoPage = (props) => {
                     </div>
                     <div className='container-description'>
                         <h3>One Punch Man</h3>
+                        <span>TV series</span>
                         <p>Life gets pretty boring when you can beat the snot out of any villain with just one punch.
                             If you like Read One-Punch Man Manga Free - Official Shonen Jump From Japan, Shonen Jump recommends:
                         </p>

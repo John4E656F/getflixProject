@@ -17,10 +17,15 @@
 .container-info p {
     font-size: 25px;
 }
-
+.container-description .starRating {
+    text-shadow: 1px -1px 2px gold;
+}
+.container-description h6 {
+    margin-top: 10px;
+}
 .container-description p {
     width: 80%;
-    height: 250px;
+    height: 200px;
     margin-top: 20px;
     overflow: scroll;
 }
