@@ -5,6 +5,7 @@ import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
 
+
 // import Cards from '../../components/test/getData'
 
 //import Carousel2 from '../../components/Home/carouselHome';
