@@ -26,6 +26,7 @@
   ],
   "dependencies": {
     "anilist-node": "^1.12.1",
+    "jikan-nodejs": "^1.0.0",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "cookie-session": "^2.0.0",
