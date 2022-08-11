@@ -1,32 +1,31 @@
 import React from "react";
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
+
 import './card.css';
 
 
-const Card = ({id, picture, title, genre, trailer}) => {
+const Card = (props) => {
 
 
     return (
-
-
-      <div className="card" key={id}>
-
-            <div className="blurImg">
-            <img src={picture}  className="cardImg" alt="alt text goes here"/>
-            <h1 className="cardTitle">{title}</h1>
-            <p className="cardDesc">{genre}</p>
-            <p>{trailer}</p>
-            
-        </div>
-  
-  </div>
-     
-      
-    
-      
+      <>
+        <div className="card" key={props.id}>
+          <img src={props.picture} alt="alt text goes here"/>
+          <div  className="info-carousel">
+            <p>{props.title}</p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={5} size="small" />
+              </Stack>
+          </div>
+        </div> 
+      </>
     );
 };
 
 export default Card;
+
+
 
 // const [backendData, setBackendData] = useState([{}]);
 

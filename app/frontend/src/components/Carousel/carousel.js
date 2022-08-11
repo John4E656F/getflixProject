@@ -12,7 +12,7 @@ const Carousel = (props) => {
   // animes.map(anime => {
   //   return <Card key= {anime.id} anime={anime}/>
   // })
-  const [anime, setAnimes] = useState([
+  const [anime, setAnime] = useState([
     {
       id: "",
       title: "",
@@ -25,23 +25,17 @@ const Carousel = (props) => {
   ]);
 
   const [error] =useState(null);
-
-
-    useEffect(() => {
+  
+  useEffect(() => {
     axios.get("https://aniflix-getflix.herokuapp.com/watch")
-    // .then(res => setAnimes(res))
-    // .catch(error => setError(error));
     .then((res) => {
-      const animeData = res.data;
-      console.log(res.data);
-      setAnimes(animeData);
+      setAnime(res.data)
+
     })
     .catch((error) => {
       console.log(error);
     })
-  });
-  
-
+  }, [])
    
     let settings= {
       dots: false,
@@ -84,11 +78,13 @@ const Carousel = (props) => {
 
           { error ? <div> Some Nice Ui saying that we cannot load </div> 
           :
-          anime.slice(0, 10).map(animeData => <Card altText={anime.altText} 
+          anime.map((anime )=> <Card 
+            id={anime._id}
+            picture={anime.picture}
             title={anime.title}
-            src={anime.picture}
+            genre={anime.genre}
             trailer={anime.trailer}
-            key={anime._id}/>)} 
+            />)} 
 
             {console.log(anime.picture)}
            
