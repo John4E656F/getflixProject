@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Rating from '../../components/Rating/rating';
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
+// import Rating from '../../components/Rating/rating';
 import './carousel.css';
 
 
@@ -54,7 +56,9 @@ export default class Responsive extends Component {
               </div>
             <div  className="info-carousel">
               <p className="title">Shingeki no Kyojin</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -65,7 +69,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Death Note</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -75,8 +81,10 @@ export default class Responsive extends Component {
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
-              <p className="title">Fullmetal Alchemist: Brotherhood</p>
-              <p><Rating /></p>
+              <p className="title">Fullmetal Alchemist: </p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -87,7 +95,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">One Punch Man</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -98,7 +108,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Sword Art Online</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -109,7 +121,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Boku no Hero Academia</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -120,7 +134,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Tokyo Ghoul</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -131,7 +147,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Naruto</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
         </Slider>
@@ -150,7 +168,9 @@ export default class Responsive extends Component {
               </div>
                     <div className="info-carousel">
                       <p className="title">Kimetsu no Yaiba</p>
-                      <p><Rating /></p>
+                      <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={3} size="small" />
+              </Stack>
                     </div>
                 </div>
 
@@ -161,7 +181,9 @@ export default class Responsive extends Component {
               </div>
                     <div className="info-carousel">
                       <p className="title">Hunter x Hunter</p>
-                      <p><Rating /></p>
+                      <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
                     </div>
                 </div>
 
@@ -172,7 +194,9 @@ export default class Responsive extends Component {
               </div>
                     <div className="info-carousel">
                       <p className="title">Kimi no Na wa</p>
-                      <p><Rating /></p>
+                      <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
                     </div>
                 </div>
 
@@ -183,7 +207,9 @@ export default class Responsive extends Component {
               </div>
                     <div className="info-carousel">
                       <p className="title">Steins;Gate</p>
-                      <p><Rating /></p>
+                      <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
                     </div>
                 </div>
 
@@ -194,7 +220,9 @@ export default class Responsive extends Component {
               </div>
                     <div className="info-carousel">
                       <p className="title">No Game No Life</p>
-                      <p><Rating /></p>
+                      <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
                     </div>
                 </div>
 
@@ -204,8 +232,10 @@ export default class Responsive extends Component {
                 <p>&#9655; Play</p>
               </div>
                     <div className="info-carousel">
-                      <p className="title">Code Geass: Hangyaku no Lelouch</p>
-                      <p><Rating /></p>
+                      <p className="title">Code Geass: Hangyaku no </p>
+                      <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
                     </div>
                 </div>
 
@@ -216,7 +246,9 @@ export default class Responsive extends Component {
               </div>
                     <div className="info-carousel">
                       <p className="title">Koe no Katachi</p>
-                      <p><Rating /></p>
+                      <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
                     </div>
                 </div>
 
@@ -227,7 +259,9 @@ export default class Responsive extends Component {
               </div>
                     <div className="info-carousel">
                       <p className="title">Toradora!</p>
-                      <p><Rating /></p>
+                      <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
                     </div>
                 </div>
         </Slider>
@@ -253,7 +287,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Noragami</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -264,7 +300,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Jujutsu Kaisen</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -275,15 +313,22 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">One Piece</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
           <div className="card">
-            <img src="https://cdn.myanimelist.net/images/anime/1244/111115.jpg" alt="Angel Beats" />
+            <div className='blurImg'>
+              <img src="https://cdn.myanimelist.net/images/anime/1244/111115.jpg" alt="Angel Beats" />
+              <p>&#9655; Play</p>
+            </div>
             <div className="info-carousel">
               <p className="title">Angel Beats!</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -294,7 +339,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Akame ga Kill!</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -305,7 +352,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Nanatsu no Taizai</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -316,7 +365,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Boku dake ga Inai Machi</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
         </Slider>
@@ -330,7 +381,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Mirai Nikki</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -341,7 +394,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Ansatsu Kyoushitsu</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -352,7 +407,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Mob Psycho 100</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
           
@@ -363,7 +420,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Ao no Exorcist</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -374,7 +433,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Haikyuu!!</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -384,8 +445,10 @@ export default class Responsive extends Component {
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
-              <p className="title">Kono Subarashii Sekai ni Shukufuku wo!</p>
-              <p><Rating /></p>
+              <p className="title">Kono Subarashii Sekai ni ...</p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -396,7 +459,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Yakusoku no Neverland</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -407,7 +472,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Bleach</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
         </Slider>
@@ -422,7 +489,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Kiseijuu: Sei no Kakuritsu</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -433,7 +502,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Cowboy Bebop</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
           
@@ -443,8 +514,10 @@ export default class Responsive extends Component {
                 <p>&#9655; Play</p>
               </div>
             <div className="info-carousel">
-              <p className="title">Sen to Chihiro no Kamikakushi</p>
-              <p><Rating /></p>
+              <p className="title">Sen to Chihiro no ...</p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -455,7 +528,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Fairy Tail</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -466,7 +541,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Neon Genesis Evangelion</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -477,7 +554,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Death Parade</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -488,7 +567,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Kill la Kill</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
 
@@ -499,7 +580,9 @@ export default class Responsive extends Component {
               </div>
             <div className="info-carousel">
               <p className="title">Violet Evergarden</p>
-              <p><Rating /></p>
+              <Stack spacing={1}>
+                <Rating className='starRating'  name="size-small" defaultValue={2} size="small" />
+              </Stack>
             </div>
           </div>
         </Slider>
