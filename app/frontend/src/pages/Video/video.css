@@ -1,20 +1,14 @@
 .video-page {
-    width:100%;
-    height:100vh ; 
-    display:flex ; 
-    flex-direction:column ;
-    justify-content:center; 
-    align-items:center ; 
-    background-color:#302620;
-    position: relative;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 .container-info {
     color: aliceblue;
     z-index: 5;
     position: absolute;
-    margin-top: 400px;
 }
 
 .container-info h1 {
@@ -22,4 +16,20 @@
 }
 .container-info p {
     font-size: 25px;
+}
+
+.container-description p {
+    width: 80%;
+    height: 250px;
+    margin-top: 20px;
+    overflow: scroll;
+}
+@media screen and (max-width:666px) {
+    .discription- {
+        flex-direction: column;
+    }
+    .container-description {
+        margin-top: 60px;
+        border: solid 1px;
+    }
 }
