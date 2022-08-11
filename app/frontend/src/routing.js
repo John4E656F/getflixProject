@@ -18,11 +18,6 @@ import Contact from './components/Contact/contact'
 import VideoPage from "./pages/Video/video";
 
 
-
-
-
-// import Profil from "./pages/Profile/index";
-
 const Routing = () => {
 
 
@@ -46,7 +41,7 @@ const Routing = () => {
 
             <Route exact path="/signup" element={<SignupPage /> } />
 
-            <Route exact path="/videoplayer" element={<VideoPage />} />
+            <Route exact path="/:id" element={<VideoPage />} />
 
 
             {/* <Route exact path="/profile">

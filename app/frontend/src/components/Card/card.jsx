@@ -1,16 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 
 import './card.css';
+import { useNavigate } from "react-router-dom";
 
 
 const Card = (props) => {
+  const navigate = useNavigate();
+  
+  const [anime] = useState([
+    {
+    key: props.key,
+    title: props.title,
+    genre: props.genre,
+    trailer: props.trailer,
+    picture: props.picture,
+    comments: props.comments,
+    ratings: props.ratings,
+    },
+  ]);
+
+  // const clickHandler = () => {
+  //   navigate("/home", { 
+  //     anime,
+  //     replace: true
+  //   });
+  // } 
 
 
     return (
       <>
-        <div className="card" key={props.id}>
+        <div className="card" key={props.id} onClick={    navigate("/home", { 
+      anime,
+      replace: true
+    })}>
           <img src={props.picture} alt="alt text goes here"/>
           <div  className="info-carousel">
             <p>{props.title}</p>

@@ -22,7 +22,6 @@ function home(){
           
             <Navbar />
             <div className='header-home'>
-                <div className='imagHeader'></div>
                 <div className='text-head '>
                     <h1 className='text-light display-1 ml-5'>mikasa ackerman</h1>
                     <p className='text-light '>Shonen Adventure Super-powers <strong>Samourai</strong></p>
@@ -32,7 +31,7 @@ function home(){
                     </div>
                 </div>
             </div>
-            <Carousels/>
+            {/* <Carousels/> */}
 
 
             <Carousel />
