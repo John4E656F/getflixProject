@@ -24,6 +24,7 @@ const Routing = () => {
     return (
 
         <Routes>
+
             <Route exact path="/" element={<Welcome />} />
 
             <Route exact path="/home" element={<Home />} />
@@ -36,22 +37,12 @@ const Routing = () => {
 
             <Route exact path="/contact" element={<Contact />} />
 
-
             <Route exact path="/login" element={<LoginPage /> } />
 
             <Route exact path="/signup" element={<SignupPage /> } />
 
-            <Route exact path="/:id" element={<VideoPage />} />
-
-
-            {/* <Route exact path="/profile">
-                <Profil />
-            </Route>
-            <Route exact path="/browse" component={Home}>
-                <MovieState>
-                    <Home />
-                </MovieState>
-            </Route> */}
+            <Route exact path="/watch?:id" element={<VideoPage />} />
+            
         </Routes>
 
     )

@@ -85,11 +85,11 @@ const Carousel = (props) => {
           { error ? <div> Some Nice Ui saying that we cannot load </div> 
           :
           anime.map((anime )=> 
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345, height: 350 }}>
           <CardActionArea>
             <CardMedia
               component="img"
-              height="140"
+              height="200"
               image={anime.picture}
               alt={anime.title}
             />

@@ -24,7 +24,7 @@ function home(){
             <Navbar />
             <div className='header-home'>
                 <div className='text-head '>
-                    <h1 className='text-light display-1 ml-5'>mikasa ackerman</h1>
+                    <h1 className='text-light display-1 ml-5'>Lycoris Recoil</h1>
                     <p className='text-light '>Shonen Adventure Super-powers <strong>Samourai</strong></p>
                     <p className='text-light '>Dive into the of Zenitsu and discover <br /> his over half and why Zenitsu's true <br /> streght awakens when he is asleep</p>
                     <div className='container-btn'>
