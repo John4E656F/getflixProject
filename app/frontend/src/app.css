@@ -1,32 +1,3 @@
 body {
     background: black;
 }
-
-.card {
-    width: 50%;
-    height: 370px;
-}
-.blurImg {
-    width: 100%;
-    height: 370px;
-}
-
-.card  img {
-    width: 100%;
-}
-.card  .slick-slide {
-    width: 200px;
-}
-
-.card .title {
-    overflow-x: hidden;
-}
-.slick-track {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-.slick-slide {
-    margin:  0 27px;
-}
-
