@@ -5,7 +5,8 @@ import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
 
-// import Cards from '../../components/test/getData'
+import Carousels from '../../components/Carousel/carousel'
+
 
 //import Carousel2 from '../../components/Home/carouselHome';
 function home(){
@@ -21,7 +22,6 @@ function home(){
           
             <Navbar />
             <div className='header-home'>
-                <div className='imagHeader'></div>
                 <div className='text-head '>
                     <h1 className='text-light display-1 ml-5'>mikasa ackerman</h1>
                     <p className='text-light '>Shonen Adventure Super-powers <strong>Samourai</strong></p>
@@ -31,7 +31,8 @@ function home(){
                     </div>
                 </div>
             </div>
-            {/* <Cards/> */}
+            {/* <Carousels/> */}
+
 
             <Carousel />
 

@@ -40,7 +40,7 @@ app.use('/user', usersRouter);
 app.use('/watch', animeRouter);
 
 // set port, listen on port 8080 for incoming requests.
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });

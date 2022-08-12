@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.7541fb8e.css",
-    "main.js": "/static/js/main.e12d7e77.js",
+    "main.css": "/static/css/main.8ea84925.css",
+    "main.js": "/static/js/main.92c28bae.js",
     "static/media/mikasa-ackerman-attack-on-titan-shingeki-no-kyojin-levi-ackerman.jpg": "/static/media/mikasa-ackerman-attack-on-titan-shingeki-no-kyojin-levi-ackerman.4da7a5d9c0b15620dc18.jpg",
     "static/media/Breath-Of-The-Wild-2-Link-Confused-AMvmra.webp": "/static/media/Breath-Of-The-Wild-2-Link-Confused-AMvmra.9c6ea1bcf6818fe9182c.webp",
     "static/media/2801892.jpg": "/static/media/2801892.c08552c2dee2f1dad297.jpg",
     "static/media/welcome.jpg": "/static/media/welcome.e13a58314701069815c4.jpg",
     "static/media/logo.png": "/static/media/logo.13417a8e61e9dc51aac4.png",
-    "static/media/Logo-aniflix.png": "/static/media/Logo-aniflix.48f343e6435dff549d93.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.7541fb8e.css.map": "/static/css/main.7541fb8e.css.map",
-    "main.e12d7e77.js.map": "/static/js/main.e12d7e77.js.map"
+    "main.8ea84925.css.map": "/static/css/main.8ea84925.css.map",
+    "main.92c28bae.js.map": "/static/js/main.92c28bae.js.map"
   },
   "entrypoints": [
-    "static/css/main.7541fb8e.css",
-    "static/js/main.e12d7e77.js"
+    "static/css/main.8ea84925.css",
+    "static/js/main.92c28bae.js"
   ]
 }

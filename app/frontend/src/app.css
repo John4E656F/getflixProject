@@ -10,7 +10,8 @@ body {
     width: 100%;
     height: 370px;
 }
-.blurImg  img {
+
+.card  img {
     width: 100%;
 }
 .card  .slick-slide {
@@ -28,3 +29,4 @@ body {
 .slick-slide {
     margin:  0 27px;
 }
+
