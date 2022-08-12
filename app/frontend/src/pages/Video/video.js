@@ -24,24 +24,15 @@ const VideoPage = (props) => {
     return (
         <>
             <Navbar />
-            <div className="video-page" key={anime.id} >
+            <div className="video-page" style={{width:'100%' , height:'100vh' , display:'flex' , justifyContent:'center' , alignItems:'center' , backgroundColor:'#302620'}}>
+                <h1 className="title">{props.title}</h1>
                 {/* Only loads the YouTube player*/}
-                <ReactPlayer 
-                width='80%'
-                height='600px' 
-                controls 
-                url={anime.trailer}
-                />
-                <div className='container-info'>
-                    <img src='anime.trailer' alt='anime.title' />
-                    <h1 className='' >{anime.title}</h1>
-                    <p>Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called Titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal Titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations. After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Eren, his adopted sister Mikasa Ackerman, and his childhood friend Armin Arlert join the brutal war against the Titans and race to discover a way of defeating them before the last walls are breached.</p>
-                    <p bold>Genre : <span>{anime.genre}</span></p>
-                    <p bold>Episodes : <span>25</span></p>
-                    <p bold>Demographic : <span>Shounen</span></p>
-                    <p bold>Studio : <span>Wit Studio</span></p>
-                    <bold>Rated : <span>R - 17= (violence & profanity)</span></bold>
-                </div>
+                <ReactPlayer controls url='https://www.youtube.com/watch?v=ysz5S6PUM-U' style={{ width:'100%', height:'auto',margin:'250px 30%' ,position:"absolute" , top:'0' , left:'0' , boxShadow:'0 0 15px gray'}} />
+                {/* <ReactPlayer autoPlay={true} style={{ width:'100%', height:'auto',margin:'250px 30%' ,position:"absolute" , top:'0' , left:'0' , boxShadow:'0 0 15px gray'}} controls className='react-player' url={this.state.url} playing={this.state.playing} /> */}
+
+                <p className="description">{props.description}</p>
+                <div className="Genres">{props.genres}</div>
+                <div className="Types">{props.types}</div>
             </div>
         </>
     );
