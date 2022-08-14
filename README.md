@@ -47,7 +47,7 @@ To run react frontend
 
 [Click Me to Check out the UX 👈](https://miro.com/app/board/uXjVOmnF7ZY=/?share_link_id=286191284988)
 
-![Aniflex user funnel ](./inspiration/userfunnel.png "Aniflex user funnel")
+![Aniflex user funnel ](https://github.com/John4E656F/getflixProject/blob/main/inpiration/userfunnel.png?raw=true "Aniflex user funnel")
 
 ## Technology used:
 - [Tailwinds CSS](https://tailwindcss.com/docs/installation "A utility-first CSS framework")
