@@ -1,13 +1,8 @@
-import  React, {useEffect, useState} from 'react';
+import  React, {useEffect, useState } from 'react';
 import Slider from "react-slick";
-import Rating from '@mui/material/Rating';
-import Stack from '@mui/material/Stack';
 
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+
+import Card from "../Card/card"
 
 
 import axios from "axios";
@@ -42,6 +37,7 @@ const Carousel = (props) => {
       console.log(error);
     })
   }, [])
+
    
     let settings= {
       dots: false,
@@ -84,28 +80,17 @@ const Carousel = (props) => {
 
           { error ? <div> Some Nice Ui saying that we cannot load </div> 
           :
-          anime.map((anime )=> 
-          <Card sx={{ maxWidth: 345, height: 350 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="200"
-              image={anime.picture}
-              alt={anime.title}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {anime.title}
-              </Typography>
-              <Stack spacing={1}>
-                <Rating className='starRating'  name="size-small" defaultValue={5} size="small" />
-              </Stack>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        )} 
-
-            {console.log(anime.picture)}
+          anime.map((anime ) => 
+          <React.Fragment key={anime.id}>
+          <Card 
+          id={anime._id}
+          picture={anime.picture}
+          title={anime.title}
+          genre={anime.genre}
+          trailer={anime.trailer}
+          />
+          </React.Fragment>
+          )} 
            
         </Slider>
         </>
