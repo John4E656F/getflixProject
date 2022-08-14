@@ -5,6 +5,7 @@ import ReactPlayer from 'react-player/youtube';
 import { useParams } from 'react-router-dom';
 
 import axios from "axios";
+import './video.css';
 
 /*--------------------------------------------------------
 *Video player pages.
@@ -39,17 +40,22 @@ const VideoPage = () => {
      }, [])
 
 
+
+
     return (
         <>
             <Navbar />
             <div className="video-page" key={anime.id} >
                 {/* Only loads the YouTube player*/}
-                <ReactPlayer 
-                width='80%'
-                height='600px' 
-                controls 
-                url={anime.trailer}
-                />
+                <div className='player-wrapper'>
+                    <ReactPlayer 
+                        width='80%'
+                        height='600px' 
+                        controls 
+                        url={anime.trailer}
+                    />
+                </div>
+
                 <div className='container-info'>
                     <img src={anime.picture} alt={anime.title} />
                     <h1 className='' >{anime.title}</h1>                </div>
