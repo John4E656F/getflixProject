@@ -41,13 +41,13 @@ To run react frontend
 
 [Click Me to Check out the UI 👈](https://www.figma.com/file/SJwTqAdGM0fmk9kw85S3Jw/Aniflex-web-design?node-id=0%3A1)
 
-![Aniflex Web ](/inspiration/aniflixDesign.PNG "Aniflex Designed by @john4e656f")
+![Aniflex Web ](./inpiration/aniflixDesign.png "Aniflex Designed by @john4e656f")
 
 ### User Funnel
 
 [Click Me to Check out the UX 👈](https://miro.com/app/board/uXjVOmnF7ZY=/?share_link_id=286191284988)
 
-![Aniflex user funnel ](/inspiration/userfunnel.PNG "Aniflex user funnel")
+![Aniflex user funnel ](./inspiration/userfunnel.PNG "Aniflex user funnel")
 
 ## Technology used:
 - [Tailwinds CSS](https://tailwindcss.com/docs/installation "A utility-first CSS framework")
@@ -70,7 +70,7 @@ To run react frontend
 
 
 
-[![The Fantastic 4!](https://media0.giphy.com/media/QdjjW71YLrzWg/giphy.gif?cid=ecf05e471uvq0rqoqhj9d29tjg93v0k99r9ssequofun8otc&rid=giphy.gif&ct=g)](https://www.youtube.com/watch?v=vTIIMJ9tUc8)
+[![The Fantastic 4!](./inpiration/fantastic4.gif)](https://www.youtube.com/watch?v=vTIIMJ9tUc8)
   
 
 <div align="center"><a href="https://www.youtube.com/watch?v=vTIIMJ9tUc8">Click Me</a></div>
