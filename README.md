@@ -70,7 +70,7 @@ To run react frontend
 
 
 
-[![The Fantastic 4!](./inspiration/fantastic4.gif)](https://www.youtube.com/watch?v=vTIIMJ9tUc8)
+[![The Fantastic 4!](https://media0.giphy.com/media/QdjjW71YLrzWg/giphy.gif?cid=ecf05e471uvq0rqoqhj9d29tjg93v0k99r9ssequofun8otc&rid=giphy.gif&ct=g)](https://www.youtube.com/watch?v=vTIIMJ9tUc8)
   
 
 <div align="center"><a href="https://www.youtube.com/watch?v=vTIIMJ9tUc8">Click Me</a></div>
