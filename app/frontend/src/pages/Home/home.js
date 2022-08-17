@@ -5,14 +5,21 @@ import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
 
-import Carousels from '../../components/Carousel/carousel'
+import Carousels from '../../components/Carousel/carousel.js'
 
 
 
 //import Carousel2 from '../../components/Home/carouselHome';
 function home(){
+    // const [data, setData] = useState([{
+    //     cardNum: 10,
 
- 
+    // }])
+
+    // const settings = () => {
+    //     setData()
+    // }
+    const data = 10;
 
       //  for(let i= 0; i < backendData.length; i++){
       //   console.log('this is id  ' + backendData[i].title);
@@ -33,7 +40,7 @@ function home(){
                 </div>
             </div>
 
-            <Carousels/>
+            <Carousels cardNum={data} />
 
 
             <Carousel />

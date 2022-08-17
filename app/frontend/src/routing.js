@@ -41,8 +41,10 @@ const Routing = () => {
 
             <Route exact path="/signup" element={<SignupPage /> } />
 
-            <Route exact path="/watch?:id" element={<VideoPage />} />
-            
+            <Route path="/watch">
+                <Route exact path=":id" element={<VideoPage />} />
+            </Route>
+
         </Routes>
 
     )

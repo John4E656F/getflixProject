@@ -1,0 +1,139 @@
+/* .wrapper {
+  overflow: scroll;
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.wrapper section {
+  transition: 450ms transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin: 20px 0;
+  padding-bottom: 10px
+ }
+
+ .wrapper section .card {
+ 
+  width: 90%;
+  height: 100%;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center center;
+ }
+
+ .cardImg {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+ }
+
+ .info-carousel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  transition: 450ms opacity;
+ }
+
+ .info-carousel:after
+ .info-carousel:before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   display: black;
+}
+
+.info-carousel:after{
+margin-top: (-(50px / 2));
+margin-left: (-(50px / 2));
+width: 50px;
+height: 50px;
+border: 3px solid #ecf0f1;
+line-height: 50px;
+text-align: center;
+border-radius: 100%;
+background: rgba(0,0,0,0.5);
+z-index: 1;
+}
+
+.info-carousel:before{
+content: '▶';
+left: 0;
+width: 100%;
+font-size: 30px;
+margin-left: 7px;
+margin-top: -18px;
+text-align: center;
+z-index: 2;
+}
+
+/* .cardContainer .card{
+    min-height: 100%;
+    background-color: blue;
+    display: flex;
+    overflow-y: hidden;
+} */
+
+
+
+
+/* .cardContainer section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+}
+
+section .item {
+    position: relative;
+    padding: 0 2px;
+    transition: 250ms all;
+} 
+
+.card {
+    position: relative;
+    display: block;
+    flex: 1 1 0px;
+    transition: transform 500ms;
+}
+  
+  .cardContainer:focus-within .card,
+  .cardContainer:hover .card { 
+    margin: 0 40px;
+    transform: scale(1.2);
+  }
+  
+  .card:focus ~ .card,
+  .card:hover ~ .card { 
+    margin: 0 40px;
+    transform: scale(1.2);
+  }
+  
+  .cardContainer .card:focus,
+  .cardContainer .card:hover {
+    transform: scale(1.5);
+    z-index: 1;
+  }
+   */
+
+  
+/* .cardContainer > img {
+    margin: 8px;
+    transition: transform 0.5s;
+  }
+
+.cardContainer > img:hover {
+    transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+    display: none;
+  } */ 

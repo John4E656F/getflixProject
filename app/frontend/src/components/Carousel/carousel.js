@@ -1,13 +1,9 @@
-import  React, {useEffect, useState} from 'react';
+import  React, {useEffect, useState } from 'react';
 import Slider from "react-slick";
-import Rating from '@mui/material/Rating';
-import Stack from '@mui/material/Stack';
 
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+
+import Card from "../Card/card"
+import './carousel.css';
 
 
 import axios from "axios";
@@ -29,6 +25,7 @@ const Carousel = (props) => {
       ratings: "",
     },
   ]);
+  const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
 
   const [error] =useState(null);
   
@@ -36,18 +33,19 @@ const Carousel = (props) => {
     axios.get("https://aniflix-getflix.herokuapp.com/watch")
     .then((res) => {
       setAnime(res.data)
-
     })
     .catch((error) => {
       console.log(error);
     })
   }, [])
-   
+
+  const shuffledAnime = shuffle(anime);
+ 
     let settings= {
       dots: false,
       infinite: false,
       speed: 500,
-      slidesToShow: 4,
+      slidesToShow: 6,
       slidesToScroll: 4,
       initialSlide: 0,
       responsive: [
@@ -80,32 +78,22 @@ const Carousel = (props) => {
 
       return (
         <>
-        <Slider {...settings }>
+        <Slider className='wrapper' {...settings }>
 
           { error ? <div> Some Nice Ui saying that we cannot load </div> 
           :
-          anime.map((anime )=> 
-          <Card sx={{ maxWidth: 345, height: 350 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="200"
-              image={anime.picture}
-              alt={anime.title}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {anime.title}
-              </Typography>
-              <Stack spacing={1}>
-                <Rating className='starRating'  name="size-small" defaultValue={5} size="small" />
-              </Stack>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        )} 
 
-            {console.log(anime.picture)}
+          shuffledAnime.slice(`0, ${props.cardNum}`).map((anime ) =>
+            <React.Fragment key={anime.id}>
+            <Card 
+            id={anime._id}
+            picture={anime.picture}
+            title={anime.title}
+            genre={anime.genre}
+            trailer={anime.trailer}
+            />
+            </React.Fragment>
+          )} 
            
         </Slider>
         </>
