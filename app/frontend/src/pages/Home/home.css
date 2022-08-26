@@ -11,7 +11,7 @@
 .header-home .imagHeader{
     width: 100%;
     height: 800px;
-    background-image: url(../../assets/images/mikasa-ackerman-attack-on-titan-shingeki-no-kyojin-levi-ackerman.jpg);
+    background-image: url('../../assets/images/mikasa-ackerman-attack-on-titan-shingeki-no-kyojin-levi-ackerman.jpg');
     background-position: center;
     background-size: cover;
 }

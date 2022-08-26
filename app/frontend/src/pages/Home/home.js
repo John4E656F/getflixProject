@@ -4,10 +4,14 @@ import Carousel from '../../components/Home/carouselHome';
 import { FiPlay }  from 'react-icons/fi'
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
-
 import Carousels from '../../components/Carousel/carousel.js'
 
+import { textualMaterial } from "./texts";
 
+import {
+    Typography,
+    Link
+  } from '@mui/material'
 
 //import Carousel2 from '../../components/Home/carouselHome';
 function home(){
@@ -20,10 +24,17 @@ function home(){
     //     setData()
     // }
     const data = 10;
+    const text = 'Must Watch';
 
-      //  for(let i= 0; i < backendData.length; i++){
-      //   console.log('this is id  ' + backendData[i].title);
-      //  }
+      const CarouselComponents = textualMaterial.CarouselTitle.map((carouselcomp) => (
+        <>
+        <Typography gutterBottom variant="h2" component="div">{carouselcomp.Text}</Typography>
+                <Carousels
+					cardNum={data}
+					carouselTitle={text}
+				/>
+        </>
+	));
     return(
         
         <div className='home '>
@@ -40,10 +51,11 @@ function home(){
                 </div>
             </div>
 
-            <Carousels cardNum={data} />
+            {/* <Carousels cardNum={data} carouselTitle={text} /> */}
 
+        {CarouselComponents}
 
-            <Carousel />
+            {/* <Carousel /> */}
 
             <div className='carousel'>
               {/* <Carousel2 /> */} 

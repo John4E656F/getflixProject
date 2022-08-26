@@ -1,12 +1,10 @@
 import  React, {useEffect, useState } from 'react';
 import Slider from "react-slick";
-
-
 import Card from "../Card/card"
 import './carousel.css';
-
-
 import axios from "axios";
+
+
 
 
 const Carousel = (props) => {
@@ -78,24 +76,25 @@ const Carousel = (props) => {
 
       return (
         <>
-        <Slider className='wrapper' {...settings }>
 
-          { error ? <div> Some Nice Ui saying that we cannot load </div> 
-          :
+            <Slider className='wrapper' {...settings }>
 
-          shuffledAnime.slice(`0, ${props.cardNum}`).map((anime ) =>
-            <React.Fragment key={anime.id}>
-            <Card 
-            id={anime._id}
-            picture={anime.picture}
-            title={anime.title}
-            genre={anime.genre}
-            trailer={anime.trailer}
-            />
-            </React.Fragment>
-          )} 
-           
-        </Slider>
+              { error ? <div> Some Nice Ui saying that we cannot load </div> 
+              :
+
+              shuffledAnime.slice(0, `${props.cardNum}`).map((anime ) =>
+                <React.Fragment key={anime.id}>
+                <Card 
+                id={anime._id}
+                picture={anime.picture}
+                title={anime.title}
+                genre={anime.genre}
+                trailer={anime.trailer}
+                />
+                </React.Fragment>
+              )} 
+
+            </Slider>
         </>
       )
 };
