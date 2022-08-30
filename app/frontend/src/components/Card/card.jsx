@@ -16,12 +16,15 @@ const Cards = (anime) => {
     return (
       <>
         <Link href={`/watch/${anime.id}`}>
-          <Card sx={{ maxWidth: 500}} key={anime.id}>
+          <Card sx={{ maxWidth: 500, marginRight: 2, marginLeft: 2}} key={anime.id}>
             <CardMedia 
             component="img"
             height='200'
             image={anime.picture}
             alt={anime.title}
+            sx={{
+              objectFit: 'cover',
+            }}
             />
 
             <CardContent>
