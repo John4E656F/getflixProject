@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ea84925.css",
-    "main.js": "/static/js/main.92c28bae.js",
+    "main.css": "/static/css/main.58e57499.css",
+    "main.js": "/static/js/main.13c128c9.js",
+    "static/media/DemonSlayer.mp4": "/static/media/DemonSlayer.2d7efd0271530a4c4a63.mp4",
+    "static/media/Zenitsu.png": "/static/media/Zenitsu.650163fdb2f3cd93d392.png",
     "static/media/mikasa-ackerman-attack-on-titan-shingeki-no-kyojin-levi-ackerman.jpg": "/static/media/mikasa-ackerman-attack-on-titan-shingeki-no-kyojin-levi-ackerman.4da7a5d9c0b15620dc18.jpg",
-    "static/media/Breath-Of-The-Wild-2-Link-Confused-AMvmra.webp": "/static/media/Breath-Of-The-Wild-2-Link-Confused-AMvmra.9c6ea1bcf6818fe9182c.webp",
     "static/media/2801892.jpg": "/static/media/2801892.c08552c2dee2f1dad297.jpg",
     "static/media/welcome.jpg": "/static/media/welcome.e13a58314701069815c4.jpg",
     "static/media/logo.png": "/static/media/logo.13417a8e61e9dc51aac4.png",
@@ -12,11 +13,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.8ea84925.css.map": "/static/css/main.8ea84925.css.map",
-    "main.92c28bae.js.map": "/static/js/main.92c28bae.js.map"
+    "main.58e57499.css.map": "/static/css/main.58e57499.css.map",
+    "main.13c128c9.js.map": "/static/js/main.13c128c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ea84925.css",
-    "static/js/main.92c28bae.js"
+    "static/css/main.58e57499.css",
+    "static/js/main.13c128c9.js"
   ]
 }
