@@ -7,10 +7,10 @@ import Hero from '../../components/Hero/Hero'
 import { textualMaterial } from "./texts";
 
 import {
-    Typography,
-    Link,
-    Stack 
-  } from '@mui/material'
+  Typography,
+  Link,
+  Stack 
+} from '@mui/material'
 
 
 function home(){
