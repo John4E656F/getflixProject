@@ -69,7 +69,7 @@ router.route('/login').post((req, res) => {
 })
 
 router.put('/update/:id', (req, res) => {
-    const { id } = req.param;
+    const { id } = req.params;
     const { newUsername, newEmail, newPassword } = req.body;
 
     const getUser = User.find((users) => users.id === id);

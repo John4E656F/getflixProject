@@ -1,5 +1,5 @@
-import React, { useContext, useState, useEffect, createContext } from "react";
-import axios from "axios";
+import React, { useContext, useState, useEffect, createContext } from 'react';
+import axios from 'axios';
 
 const APIContext = createContext();
 
@@ -10,7 +10,8 @@ export default function APIContextProvider({ children }) {
 
   // Fetch data
   useEffect(() => {
-    let url = "https://aniflix-getflix.herokuapp.com/watch";
+    // let url = 'https://aniflix-getflix.herokuapp.com/watch';
+    let url = 'http://localhost:4000/watch/';
     axios
       .get(url)
       .then((res) => {
@@ -20,18 +21,14 @@ export default function APIContextProvider({ children }) {
       .catch((error) => console.log(error));
   }, []);
 
-  return (
-    <APIContext.Provider value={{ data, isLoading }}>
-      {children}
-    </APIContext.Provider>
-  );
+  return <APIContext.Provider value={{ data, isLoading }}>{children}</APIContext.Provider>;
 }
 
 // Create a hook to use the APIContext, this is a Kent C. Dodds pattern
 export function useAPI() {
   const context = useContext(APIContext);
   if (context === undefined) {
-    throw new Error("Context must be used within a Provider");
+    throw new Error('Context must be used within a Provider');
   }
   return context;
 }
