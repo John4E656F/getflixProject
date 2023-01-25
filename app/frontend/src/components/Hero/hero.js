@@ -2,7 +2,8 @@ import React from "react";
 import {
     Container,
     Grid,
-    Card,
+    Box,
+    Button,
     CardContent,
     CardMedia,
     Typography,
@@ -31,26 +32,36 @@ const Hero = (props) => {
                 direction="column"
                 justify="flex-end"
                 alignItems="right"
-                style={styles.heroContainer} >
+                style={styles.heroContainer} 
+            >
 
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    style={{ height: "100%", width: "100%", objectFit: "cover",  }} //object-fit:cover
-                >
-                    <source src={video} type="video/mp4" />
+                <Grid item>
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        style={{ height: "100%", width: "100%", objectFit: "cover",  }} //object-fit:cover
+                    >
+                        <source src={video} type="video/mp4" />
 
-                </video>
-                <Grid item
-                sx={{
-                    zIndex: 1000,
-                    backgroundColor: 'red',
-                }}>
-                <Typography >
-                        Hello
-                </Typography>
+                    </video>
                 </Grid>
+                <Box
+                  height="100%"
+                  display="flex"
+                  flexDirection="column"
+                  justifyContent="center"
+                  alignItems="center"
+                  color="#fff"
+                >
+                  <Typography variant="h3" component="h1" >
+                    Title Goes Here
+                  </Typography>
+                  <Button color="primary" variant="contained">
+                    Click Me
+                  </Button>
+                </Box>
+
             </Grid>
         </>
     )

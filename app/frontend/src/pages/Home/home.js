@@ -3,14 +3,14 @@ import './home.css';
 import Navbar from '../../components/Navbar/navbar';
 import Footer from '../../components/Footer/footer';
 import Carousels from '../../components/Carousel/carousel.js'
-import Hero from '../../components/Hero/hero'
+import Hero from '../../components/Hero/Hero'
 import { textualMaterial } from "./texts";
 
 import {
-    Typography,
-    Link,
-    Stack 
-  } from '@mui/material'
+  Typography,
+  Link,
+  Stack 
+} from '@mui/material'
 
 
 function home(){
